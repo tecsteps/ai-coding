@@ -1,6 +1,15 @@
-Introduction others
+# Title slide
+## Content
+
+AI-Coding
+
+## Instructions:
+
+(this slide has no headine)
 
 # About me
+
+## Content
 Fabian Wesner
 CTO & Entrepreneur
 
@@ -13,6 +22,8 @@ https://www.linkedin.com/in/fabian-wesner/
 
 # Today's Agenda
 
+## Content:
+
 (1) Short presentation to set the scenes
 
 (2) Hands-on workshop.
@@ -23,46 +34,84 @@ We'll build a full project together. You'll lean how I do it, so you can take in
 
 I am here to answer all your questions about using AI-coding for your daily work. So don't hesitate to ask me at any time,
 
-# How to AI-Code?
-
-1. Tabs ()
-2. In context
-3. Agents
-4. SDD / Swarms
-For each show pro and com and impact on speed
-
-   Main lever of productivity
-   Developer writes code
-   Developer writes code with AI (+30%)
-   AI writes code with developer (5-10x)
-   Very easy to start with, but also very easy to fail
 
 
-# Question 
-Ask who is doing what
+
+# Evolution
+
+## Content (drafted)
+
+- Developer writes code (1x)
+- Developer writes code with AI (1,3x) - Tab-completions / In-context editing
+- AI writes code with developer (10x) - Coding Agents
+
+## Instructions:
+
+Make it look stunning!!!
+
+# Question 1
+
+## Content
+
+Who of you have experience with
+(A) Cursor
+(B) Claude Code
+(C) Other?
+
+## Instructions
+
+Use the "Who of you have experience with" as headline, not "Question 1"
+
+Improve my copy
+
+None of them is highlighted. But when I use up/down arrows, I can set a highlight-cursor. When I press "SPACE" then I can count (show nicely with a Magic component). Rember the counts in localStorage, so they are not lost for this session.
+
+# Question2
+
+## Content
+
+Who of you have experience with
+(A) MCPs
+(B) Sub-Agents
+(C) Planning-Mode
+
+## Instructions
+
+Same as above
+
 
 # Agent theory
 
+## Instructions
+
 Visually explain how Claude Code works (basics)
+Re-Act / Orchestrator
 
-# How to use
 
-Starting is very easy!
 
-(Show a basic prompt example, like adding a button)
+# Starting is very easy!
+
+## Instructions
+
+Show a basic prompt example, like adding a button
 
 # But doing it "right" is hard.
 
-(show the open specifications gap of the button, like what color, size, action, double-click ....)
+## Content
 
 => The AI will fill specification-gaps.
 => Leads to frustration (AI isn't doing what I want....)
 
+## Instructions
+
+
+
+(show the open specifications gap of the button, like what color, size, action, double-click ....)
+
+
 (Optimize my copy and make it visually stunning)
 
-# But doing it "right" is hard.
-
-(Show this cartoon images/butto.jpeg)
+=================== STOP===================
 
 
 # Ways how to use it (feel free to improve the copy)
@@ -194,3 +243,5 @@ Full spec
 Guardrails / Reviews
 Tools to enable it to try it out
 Final review by human
+
+- Very easy to start with, but also very easy to fail
