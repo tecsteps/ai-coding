@@ -50,16 +50,24 @@ function usePersistedCounts(storageKey: string, optionCount: number) {
     });
   }, []);
 
+  const decrement = useCallback((index: number) => {
+    setCounts((prev) => {
+      const next = [...prev];
+      next[index] = Math.max(0, prev[index] - 1);
+      return next;
+    });
+  }, []);
+
   const reset = useCallback(() => {
     setCounts(Array(optionCount).fill(0));
   }, [optionCount]);
 
-  return { counts, increment, reset };
+  return { counts, increment, decrement, reset };
 }
 
 export function QuestionSlide({ slide }: Props) {
   const [cursorIndex, setCursorIndex] = useState<number | null>(null);
-  const { counts, increment, reset } = usePersistedCounts(
+  const { counts, increment, decrement, reset } = usePersistedCounts(
     slide.storageKey,
     slide.options.length
   );
@@ -81,6 +89,9 @@ export function QuestionSlide({ slide }: Props) {
       } else if (event.key === ' ' && cursorIndex !== null) {
         event.preventDefault();
         increment(cursorIndex);
+      } else if (event.key === 'Backspace' && cursorIndex !== null) {
+        event.preventDefault();
+        decrement(cursorIndex);
       } else if (event.key === 'q') {
         event.preventDefault();
         reset();
@@ -89,7 +100,7 @@ export function QuestionSlide({ slide }: Props) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [slide.options.length, cursorIndex, increment, reset]);
+  }, [slide.options.length, cursorIndex, increment, decrement, reset]);
 
   return (
     <div className="relative flex min-h-screen flex-col bg-slate-950 text-white">
@@ -120,7 +131,8 @@ export function QuestionSlide({ slide }: Props) {
               return (
                 <BlurFade key={index} delay={0.2 + index * 0.15} duration={0.5}>
                   <div
-                    className={`flex items-center gap-8 rounded-2xl border p-8 backdrop-blur-sm transition-all ${
+                    onClick={() => increment(index)}
+                    className={`flex cursor-pointer items-center gap-8 rounded-2xl border p-8 backdrop-blur-sm transition-all hover:border-cyan-400/30 ${
                       isHighlighted
                         ? 'border-cyan-400/50 bg-cyan-950/40'
                         : 'border-slate-700/30 bg-slate-900/30'
@@ -174,6 +186,12 @@ export function QuestionSlide({ slide }: Props) {
           </div>
         </div>
 
+        {/* Instructions */}
+        <div className="pb-8 text-center">
+          <p className="text-sm text-slate-500">
+            Click option to count up | Arrow keys to navigate | Space to count up | Backspace to count down | Q to reset
+          </p>
+        </div>
       </div>
     </div>
   );

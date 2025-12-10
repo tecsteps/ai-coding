@@ -360,9 +360,14 @@ With AI Coding Agent:
 
 
 
+# Let's get our hands dirty!
 
+## Content
 
+What We're Building
+A small app for damage reporting for courier operations. Drivers upload photos of damaged packages, and the system automatically assesses severity and generates professional reports.
 
-# Check:
-http://localhost:3000/demo/12
-http://localhost:3000/demo/13
+Procedure:
+- I will build it in front of you
+- You are doing it in parallel locally.
+- Use whatever technology you like (we need UI, some business logic and a database (e.g. SQLite)).

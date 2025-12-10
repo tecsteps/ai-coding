@@ -5,7 +5,7 @@ import { GuardrailsSlide as GuardrailsSlideType } from '@/types/slide';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { StaticLightRays } from '@/components/ui/static-light-rays';
 import { cn } from '@/lib/utils';
-import { Shield, User, CheckCircle } from 'lucide-react';
+import { Shield, Bot, CheckCircle } from 'lucide-react';
 
 interface Props {
   slide: GuardrailsSlideType;
@@ -51,7 +51,7 @@ export function GuardrailsSlide({ slide }: Props) {
         </div>
 
         {/* Content */}
-        <div className="flex flex-1 flex-col items-center justify-start px-16 py-8">
+        <div className="flex flex-1 flex-col items-center justify-center px-16 py-8">
           <div className="w-full max-w-5xl">
             {/* Intro */}
             <BlurFade delay={0.2} duration={0.5}>
@@ -61,6 +61,7 @@ export function GuardrailsSlide({ slide }: Props) {
                     <Shield className="h-6 w-6 text-purple-400" />
                   </div>
                   <div>
+                    <p className="text-xs text-purple-400 uppercase tracking-wider mb-1">Tooling</p>
                     <p className="text-xl text-slate-200 leading-relaxed">
                       {slide.intro}
                     </p>
@@ -108,7 +109,7 @@ export function GuardrailsSlide({ slide }: Props) {
                               isVisible ? 'bg-purple-500/20' : 'bg-slate-800/50'
                             )}
                           >
-                            <User
+                            <Bot
                               className={cn(
                                 'h-8 w-8 transition-colors duration-300',
                                 isVisible ? 'text-purple-400' : 'text-slate-600'

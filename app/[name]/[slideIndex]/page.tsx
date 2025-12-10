@@ -19,7 +19,10 @@ import { PrimeDirectiveSlide } from '@/components/slides/PrimeDirectiveSlide';
 import { MentalModelSlide } from '@/components/slides/MentalModelSlide';
 import { AiFailuresSlide } from '@/components/slides/AiFailuresSlide';
 import { JobsSlide } from '@/components/slides/JobsSlide';
+import { HandsOnSlide } from '@/components/slides/HandsOnSlide';
 import { SlideNavigation } from '@/components/slides/SlideNavigation';
+import { SlideHints } from '@/components/slides/SlideHints';
+import { LaserPointer } from '@/components/slides/LaserPointer';
 import { demo } from '@/data/presentations/demo';
 import { Presentation } from '@/types/slide';
 
@@ -77,6 +80,9 @@ export default async function SlidePage({ params }: Props) {
       {slide.type === 'mental-model' && <MentalModelSlide slide={slide} />}
       {slide.type === 'ai-failures' && <AiFailuresSlide slide={slide} />}
       {slide.type === 'jobs' && <JobsSlide slide={slide} />}
+      {slide.type === 'hands-on' && <HandsOnSlide slide={slide} />}
+      <SlideHints slideIndex={index} slideType={slide.type} />
+      <LaserPointer />
     </>
   );
 }

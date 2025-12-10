@@ -159,7 +159,7 @@ export const demo: Presentation = {
           description: 'Implement phase by phase. Each phase is validated before moving to the next.',
         },
       ],
-      footer: "We're doing this without additional tools today, but there are popular ones like spec-kit from GitHub:",
+      footer: "We're doing this without additional tools today, but there are popular ones like",
       footerLink: { url: 'https://github.com/github/spec-kit', label: 'github/spec-kit' },
     },
     {
@@ -432,6 +432,17 @@ export const demo: Presentation = {
       {
           type: 'agent-theory',
           headline: 'How Claude Code Works',
-      }
+      },
+    {
+      type: 'hands-on',
+      headline: "Let's get our hands dirty!",
+      projectDescription: 'A small app for damage reporting for courier operations. Drivers upload photos of damaged packages, and the system automatically assesses severity and generates professional reports.',
+      procedureItems: [
+        'I will build it in front of you',
+        'You are doing it in parallel locally',
+        'Use whatever technology you like',
+      ],
+      techNote: 'We need UI, some business logic, and a database (e.g. SQLite)',
+    },
   ],
 };
