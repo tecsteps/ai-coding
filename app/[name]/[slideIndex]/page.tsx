@@ -6,6 +6,12 @@ import { QuestionSlide } from '@/components/slides/QuestionSlide';
 import { AgentTheorySlide } from '@/components/slides/AgentTheorySlide';
 import { EasyStartSlide } from '@/components/slides/EasyStartSlide';
 import { SpecGapSlide } from '@/components/slides/SpecGapSlide';
+import { WaysSlide } from '@/components/slides/WaysSlide';
+import { PillarsSlide } from '@/components/slides/PillarsSlide';
+import { SddSlide } from '@/components/slides/SddSlide';
+import { QualitySlide } from '@/components/slides/QualitySlide';
+import { InteractionSlide } from '@/components/slides/InteractionSlide';
+import { McpSlide } from '@/components/slides/McpSlide';
 import { SlideNavigation } from '@/components/slides/SlideNavigation';
 import { demo } from '@/data/presentations/demo';
 import { Presentation } from '@/types/slide';
@@ -49,6 +55,14 @@ export default async function SlidePage({ params }: Props) {
       {slide.type === 'evolution' && <EvolutionSlide slide={slide} />}
       {slide.type === 'question' && <QuestionSlide slide={slide} />}
       {slide.type === 'agent-theory' && <AgentTheorySlide slide={slide} />}
+      {slide.type === 'easy-start' && <EasyStartSlide slide={slide} />}
+      {slide.type === 'spec-gap' && <SpecGapSlide slide={slide} />}
+      {slide.type === 'ways' && <WaysSlide slide={slide} />}
+      {slide.type === 'pillars' && <PillarsSlide slide={slide} />}
+      {slide.type === 'sdd' && <SddSlide slide={slide} />}
+      {slide.type === 'quality' && <QualitySlide slide={slide} />}
+      {slide.type === 'interaction' && <InteractionSlide slide={slide} />}
+      {slide.type === 'mcp' && <McpSlide slide={slide} />}
     </>
   );
 }

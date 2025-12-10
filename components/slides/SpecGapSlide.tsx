@@ -26,10 +26,10 @@ export function SpecGapSlide({ slide }: Props) {
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === 'ArrowRight' || event.key === 'ArrowDown' || event.key === ' ') {
+      if (event.key === 'ArrowDown' || event.key === ' ') {
         event.preventDefault();
         setVisibleCount((prev) => Math.min(specificationGaps.length, prev + 1));
-      } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+      } else if (event.key === 'ArrowUp') {
         event.preventDefault();
         setVisibleCount((prev) => Math.max(0, prev - 1));
       }
@@ -52,10 +52,8 @@ export function SpecGapSlide({ slide }: Props) {
         {/* Header */}
         <div className="pt-12 text-center">
           <BlurFade delay={0.1} duration={0.6}>
-            <div className="inline-flex items-center gap-3 mb-4">
-              <AlertTriangle className="h-10 w-10 text-amber-400" />
-            </div>
-            <h1 className="text-6xl font-bold tracking-tight text-white">
+            <h1 className="inline-flex items-center gap-4 text-6xl font-bold tracking-tight text-white">
+              <AlertTriangle className="h-12 w-12 text-amber-400" />
               {slide.headline}
             </h1>
           </BlurFade>
@@ -138,7 +136,7 @@ export function SpecGapSlide({ slide }: Props) {
         <BlurFade delay={0.5} duration={0.5}>
           <div className="pb-6 text-center">
             <p className="text-base text-slate-500">
-              Press <kbd className="px-2 py-1 bg-slate-800 rounded text-slate-400 mx-1">→</kbd> to reveal specification gaps
+              Press <kbd className="px-2 py-1 bg-slate-800 rounded text-slate-400 mx-1">↓</kbd> to reveal specification gaps
             </p>
           </div>
         </BlurFade>

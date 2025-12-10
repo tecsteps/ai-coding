@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { AgentTheorySlide as AgentTheorySlideType } from '@/types/slide';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { StaticLightRays } from '@/components/ui/static-light-rays';
-import { AnimatedBeam } from '@/components/ui/animated-beam';
+import { CurvedArrow } from '@/components/ui/curved-arrow';
 import { cn } from '@/lib/utils';
 import {
   Brain,
@@ -14,6 +14,8 @@ import {
   Terminal,
   Search,
   User,
+  MessageSquare,
+  Globe,
 } from 'lucide-react';
 
 interface Props {
@@ -25,25 +27,35 @@ const CircleNode = ({
   children,
   label,
   sublabel,
+  size = 'normal',
 }: {
   className?: string;
   children?: React.ReactNode;
   label: string;
   sublabel?: string;
+  size?: 'small' | 'normal' | 'large';
 }) => {
+  // Sizes increased by 30%
+  const sizeClasses = {
+    small: 'h-[72px] w-[72px]',
+    normal: 'h-[84px] w-[84px]',
+    large: 'h-[104px] w-[104px]',
+  };
+
   return (
-    <div className="flex flex-col items-center gap-2">
+    <div className="flex flex-col items-center gap-3">
       <div
         className={cn(
-          'z-10 flex h-16 w-16 items-center justify-center rounded-full border-2 bg-slate-900 shadow-lg',
+          'z-10 flex items-center justify-center rounded-full border-2 bg-slate-900 shadow-lg',
+          sizeClasses[size],
           className
         )}
       >
         {children}
       </div>
       <div className="text-center">
-        <p className="text-base font-semibold text-white">{label}</p>
-        {sublabel && <p className="text-xs text-slate-400">{sublabel}</p>}
+        <p className="text-lg font-semibold text-white">{label}</p>
+        {sublabel && <p className="text-sm text-slate-400">{sublabel}</p>}
       </div>
     </div>
   );
@@ -52,11 +64,11 @@ const CircleNode = ({
 export function AgentTheorySlide({ slide }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const userRef = useRef<HTMLDivElement>(null);
-  const orchestratorRef = useRef<HTMLDivElement>(null);
-  const reasonRef = useRef<HTMLDivElement>(null);
-  const actRef = useRef<HTMLDivElement>(null);
-  const observeRef = useRef<HTMLDivElement>(null);
+  const thoughtRef = useRef<HTMLDivElement>(null);
+  const actionRef = useRef<HTMLDivElement>(null);
   const toolsRef = useRef<HTMLDivElement>(null);
+  const observationRef = useRef<HTMLDivElement>(null);
+  const finalRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className="relative flex min-h-screen flex-col bg-slate-950 text-white">
@@ -69,107 +81,69 @@ export function AgentTheorySlide({ slide }: Props) {
 
       <div className="relative z-10 flex flex-1 flex-col">
         {/* Header */}
-        <div className="pt-10 text-center">
+        <div className="pt-8 text-center">
           <BlurFade delay={0.1} duration={0.6}>
             <h1 className="text-5xl font-bold tracking-tight text-white">
               {slide.headline}
             </h1>
-          </BlurFade>
-          <BlurFade delay={0.2} duration={0.6}>
-            <p className="mt-3 text-xl text-slate-400">
-              The Re-Act Pattern
-            </p>
           </BlurFade>
         </div>
 
         {/* Main diagram */}
         <div
           ref={containerRef}
-          className="relative mx-auto flex flex-1 w-full max-w-5xl items-center justify-center px-8"
+          className="relative mx-auto flex flex-1 w-full max-w-7xl items-center justify-center px-8"
         >
-          {/* Row layout: You -> Orchestrator -> [Loop] -> Tools */}
-
-          {/* Left: User */}
-          <div className="absolute left-8 top-1/2 -translate-y-1/2">
+          {/* USER - Entry point (left) */}
+          <div className="absolute left-[40px] top-[20%]">
             <BlurFade delay={0.3} duration={0.5}>
               <div ref={userRef}>
                 <CircleNode
                   className="border-emerald-500/50 bg-gradient-to-br from-emerald-950 to-slate-900"
-                  label="You"
-                  sublabel="Prompt"
+                  label="User"
+                  sublabel="Request"
                 >
-                  <User className="h-8 w-8 text-emerald-400" />
+                  <User className="h-10 w-10 text-emerald-400" />
                 </CircleNode>
               </div>
             </BlurFade>
           </div>
 
-          {/* Orchestrator */}
-          <div className="absolute left-[180px] top-1/2 -translate-y-1/2">
+          {/* REASON - Analyze & Plan */}
+          <div className="absolute left-[200px] top-[20%]">
             <BlurFade delay={0.4} duration={0.5}>
-              <div ref={orchestratorRef} className="flex flex-col items-center gap-2">
-                <div className="z-10 flex h-20 w-20 items-center justify-center rounded-full border-2 border-purple-500/50 bg-gradient-to-br from-purple-950 to-slate-900 shadow-xl shadow-purple-500/20">
-                  <Brain className="h-10 w-10 text-purple-400" />
-                </div>
-                <div className="text-center">
-                  <p className="text-base font-bold text-white">Orchestrator</p>
-                  <p className="text-xs text-slate-400">Claude LLM</p>
-                </div>
-              </div>
-            </BlurFade>
-          </div>
-
-          {/* Center: The Re-Act Loop - triangle layout */}
-          {/* Reason - top center of the loop */}
-          <div className="absolute left-[420px] top-[25%]">
-            <BlurFade delay={0.5} duration={0.5}>
-              <div ref={reasonRef}>
+              <div ref={thoughtRef}>
                 <CircleNode
-                  className="border-cyan-500/50 bg-gradient-to-br from-cyan-950 to-slate-900"
+                  className="border-purple-500/50 bg-gradient-to-br from-purple-950 to-slate-900 shadow-xl shadow-purple-500/20"
                   label="Reason"
                   sublabel="Analyze & Plan"
+                  size="large"
                 >
-                  <Brain className="h-8 w-8 text-cyan-400" />
+                  <Brain className="h-12 w-12 text-purple-400" />
                 </CircleNode>
               </div>
             </BlurFade>
           </div>
 
-          {/* Act - bottom right of triangle, connects to tools */}
-          <div className="absolute left-[560px] top-[60%]">
-            <BlurFade delay={0.6} duration={0.5}>
-              <div ref={actRef}>
+          {/* ACT - Execute Tool */}
+          <div className="absolute left-[200px] top-[55%]">
+            <BlurFade delay={0.5} duration={0.5}>
+              <div ref={actionRef}>
                 <CircleNode
                   className="border-amber-500/50 bg-gradient-to-br from-amber-950 to-slate-900"
                   label="Act"
-                  sublabel="Execute Tools"
+                  sublabel="Execute Tool"
                 >
-                  <Cog className="h-8 w-8 text-amber-400" />
+                  <Cog className="h-10 w-10 text-amber-400" />
                 </CircleNode>
               </div>
             </BlurFade>
           </div>
 
-          {/* Observe - bottom left of triangle */}
-          <div className="absolute left-[300px] top-[60%]">
-            <BlurFade delay={0.7} duration={0.5}>
-              <div ref={observeRef}>
-                <CircleNode
-                  className="border-rose-500/50 bg-gradient-to-br from-rose-950 to-slate-900"
-                  label="Observe"
-                  sublabel="Analyze Results"
-                >
-                  <Eye className="h-8 w-8 text-rose-400" />
-                </CircleNode>
-              </div>
-            </BlurFade>
-          </div>
-
-          {/* Right: Tools */}
-          <div className="absolute right-8 top-1/2 -translate-y-1/2">
-            <BlurFade delay={0.8} duration={0.5}>
-              <div ref={toolsRef} className="flex flex-col items-center gap-2">
-                <p className="text-base font-semibold text-white mb-2">Tools</p>
+          {/* TOOLS */}
+          <div className="absolute left-[380px] top-[48%]">
+            <BlurFade delay={0.6} duration={0.5}>
+              <div ref={toolsRef} className="flex flex-col items-center gap-3">
                 <div className="flex flex-col gap-3 rounded-xl border border-slate-700/50 bg-slate-900/80 p-4">
                   <div className="flex items-center gap-3">
                     <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-500/20">
@@ -189,89 +163,158 @@ export function AgentTheorySlide({ slide }: Props) {
                     </div>
                     <span className="text-sm text-slate-300">Search / Glob</span>
                   </div>
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-cyan-500/20">
+                      <Globe className="h-4 w-4 text-cyan-400" />
+                    </div>
+                    <span className="text-sm text-slate-300">Web Search</span>
+                  </div>
                 </div>
               </div>
             </BlurFade>
           </div>
 
-          {/* Animated beams - clear flow */}
-          {/* 1. User -> Orchestrator */}
-          <AnimatedBeam
+          {/* OBSERVE - Process Results */}
+          <div className="absolute left-[640px] top-[35%]">
+            <BlurFade delay={0.7} duration={0.5}>
+              <div ref={observationRef}>
+                <CircleNode
+                  className="border-rose-500/50 bg-gradient-to-br from-rose-950 to-slate-900"
+                  label="Observe"
+                  sublabel="Process Results"
+                >
+                  <Eye className="h-10 w-10 text-rose-400" />
+                </CircleNode>
+              </div>
+            </BlurFade>
+          </div>
+
+          {/* RESPONSE - Task Complete */}
+          <div className="absolute left-[880px] top-[35%]">
+            <BlurFade delay={0.8} duration={0.5}>
+              <div ref={finalRef}>
+                <CircleNode
+                  className="border-emerald-500/50 bg-gradient-to-br from-emerald-950 to-slate-900"
+                  label="Response"
+                  sublabel="Task Complete"
+                >
+                  <MessageSquare className="h-10 w-10 text-emerald-400" />
+                </CircleNode>
+              </div>
+            </BlurFade>
+          </div>
+
+
+          {/* Curved arrows - Sequential animation showing ReAct loop */}
+          {/* Sequence: User -> Reason -> Act -> Tools -> Observe -> Reason -> Act -> Tools -> Observe -> Response */}
+          {/* Total loop time = 12s, each arrow animation ~1.2s */}
+
+          {/* 1. User -> Reason */}
+          <CurvedArrow
             containerRef={containerRef}
             fromRef={userRef}
-            toRef={orchestratorRef}
-            curvature={0}
-            duration={3}
+            toRef={thoughtRef}
+            duration={12}
+            delay={0}
             gradientStartColor="#10b981"
             gradientStopColor="#8b5cf6"
           />
 
-          {/* 2. Orchestrator -> Reason (start the loop) */}
-          <AnimatedBeam
+          {/* 2. Reason -> Act (first iteration) */}
+          <CurvedArrow
             containerRef={containerRef}
-            fromRef={orchestratorRef}
-            toRef={reasonRef}
-            curvature={-20}
-            duration={2}
-            delay={0.3}
+            fromRef={thoughtRef}
+            toRef={actionRef}
+            duration={24}
+            delay={1}
             gradientStartColor="#8b5cf6"
-            gradientStopColor="#06b6d4"
-          />
-
-          {/* 3. Reason -> Act */}
-          <AnimatedBeam
-            containerRef={containerRef}
-            fromRef={reasonRef}
-            toRef={actRef}
-            curvature={-20}
-            duration={1.5}
-            delay={0.6}
-            gradientStartColor="#06b6d4"
             gradientStopColor="#f59e0b"
           />
 
-          {/* 4. Act -> Tools */}
-          <AnimatedBeam
+          {/* 3. Act -> Tools (first iteration) */}
+          <CurvedArrow
             containerRef={containerRef}
-            fromRef={actRef}
+            fromRef={actionRef}
             toRef={toolsRef}
-            curvature={0}
-            duration={2}
-            delay={0.9}
+            duration={24}
+            delay={2}
             gradientStartColor="#f59e0b"
             gradientStopColor="#3b82f6"
           />
 
-          {/* 5. Tools -> Observe (results return) */}
-          <AnimatedBeam
+          {/* 4. Tools -> Observe (first iteration) */}
+          <CurvedArrow
             containerRef={containerRef}
             fromRef={toolsRef}
-            toRef={observeRef}
-            curvature={20}
-            duration={2}
-            delay={1.2}
+            toRef={observationRef}
+            duration={24}
+            delay={3}
             gradientStartColor="#3b82f6"
             gradientStopColor="#f43f5e"
           />
 
-          {/* 6. Observe -> Reason (loop back!) */}
-          <AnimatedBeam
+          {/* 5. Observe -> Reason (loop back) */}
+          <CurvedArrow
             containerRef={containerRef}
-            fromRef={observeRef}
-            toRef={reasonRef}
-            curvature={60}
-            duration={2}
-            delay={1.5}
+            fromRef={observationRef}
+            toRef={thoughtRef}
+            duration={12}
+            delay={4}
             gradientStartColor="#f43f5e"
-            gradientStopColor="#06b6d4"
+            gradientStopColor="#8b5cf6"
+            reverse
+          />
+
+          {/* 6. Reason -> Act (second iteration) */}
+          <CurvedArrow
+            containerRef={containerRef}
+            fromRef={thoughtRef}
+            toRef={actionRef}
+            duration={24}
+            delay={5.5}
+            gradientStartColor="#8b5cf6"
+            gradientStopColor="#f59e0b"
+          />
+
+          {/* 7. Act -> Tools (second iteration) */}
+          <CurvedArrow
+            containerRef={containerRef}
+            fromRef={actionRef}
+            toRef={toolsRef}
+            duration={24}
+            delay={6.5}
+            gradientStartColor="#f59e0b"
+            gradientStopColor="#3b82f6"
+          />
+
+          {/* 8. Tools -> Observe (second iteration) */}
+          <CurvedArrow
+            containerRef={containerRef}
+            fromRef={toolsRef}
+            toRef={observationRef}
+            duration={24}
+            delay={7.5}
+            gradientStartColor="#3b82f6"
+            gradientStopColor="#f43f5e"
+          />
+
+          {/* 9. Observe -> Response (exit) */}
+          <CurvedArrow
+            containerRef={containerRef}
+            fromRef={observationRef}
+            toRef={finalRef}
+            duration={12}
+            delay={8.5}
+            gradientStartColor="#f43f5e"
+            gradientStopColor="#10b981"
           />
         </div>
 
-        {/* Legend */}
+        {/* Footer */}
         <BlurFade delay={1} duration={0.5}>
           <div className="pb-6 text-center">
-            <p className="text-base text-slate-500">
-              The agent loops: Reason, Act, Observe - until the task is complete
+            <p className="text-lg text-slate-400">
+              The ReAct Loop
             </p>
           </div>
         </BlurFade>

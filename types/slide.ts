@@ -70,7 +70,84 @@ export interface SpecGapSlide {
   points: string[];
 }
 
-export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide;
+export interface WayToUse {
+  title: string;
+  badge?: string;
+  description?: string;
+  prompt?: string;
+  pros?: string[];
+  cons?: string[];
+  highlight?: string;
+}
+
+export interface WaysSlide {
+  type: 'ways';
+  headline: string;
+  ways: WayToUse[];
+  footer?: string;
+}
+
+export interface Pillar {
+  title: string;
+  description?: string;
+}
+
+export interface PillarsSlide {
+  type: 'pillars';
+  headline: string;
+  pillars: Pillar[];
+  focusIndex?: number;
+}
+
+export interface SddStep {
+  title: string;
+  description: string;
+}
+
+export interface SddSlide {
+  type: 'sdd';
+  headline: string;
+  steps: SddStep[];
+  footer?: string;
+  footerLink?: { url: string; label: string };
+}
+
+export interface QualitySlide {
+  type: 'quality';
+  headline: string;
+  goal: string;
+  checks: string[];
+}
+
+export interface InteractionCapability {
+  icon: 'eye' | 'database' | 'log' | 'script' | 'search' | 'test';
+  title: string;
+  description: string;
+}
+
+export interface InteractionSlide {
+  type: 'interaction';
+  headline: string;
+  problem: string;
+  capabilities: InteractionCapability[];
+}
+
+export interface McpItem {
+  name: string;
+  description: string;
+  enables: string;
+  builtIn?: boolean;
+}
+
+export interface McpSlide {
+  type: 'mcp';
+  headline: string;
+  definition: string;
+  items: McpItem[];
+  footer?: string;
+}
+
+export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide;
 
 export interface Presentation {
   name: string;

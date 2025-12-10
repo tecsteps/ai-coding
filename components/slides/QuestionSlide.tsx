@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { QuestionSlide as QuestionSlideType } from '@/types/slide';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { StaticLightRays } from '@/components/ui/static-light-rays';
@@ -10,30 +10,37 @@ interface Props {
   slide: QuestionSlideType;
 }
 
-function usePersistedCounts(storageKey: string, optionCount: number) {
-  const [counts, setCounts] = useState<number[]>(() => Array(optionCount).fill(0));
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    const stored = localStorage.getItem(storageKey);
-    if (stored) {
-      try {
-        const parsed = JSON.parse(stored);
-        if (Array.isArray(parsed) && parsed.length === optionCount) {
-          setCounts(parsed);
-        }
-      } catch {
-        // Ignore parse errors
+function getInitialCounts(storageKey: string, optionCount: number): number[] {
+  if (typeof window === 'undefined') {
+    return Array(optionCount).fill(0);
+  }
+  const stored = localStorage.getItem(storageKey);
+  if (stored) {
+    try {
+      const parsed = JSON.parse(stored);
+      if (Array.isArray(parsed) && parsed.length === optionCount) {
+        return parsed;
       }
+    } catch {
+      // Ignore parse errors
     }
-    setIsLoaded(true);
-  }, [storageKey, optionCount]);
+  }
+  return Array(optionCount).fill(0);
+}
+
+function usePersistedCounts(storageKey: string, optionCount: number) {
+  const [counts, setCounts] = useState<number[]>(() =>
+    getInitialCounts(storageKey, optionCount)
+  );
+  const isInitialMount = useRef(true);
 
   useEffect(() => {
-    if (isLoaded) {
-      localStorage.setItem(storageKey, JSON.stringify(counts));
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
     }
-  }, [counts, storageKey, isLoaded]);
+    localStorage.setItem(storageKey, JSON.stringify(counts));
+  }, [counts, storageKey]);
 
   const increment = useCallback((index: number) => {
     setCounts((prev) => {
@@ -47,12 +54,12 @@ function usePersistedCounts(storageKey: string, optionCount: number) {
     setCounts(Array(optionCount).fill(0));
   }, [optionCount]);
 
-  return { counts, increment, reset, isLoaded };
+  return { counts, increment, reset };
 }
 
 export function QuestionSlide({ slide }: Props) {
   const [cursorIndex, setCursorIndex] = useState<number | null>(null);
-  const { counts, increment, reset, isLoaded } = usePersistedCounts(
+  const { counts, increment, reset } = usePersistedCounts(
     slide.storageKey,
     slide.options.length
   );
@@ -142,7 +149,7 @@ export function QuestionSlide({ slide }: Props) {
                     </div>
 
                     {/* Count display */}
-                    {isLoaded && count > 0 && (
+                    {count > 0 && (
                       <div className="flex items-center gap-3">
                         <div
                           className={`flex h-14 min-w-14 items-center justify-center rounded-full px-4 text-2xl font-bold ${

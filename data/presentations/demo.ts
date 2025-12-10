@@ -99,5 +99,186 @@ export const demo: Presentation = {
       type: 'agent-theory',
       headline: 'How Claude Code Works',
     },
+    {
+      type: 'easy-start',
+      headline: 'Starting is very easy!',
+    },
+    {
+      type: 'spec-gap',
+      headline: 'But doing it "right" is hard.',
+      points: [
+        'The AI will fill specification gaps.',
+        'Leads to frustration ("AI isn\'t doing what I want...")',
+      ],
+    },
+    {
+      type: 'pillars',
+      headline: 'The Three Pillars of Productive AI-Coding',
+      pillars: [
+        { title: 'Plan complex features with AI' },
+        { title: 'Provide the right tools' },
+        { title: 'Define guardrails' },
+      ],
+      focusIndex: 0,
+    },
+    {
+      type: 'ways',
+      headline: 'Vibe-Coding vs SDD*',
+      footer: '*Spec Driven Development (SDD)',
+      ways: [
+        {
+          title: 'Prompt-by-Prompt',
+          badge: 'Vibe-Coding',
+          description: 'Developer still develops. AI just "types" the code.',
+          prompt: 'Change the Save button color to green',
+          pros: ['Good for fine-tuning', 'Ideal with visual confirmation'],
+          cons: ['Bad for complex features', 'Brain-rot (exhausting after a few hours)'],
+          highlight: 'I vibe-coded this entire presentation!',
+        },
+        {
+          title: 'Autonomous Development',
+          badge: 'SDD',
+          description: 'Developer does a full brainstorming session with the coding agent, then lets it implement.',
+          prompt: "Let's discuss how we build the user registration",
+          pros: ['Great for complex features', 'Maintains architecture coherence'],
+          cons: ['Requires more upfront effort', 'Can lead to losing the mental model'],
+          highlight: "We'll practice this today!",
+        },
+      ],
+    },
+    {
+      type: 'sdd',
+      headline: 'Spec Driven Development (SDD)',
+      steps: [
+        {
+          title: 'Brainstorm with the Coding Agent',
+          description: 'Have a collaborative Q&A session to explore requirements, edge cases, and architectural decisions.',
+        },
+        {
+          title: 'Generate a Technical Specification',
+          description: 'The agent creates a detailed spec with checkboxes for every requirement - nothing ambiguous.',
+        },
+        {
+          title: 'Iterative Implementation',
+          description: 'Implement phase by phase. Each phase is validated before moving to the next.',
+        },
+      ],
+      footer: "We're doing this without additional tools today, but there are popular ones like spec-kit from GitHub:",
+      footerLink: { url: 'https://github.com/github/spec-kit', label: 'github/spec-kit' },
+    },
+    {
+      type: 'pillars',
+      headline: 'The Three Pillars of Productive AI-Coding',
+      pillars: [
+        { title: 'Plan complex features with AI' },
+        { title: 'Provide the right tools' },
+        { title: 'Define guardrails' },
+      ],
+      focusIndex: 1,
+    },
+    {
+      type: 'interaction',
+      headline: 'Blind Coding leads to Low Accuracy',
+      problem: 'Without feedback, the agent cannot validate its work or self-correct. It writes code blindly, likely to fail.',
+      capabilities: [
+        {
+          icon: 'eye',
+          title: 'See the Result',
+          description: 'Browser automation to verify UI changes',
+        },
+        {
+          icon: 'database',
+          title: 'Query the Database',
+          description: 'Validate data persistence and integrity',
+        },
+        {
+          icon: 'log',
+          title: 'Read Logs',
+          description: 'Analyze errors and debug issues',
+        },
+        {
+          icon: 'script',
+          title: 'Use Scripts',
+          description: 'Run custom validation commands',
+        },
+        {
+          icon: 'search',
+          title: 'Do Research',
+          description: 'Access docs and external knowledge',
+        },
+        {
+          icon: 'test',
+          title: 'Run Tests',
+          description: 'Execute test suites for verification',
+        },
+      ],
+    },
+    {
+      type: 'mcp',
+      headline: 'Extending Agent Capabilities',
+      definition: 'A standard protocol that allows AI agents to connect with external tools and data sources.',
+      items: [
+        {
+          name: 'Bash',
+          description: 'Shell command execution',
+          enables: 'Run scripts, system commands',
+          builtIn: true,
+        },
+        {
+          name: 'WebSearch',
+          description: 'Search the web',
+          enables: 'Access current information',
+          builtIn: true,
+        },
+        {
+          name: 'WebFetch',
+          description: 'Fetch web content',
+          enables: 'Read documentation, APIs',
+          builtIn: true,
+        },
+        {
+          name: 'Playwright',
+          description: 'Browser automation',
+          enables: 'See the result, interact with UI',
+          builtIn: false,
+        },
+        {
+          name: 'JetBrains',
+          description: 'IDE integration',
+          enables: 'Code analysis, refactoring',
+          builtIn: false,
+        },
+        {
+          name: 'Laravel Boost',
+          description: 'Laravel framework tools',
+          enables: 'Database queries, Artisan commands, Documentation',
+          builtIn: false,
+        },
+      ],
+      footer: 'Depending on your IDE and technology stack, other MCPs might be better suited.',
+    },
+    {
+      type: 'pillars',
+      headline: 'The Three Pillars of Productive AI-Coding',
+      pillars: [
+        { title: 'Plan complex features with AI' },
+        { title: 'Provide the right tools' },
+        { title: 'Define guardrails' },
+      ],
+      focusIndex: 2,
+    },
+    {
+      type: 'quality',
+      headline: 'How to ensure quality?',
+      goal: 'Generate production-ready code',
+      checks: [
+        'Features are complete and correct',
+        'Architecture stays consistent',
+        'Code conventions are obeyed',
+        'Zero code duplications',
+        'Code is tested',
+        'Documentation is accurate',
+      ],
+    },
   ],
 };

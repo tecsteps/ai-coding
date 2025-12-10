@@ -25,10 +25,10 @@ function AgendaCard({ section, index, isActive }: { section: ContentSection; ind
 
   return (
     <BlurFade delay={0.2 + index * 0.15} duration={0.5}>
-      <div className={`flex h-full items-start gap-6 rounded-2xl border p-8 backdrop-blur-sm transition-all ${
+      <div className={`flex h-full items-start gap-6 rounded-2xl border p-8 backdrop-blur-sm transition-all duration-300 ${
         isActive
           ? 'border-cyan-400/50 bg-cyan-950/40'
-          : 'border-slate-700/30 bg-slate-900/30'
+          : 'border-slate-700/30 bg-slate-900/30 hover:border-cyan-500/40 hover:bg-slate-900/60'
       }`}>
         {IconComponent && (
           <div className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-xl ${

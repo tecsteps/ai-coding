@@ -15,10 +15,10 @@ export function EvolutionSlide({ slide }: Props) {
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
+      if (event.key === 'ArrowUp') {
         event.preventDefault();
         setActiveIndex((prev) => Math.max(0, prev - 1));
-      } else if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
+      } else if (event.key === 'ArrowDown') {
         event.preventDefault();
         setActiveIndex((prev) => Math.min(slide.stages.length - 1, prev + 1));
       }
@@ -54,10 +54,10 @@ export function EvolutionSlide({ slide }: Props) {
               <div key={index} className="flex items-center">
                 <BlurFade delay={0.2 + index * 0.2} duration={0.5}>
                   <div
-                    className={`relative flex h-72 w-80 flex-col rounded-2xl border p-8 backdrop-blur-sm transition-all ${
+                    className={`relative flex h-72 w-80 flex-col rounded-2xl border p-8 backdrop-blur-sm transition-all duration-300 ${
                       activeIndex === index
                         ? 'border-cyan-400/60 bg-gradient-to-br from-cyan-950/60 to-slate-900/60'
-                        : 'border-slate-700/40 bg-slate-900/40'
+                        : 'border-slate-700/40 bg-slate-900/40 hover:border-cyan-500/40 hover:bg-slate-900/60'
                     }`}
                   >
                     {/* Multiplier badge */}

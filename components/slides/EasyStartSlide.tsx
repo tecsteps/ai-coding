@@ -4,7 +4,6 @@ import { EasyStartSlide as EasyStartSlideType } from '@/types/slide';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { StaticLightRays } from '@/components/ui/static-light-rays';
 import { Terminal, TypingAnimation, AnimatedSpan } from '@/components/ui/terminal';
-import { Sparkles } from 'lucide-react';
 
 interface Props {
   slide: EasyStartSlideType;
@@ -22,59 +21,42 @@ export function EasyStartSlide({ slide }: Props) {
 
       <div className="relative z-10 flex flex-1 flex-col">
         {/* Header */}
-        <div className="pt-16 text-center">
+        <div className="pt-12 text-center">
           <BlurFade delay={0.1} duration={0.6}>
-            <div className="inline-flex items-center gap-3 mb-4">
-              <Sparkles className="h-10 w-10 text-green-400" />
-            </div>
             <h1 className="text-6xl font-bold tracking-tight text-white">
               {slide.headline}
             </h1>
-          </BlurFade>
-          <BlurFade delay={0.2} duration={0.6}>
-            <p className="mt-4 text-xl text-slate-400">
-              Just describe what you want
-            </p>
           </BlurFade>
         </div>
 
         {/* Terminal example */}
         <div className="flex flex-1 items-center justify-center px-16 py-8">
           <BlurFade delay={0.4} duration={0.6}>
-            <Terminal className="max-w-2xl bg-slate-900/80 border-slate-700/50">
-              <TypingAnimation delay={800} duration={30} className="text-green-400">
+            <Terminal className="max-w-5xl w-full min-w-[700px] max-h-[500px] bg-slate-900/80 border-slate-700/50 text-lg">
+              <TypingAnimation delay={800} duration={30} className="text-green-400 text-xl">
                 {`> Add a "Save" button to the settings page`}
               </TypingAnimation>
-              <AnimatedSpan delay={2500} className="text-slate-400 mt-4">
+              <AnimatedSpan delay={2500} className="text-slate-400 mt-6 text-lg">
                 Analyzing codebase...
               </AnimatedSpan>
-              <AnimatedSpan delay={3200} className="text-slate-400">
+              <AnimatedSpan delay={3200} className="text-slate-400 text-lg">
                 Found settings page at src/pages/Settings.tsx
               </AnimatedSpan>
-              <AnimatedSpan delay={4000} className="text-cyan-400 mt-2">
+              <AnimatedSpan delay={4000} className="text-cyan-400 mt-4 text-lg">
                 + Added Button component import
               </AnimatedSpan>
-              <AnimatedSpan delay={4600} className="text-cyan-400">
+              <AnimatedSpan delay={4600} className="text-cyan-400 text-lg">
                 + Created handleSave function
               </AnimatedSpan>
-              <AnimatedSpan delay={5200} className="text-cyan-400">
+              <AnimatedSpan delay={5200} className="text-cyan-400 text-lg">
                 + Added Save button with onClick handler
               </AnimatedSpan>
-              <AnimatedSpan delay={6000} className="text-green-400 mt-4 font-semibold">
+              <AnimatedSpan delay={6000} className="text-green-400 mt-6 font-semibold text-xl">
                 Done! The Save button has been added.
               </AnimatedSpan>
             </Terminal>
           </BlurFade>
         </div>
-
-        {/* Footer hint */}
-        <BlurFade delay={0.6} duration={0.5}>
-          <div className="pb-8 text-center">
-            <p className="text-lg text-slate-500">
-              Simple prompts work - the AI figures out the rest
-            </p>
-          </div>
-        </BlurFade>
       </div>
     </div>
   );

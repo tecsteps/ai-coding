@@ -111,10 +111,12 @@ Show a basic prompt example, like adding a button
 
 (Optimize my copy and make it visually stunning)
 
-=================== STOP===================
+
 
 
 # Ways how to use it (feel free to improve the copy)
+
+## Content
 
 (1) Prompt very specfic commands 
 "Do this, do that" (<- often called "vibe coding")
@@ -124,27 +126,145 @@ Show a basic prompt example, like adding a button
 (2) Brainstorm with AI
 Do a full brainstorming session with the coding agent. Result is a very detailed "prompt" with hundrets or thousands of lines. 
 
-We'll do both today!
+## Instructions
 
-# AI-Coding Checklist
+Present it wisly
 
-(checkmark) Brainstorm with AI 
+# The three pillars of productive AI-Coding 
+
+## Content (Drafted)
+
+(1) Plan complex features with AI
+
+(2) Provide the right tools
+
+(3) Define guardrails
+
+## Instructions
+This checklist will be shown multiple times, and we'll add items
+For now add a focus marker on (1) Not movable. This is the next section
 
 
-(This checklist will be shown multiple times, and we'll add items)
+# Spec Driven Development (SDD)
+
+## Content
+
+* Brainstorm the feature with the Coding Agent
+* ....
+
+
+
+## Instructions
+
+Create the content of the slide. We are not doing SDD by the books. Instead we are using it like described in these two Claude Code commands (don't mention them; just for context)
+
+Add a footnote, that we are doing it without additional tools today, but there are popular ones like spec-kit from Github (link to https://github.com/github/spec-kit)
+
+
+
+
+# Interaction
+
+## Instructions
+
+Create this slide based on my thoughts:
+Coding Agent creates a code but when it's not able to try out things and see the consequences, it cannot improve itself. So it's very likely to fail. That's why we need to give it to it so Coding Agent can
+- "see" the result
+- query the database
+- read logs
+- use scripts
+- do research
+- run tests
+
+
+
+# MCP
+
+## Content (draft)
+
+MCP = Model Context Protocol
+
+Laravel Boost | ...
+Playwright | 
+Jetbrains |
+
+Footnote: Depending on your IDE and technology stack, other MCPs might be better.
+
+## Instructions
+
+Show MCP = Model Context Protocol in a box. Add a short description what is.
+
+Show the MCPs as table. Add a short description for each and what it enables (see see slide http://localhost:3000/demo/13)
+Mark thoses that are ootb (Claude Code)
+
+
+# How to ensure quality?
+
+## Content (draft)
+
+The goal is to generate production-ready code. What does that mean?
+
+- Features are complete and correct
+- Architecture stays consistent
+- Code conventions are obeyed
+- Existing libraries are used
+- Code is tested
+
+## Instructions
+
+Optimizy the content (did I miss something fundamental?)
+
+
+# Provide Guidance
+
+## Content
+
+1. Make sure the agent "knows" what it needs to know 
+- Full documentation of your systems
+- Schema, Architecture, Technologies
+- Your code conventions
+
+Example (for COde Conventions):
+3. **No Magic Strings:**
+    - NEVER use string literals for constants, statuses, types, etc.
+    - ALWAYS use class constants or enums
+    - ❌ BAD: `if ($status === 'pending')`
+    - ✅ GOOD: `if ($status === Status::PENDING)`
+
+4. **Use DTOs, Not Associative Arrays:**
+    - NEVER pass associative arrays between layers
+    - ALWAYS create typed DTO classes for data transport
+    - DTOs should have typed properties and clear structure
+    - ❌ BAD: `return ['name' => $name, 'url' => $url];`
+    - ✅ GOOD: `return new CompanyData(name: $name, url: $url);`
+
+## Instructions
+
+Show examples as code
+
+Make examples open when I press down arrow
+
+# Provide Guardrails
+
+## Content
+
+Provide tools which allows the agent to check the results
+
+
+
+
+## Instructions
+
 
 
 ============================== NOT PREPARED ==============================
 
 
-# How to ensure quality?
+# Rule Nr 1
 
-Quality?
-- Architecture stays consistent
-- Code conventions are obeyed
-- Existing libraries are used
-- Code is tests
-- Features are complete and correct
+The developer is in charge of the results.
+There is no difference if code was written by a Coding Agent or a human.
+AI cannot be blamed. AI is not accountable when sh*t hits the fan.
 
 # Jobs of the developer
 
@@ -161,14 +281,17 @@ With AI Coding Agent
 * Coding (5%)
 
 
+# Mental Model
+
+## Content
+
+When I create the actual code
 
 Mental model. Architecture clean, code conventions
 
 Testing
-Patterns: Unit, browser, try, database
+Patterns
 
-
-Agent theory
 
 Context management with sub agents
 
@@ -245,3 +368,18 @@ Tools to enable it to try it out
 Final review by human
 
 - Very easy to start with, but also very easy to fail
+
+## Content (Drafted)
+
+(1) Plan complex features with AI
+
+(2) Give it the right tools
+- so it can try-out the results on its own (browser, database, logs)
+- learn about the technologies, features, overall setup of your company
+- so it can create and run tests
+
+(3) Define guardrails
+- Architecture
+- Code Conventions
+- Technologies
+- Automated reviews
