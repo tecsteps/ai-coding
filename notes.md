@@ -249,24 +249,102 @@ Make examples open when I press down arrow
 ## Content
 
 Provide tools which allows the agent to check the results
+* Check for code errors by giving access to the IDEs Intelisense (e.g. with Jetbrains MCP)
+* Enable to write & execute tests (incl. security tests)
+* Use skeptical sub-agents to do reviews
+
+Examples for sub-agents:
+- Architecture Guarding - Knows all your conventions and checks the code critically
+- Spec Checker - Checks specification for gaps, logicak hickups and completness
+- Result Inspector - Checks the implementation is compliant to the specs (nothing forgotten, nothing added) 
+
+## Instructions
+Use people icon for the sub-agents. Show ony by one when I press down arrow
 
 
 
+
+
+
+# Claude Code vs Cursor
+
+## Content
+
+Claude Code
++ Most advanced coding agent
++ Maintained by Anthropic
++ "Flaterate" pricing
++ Works with JetBrains
+- Learning curve
+- Raw CLI tool*
+
+Cursor
++ Amazing UX (main reason to use it)
++ All LLMs available
+- Limited to VSCode
+
+## Footnote
+* There is a nice VSCode plugin available
+** Claude Code can also be used with other LLMs
 
 ## Instructions
 
+Show the (main reason to use it) not as regular text, more as hint
+
+Show company logo for Cursor
+Show ascii art for Claude COde (using the right colors)
+
+ ▐▛███▜▌
+▝▜█████▛▘
+  ▘▘ ▝▝
 
 
-============================== NOT PREPARED ==============================
 
 
-# Rule Nr 1
+# Prime Directive
 
-The developer is in charge of the results.
-There is no difference if code was written by a Coding Agent or a human.
-AI cannot be blamed. AI is not accountable when sh*t hits the fan.
+## Content
+
+* The developer is fully responsible for the outcome.
+* Work produced by a Coding Agent is treated exactly like human-written code.
+* AI carries no blame and no accountability when things go wrong.
+
+## Instructions
+
+Present as a prime directive
+
+
+# Mental Model
+
+## Content
+
+While building software, the developer also builds a mental model of it. That model is just as important as the code. If a company loses the person who holds it, the software often becomes far less usable.
+
+When using Coding Agents, there is a risk of loosing the mental model!
+
+So to keep the mental model:
+- Don't let the AI decide anything!
+- Always check the results!
+- Enforce "your" architecture!
+
+
+# AI failures
+
+## Content
+
+When AI makes a "mistake" then it's
+- 95% missing clear instructions (-> SDD + Knowledge + Guardrails + Checks)
+- 5% Non deterministic behavior
+
+The last 5% are still a challenge!
+
+## Footnote
+Percentage values are based on my experience
+
 
 # Jobs of the developer
+
+## Content
 
 Before (simplified)
 * Technical specifications
@@ -274,112 +352,17 @@ Before (simplified)
 * (Unit) testing
 * Validation of results
 
-With AI Coding Agent
+With AI Coding Agent:
 * Technical specifications (80%)
 * Validation of results (10%)
 * Perfectionizing the setup for the Coding Agent (5%)
 * Coding (5%)
 
 
-# Mental Model
-
-## Content
-
-When I create the actual code
-
-Mental model. Architecture clean, code conventions
-
-Testing
-Patterns
-
-
-Context management with sub agents
-
-Accesscto docs
-
-Claude Code vs Cursor
-
-Cc with other llms
-
-MCPs
-
-Agent techniques (last post)
-
-Commands
-
-Roadmap
-Practice all types of AI coding
-
-
-Challenge
-Knowledge sharing
-Code reviews
-Peoduct vs Engineering vs QA
-
-Documentation building
-
-Run without approvals
-- directly (risky, powerful)
-- isolated (recommendet)
-
-Typical concerns
-Only Greenfield
-Developers do more than coding
-
-To make AI work you need
-1. Complete technical specifications (to avoid filling the gap)
-2. Knowledge about you conversations,c architecture, features, schema, terms
-3. Access to documentation of your frameworks
-4. Ability to test
-5. Automated reviews (specs fully implemented, architecture in place?)
 
 
 
-Why hard?
-Even small features, c require a lot of specs (or AI will fill the gaps - random results)
-Code conventions or architecture might be broken
-Mental model is gone
-It might do nonsense (it might delete broken tests instead of fixing)
 
-What helps:
-Detailed instructions
-Let AI test it
-Let AI do a critical review
-Validate yourself (time consuming)
-
-Increasing productivity means to Systematically eliminate all human work and only do what AI cannot (Giving the intent)
-
-When something for wrong, fix it and make sure it never happens and again.
-
-When AI makes a "mistake" then it's
-95% missing clear instructions (can be fixed)
-5% Non deterministic behavior (can be checked)
-Percentage values are based on my experience
-
-Developer is still fully responsible for its work
-Review everything
-Enforce best practices, set architecture guardrails and code conventions.
-Don't push code, you don't understand
-
-How to make the agent do what youneer?
-Full spec
-Guardrails / Reviews
-Tools to enable it to try it out
-Final review by human
-
-- Very easy to start with, but also very easy to fail
-
-## Content (Drafted)
-
-(1) Plan complex features with AI
-
-(2) Give it the right tools
-- so it can try-out the results on its own (browser, database, logs)
-- learn about the technologies, features, overall setup of your company
-- so it can create and run tests
-
-(3) Define guardrails
-- Architecture
-- Code Conventions
-- Technologies
-- Automated reviews
+# Check:
+http://localhost:3000/demo/12
+http://localhost:3000/demo/13

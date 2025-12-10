@@ -97,6 +97,7 @@ export interface PillarsSlide {
   headline: string;
   pillars: Pillar[];
   focusIndex?: number;
+  allActive?: boolean;
 }
 
 export interface SddStep {
@@ -147,7 +148,97 @@ export interface McpSlide {
   footer?: string;
 }
 
-export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide;
+export interface CodeExample {
+  title: string;
+  bad: string;
+  good: string;
+}
+
+export interface GuidanceSlide {
+  type: 'guidance';
+  headline: string;
+  intro: string;
+  points: string[];
+  examples: CodeExample[];
+}
+
+export interface SubAgent {
+  name: string;
+  description: string;
+}
+
+export interface GuardrailsSlide {
+  type: 'guardrails';
+  headline: string;
+  intro: string;
+  points: string[];
+  subAgents: SubAgent[];
+  bottomStatement?: string;
+}
+
+export interface VsTool {
+  name: string;
+  pros: string[];
+  cons: string[];
+  highlight?: string;
+}
+
+export interface VsSlide {
+  type: 'vs';
+  headline: string;
+  tools: [VsTool, VsTool];
+  footnotes?: string[];
+}
+
+export interface PrimeDirectiveSlide {
+  type: 'prime-directive';
+  headline: string;
+  directives: string[];
+}
+
+export interface MentalModelSlide {
+  type: 'mental-model';
+  headline: string;
+  intro: string;
+  warning: string;
+  tips: string[];
+}
+
+export interface FailureReason {
+  percentage: number;
+  label: string;
+  description?: string;
+}
+
+export interface AiFailuresSlide {
+  type: 'ai-failures';
+  headline: string;
+  intro: string;
+  reasons: FailureReason[];
+  conclusion: string;
+  footnote?: string;
+}
+
+export interface JobItem {
+  task: string;
+  percentage?: number;
+}
+
+export interface JobsSlide {
+  type: 'jobs';
+  headline: string;
+  before: {
+    title: string;
+    items: JobItem[];
+  };
+  after: {
+    title: string;
+    items: JobItem[];
+  };
+  footnote?: string;
+}
+
+export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide;
 
 export interface Presentation {
   name: string;

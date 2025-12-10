@@ -12,6 +12,13 @@ import { SddSlide } from '@/components/slides/SddSlide';
 import { QualitySlide } from '@/components/slides/QualitySlide';
 import { InteractionSlide } from '@/components/slides/InteractionSlide';
 import { McpSlide } from '@/components/slides/McpSlide';
+import { GuidanceSlide } from '@/components/slides/GuidanceSlide';
+import { GuardrailsSlide } from '@/components/slides/GuardrailsSlide';
+import { VsSlide } from '@/components/slides/VsSlide';
+import { PrimeDirectiveSlide } from '@/components/slides/PrimeDirectiveSlide';
+import { MentalModelSlide } from '@/components/slides/MentalModelSlide';
+import { AiFailuresSlide } from '@/components/slides/AiFailuresSlide';
+import { JobsSlide } from '@/components/slides/JobsSlide';
 import { SlideNavigation } from '@/components/slides/SlideNavigation';
 import { demo } from '@/data/presentations/demo';
 import { Presentation } from '@/types/slide';
@@ -63,6 +70,13 @@ export default async function SlidePage({ params }: Props) {
       {slide.type === 'quality' && <QualitySlide slide={slide} />}
       {slide.type === 'interaction' && <InteractionSlide slide={slide} />}
       {slide.type === 'mcp' && <McpSlide slide={slide} />}
+      {slide.type === 'guidance' && <GuidanceSlide slide={slide} />}
+      {slide.type === 'guardrails' && <GuardrailsSlide slide={slide} />}
+      {slide.type === 'vs' && <VsSlide slide={slide} />}
+      {slide.type === 'prime-directive' && <PrimeDirectiveSlide slide={slide} />}
+      {slide.type === 'mental-model' && <MentalModelSlide slide={slide} />}
+      {slide.type === 'ai-failures' && <AiFailuresSlide slide={slide} />}
+      {slide.type === 'jobs' && <JobsSlide slide={slide} />}
     </>
   );
 }

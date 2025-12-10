@@ -96,10 +96,6 @@ export const demo: Presentation = {
       ],
     },
     {
-      type: 'agent-theory',
-      headline: 'How Claude Code Works',
-    },
-    {
       type: 'easy-start',
       headline: 'Starting is very easy!',
     },
@@ -115,9 +111,9 @@ export const demo: Presentation = {
       type: 'pillars',
       headline: 'The Three Pillars of Productive AI-Coding',
       pillars: [
-        { title: 'Plan complex features with AI' },
-        { title: 'Provide the right tools' },
-        { title: 'Define guardrails' },
+        { title: 'Spec-Driven Development' },
+        { title: 'Knowledge & Guardrails' },
+        { title: 'Tools & MCPs' },
       ],
       focusIndex: 0,
     },
@@ -170,11 +166,81 @@ export const demo: Presentation = {
       type: 'pillars',
       headline: 'The Three Pillars of Productive AI-Coding',
       pillars: [
-        { title: 'Plan complex features with AI' },
-        { title: 'Provide the right tools' },
-        { title: 'Define guardrails' },
+        { title: 'Spec-Driven Development' },
+        { title: 'Knowledge & Guardrails' },
+        { title: 'Tools & MCPs' },
       ],
       focusIndex: 1,
+    },
+    {
+      type: 'quality',
+      headline: 'How to ensure quality?',
+      goal: 'Generate production-ready code',
+      checks: [
+        'Features are complete and correct',
+        'Architecture stays consistent',
+        'Code conventions are obeyed',
+        'Zero code duplications',
+        'Code is tested',
+        'Documentation is accurate',
+      ],
+    },
+    {
+      type: 'guidance',
+      headline: 'Provide Guidance',
+      intro: 'Make sure the agent "knows" what it needs to know',
+      points: [
+        'Full documentation of your systems',
+        'Schema, Architecture, Technologies',
+        'Your code conventions',
+      ],
+      examples: [
+        {
+          title: 'No Magic Strings',
+          bad: "if ($status === 'pending')",
+          good: 'if ($status === Status::PENDING)',
+        },
+        {
+          title: 'Use DTOs, Not Associative Arrays',
+          bad: "return ['name' => $name, 'url' => $url];",
+          good: 'return new CompanyData(name: $name, url: $url);',
+        },
+      ],
+    },
+    {
+      type: 'guardrails',
+      headline: 'Provide Guardrails',
+      intro: 'Provide tools which allow the agent to check its results',
+      points: [
+        "Check for code errors via the IDE's IntelliSense (e.g. JetBrains MCP)",
+        'Enable writing & executing tests (incl. security tests)',
+        'Use skeptical sub-agents to do reviews',
+      ],
+      subAgents: [
+        {
+          name: 'Architecture Guardian',
+          description: 'Knows all your conventions and checks the code critically',
+        },
+        {
+          name: 'Spec Checker',
+          description: 'Checks specifications for gaps, logical issues, and completeness',
+        },
+        {
+          name: 'Result Inspector',
+          description: 'Verifies implementation is compliant to specs - nothing forgotten, nothing added',
+        },
+      ],
+      bottomStatement: 'When something goes wrong, fix it and make sure it never happens again!',
+    },
+    {
+      type: 'pillars',
+      headline: 'The Three Pillars of Productive AI-Coding',
+      pillars: [
+        { title: 'Spec-Driven Development' },
+        { title: 'Knowledge & Guardrails' },
+        { title: 'Tools & MCPs' },
+      ],
+      focusIndex: 2,
     },
     {
       type: 'interaction',
@@ -251,7 +317,7 @@ export const demo: Presentation = {
         {
           name: 'Laravel Boost',
           description: 'Laravel framework tools',
-          enables: 'Database queries, Artisan commands, Documentation',
+          enables: 'Database, Artisan commands, docs',
           builtIn: false,
         },
       ],
@@ -261,24 +327,111 @@ export const demo: Presentation = {
       type: 'pillars',
       headline: 'The Three Pillars of Productive AI-Coding',
       pillars: [
-        { title: 'Plan complex features with AI' },
-        { title: 'Provide the right tools' },
-        { title: 'Define guardrails' },
+        { title: 'Spec-Driven Development' },
+        { title: 'Knowledge & Guardrails' },
+        { title: 'Tools & MCPs' },
       ],
-      focusIndex: 2,
+      allActive: true,
     },
     {
-      type: 'quality',
-      headline: 'How to ensure quality?',
-      goal: 'Generate production-ready code',
-      checks: [
-        'Features are complete and correct',
-        'Architecture stays consistent',
-        'Code conventions are obeyed',
-        'Zero code duplications',
-        'Code is tested',
-        'Documentation is accurate',
+      type: 'ai-failures',
+      headline: 'AI Failures',
+      intro: 'When AI fails, it\'s typically due to',
+      reasons: [
+        {
+          percentage: 95,
+          label: 'Missing clear instructions',
+          description: 'SDD + Knowledge + Guardrails + Checks',
+        },
+        {
+          percentage: 5,
+          label: 'Non-deterministic behavior',
+        },
+      ],
+      conclusion: 'The last 5% are still a challenge!',
+      footnote: 'Percentage values are based on my experience',
+    },
+
+    {
+      type: 'prime-directive',
+      headline: 'Prime Directive',
+      directives: [
+        'The developer is fully responsible for the outcome.',
+        'Work produced by a Coding Agent is treated exactly like human-written code.',
+        'AI carries no blame and no accountability when things go wrong.',
       ],
     },
+    {
+      type: 'mental-model',
+      headline: 'Mental Model',
+      intro: 'While building software, the developer also builds a mental model of it. That model is just as important as the code. If a company loses the person who holds it, the software often becomes far less maintainable.',
+      warning: 'When using Coding Agents, there is a risk of losing the mental model!',
+      tips: [
+        "Don't let the AI decide anything!",
+        'Never commit code, you don\'t understand!',
+        'Enforce "your" architecture!',
+      ],
+    },
+    {
+      type: 'jobs',
+      headline: 'Jobs of the Developer',
+      before: {
+        title: 'Before (simplified)',
+        items: [
+          { task: 'Technical specifications' },
+          { task: 'Programming' },
+          { task: '(Unit) testing' },
+          { task: 'Validation of results' },
+        ],
+      },
+      after: {
+        title: 'With AI Coding Agent',
+        items: [
+          { task: 'Technical specifications', percentage: 80 },
+          { task: 'Validation of results', percentage: 10 },
+          { task: 'Defining Guardrails, Guidance & Tooling/MCPs', percentage: 5 },
+          { task: 'Coding', percentage: 5 },
+        ],
+      },
+      footnote: 'Percentage values are based on my experience',
+    },
+      {
+          type: 'vs',
+          headline: 'Claude Code vs Cursor',
+          tools: [
+              {
+                  name: 'Claude Code',
+                  pros: [
+                      'Most advanced coding agent',
+                      'Maintained by Anthropic',
+                      '"Flatrate" pricing',
+                      'Works with JetBrains',
+                  ],
+                  cons: [
+                      'Learning curve',
+                      'Raw CLI tool*',
+                  ],
+              },
+              {
+                  name: 'Cursor',
+                  pros: [
+                      'Amazing UX',
+                      'All LLMs available**',
+                  ],
+                  cons: [
+                      'Limited to VSCode',
+                  ],
+                  highlight: 'main reason to use it',
+              },
+          ],
+          footnotes: [
+              '* There is a nice VSCode plugin available',
+              '** Claude Code can also be used with other LLMs',
+          ],
+      },
+      {
+          type: 'agent-theory',
+          headline: 'How Claude Code Works',
+      }
   ],
 };

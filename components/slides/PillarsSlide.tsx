@@ -9,7 +9,7 @@ interface Props {
   slide: PillarsSlideType;
 }
 
-const pillarIcons = [Brain, Wrench, Shield];
+const pillarIcons = [Brain, Shield, Wrench];
 
 export function PillarsSlide({ slide }: Props) {
   return (
@@ -36,7 +36,7 @@ export function PillarsSlide({ slide }: Props) {
           <div className="flex gap-8 w-full max-w-5xl justify-center items-stretch">
             {slide.pillars.map((pillar, index) => {
               const Icon = pillarIcons[index] || Brain;
-              const isFocused = slide.focusIndex === index;
+              const isFocused = slide.allActive || slide.focusIndex === index;
 
               return (
                 <BlurFade key={index} delay={0.2 + index * 0.15} duration={0.5} className="flex">
@@ -48,7 +48,7 @@ export function PillarsSlide({ slide }: Props) {
                     }`}
                   >
                     {/* Focus indicator */}
-                    {isFocused && (
+                    {isFocused && !slide.allActive && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-amber-500 text-slate-900 text-xs font-bold rounded-full">
                         UP NEXT
                       </div>
