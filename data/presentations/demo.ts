@@ -101,10 +101,10 @@ export const demo: Presentation = {
     },
     {
       type: 'spec-gap',
-      headline: 'But doing it "right" is hard.',
+      headline: 'But doing it *right* is hard.',
       points: [
         'The AI will fill specification gaps.',
-        'Leads to frustration ("AI isn\'t doing what I want...")',
+        'Leads to frustration (*AI isn\'t doing what I want...*)',
       ],
     },
     {
@@ -249,7 +249,7 @@ export const demo: Presentation = {
       capabilities: [
         {
           icon: 'eye',
-          title: 'See the Result',
+          title: 'Try it out',
           description: 'Browser automation to verify UI changes',
         },
         {
@@ -374,9 +374,9 @@ export const demo: Presentation = {
     },
     {
       type: 'jobs',
-      headline: 'Jobs of the Developer',
+      headline: 'Role of the Developer',
       before: {
-        title: 'Before (simplified)',
+        title: 'Traditional',
         items: [
           { task: 'Technical specifications' },
           { task: 'Programming' },
@@ -397,14 +397,14 @@ export const demo: Presentation = {
     },
       {
           type: 'vs',
-          headline: 'Claude Code vs Cursor',
+          headline: 'Which Coding Agent to use?',
           tools: [
               {
                   name: 'Claude Code',
                   pros: [
                       'Most advanced coding agent',
                       'Maintained by Anthropic',
-                      '"Flatrate" pricing',
+                      'Flatrate pricing',
                       'Works with JetBrains',
                   ],
                   cons: [

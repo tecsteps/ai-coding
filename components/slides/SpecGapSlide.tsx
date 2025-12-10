@@ -10,6 +10,13 @@ interface Props {
   slide: SpecGapSlideType;
 }
 
+function renderWithItalics(text: string) {
+  const parts = text.split(/\*([^*]+)\*/g);
+  return parts.map((part, index) =>
+    index % 2 === 1 ? <em key={index}>{part}</em> : part
+  );
+}
+
 const specificationGaps = [
   { question: 'What color?', options: ['Primary blue', 'Green', 'Gray', 'Custom brand color'] },
   { question: 'What size?', options: ['Small', 'Medium', 'Large', 'Full width'] },
@@ -54,7 +61,7 @@ export function SpecGapSlide({ slide }: Props) {
           <BlurFade delay={0.1} duration={0.6}>
             <h1 className="inline-flex items-center gap-4 text-6xl font-bold tracking-tight text-white">
               <AlertTriangle className="h-12 w-12 text-amber-400" />
-              {slide.headline}
+              {renderWithItalics(slide.headline)}
             </h1>
           </BlurFade>
         </div>
@@ -81,7 +88,7 @@ export function SpecGapSlide({ slide }: Props) {
                     className="flex items-start gap-3 text-xl text-slate-300"
                   >
                     <span className="text-amber-400 mt-1">→</span>
-                    <span>{point}</span>
+                    <span>{renderWithItalics(point)}</span>
                   </div>
                 ))}
               </div>
@@ -132,14 +139,6 @@ export function SpecGapSlide({ slide }: Props) {
           </div>
         </div>
 
-        {/* Footer */}
-        <BlurFade delay={0.5} duration={0.5}>
-          <div className="pb-6 text-center">
-            <p className="text-base text-slate-500">
-              Press <kbd className="px-2 py-1 bg-slate-800 rounded text-slate-400 mx-1">↓</kbd> to reveal specification gaps
-            </p>
-          </div>
-        </BlurFade>
       </div>
     </div>
   );
