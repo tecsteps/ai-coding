@@ -24,26 +24,16 @@ import { SlideNavigation } from '@/components/slides/SlideNavigation';
 import { SlideHints } from '@/components/slides/SlideHints';
 import { LaserPointer } from '@/components/slides/LaserPointer';
 import { demo } from '@/data/presentations/demo';
-import { Presentation } from '@/types/slide';
-
-const presentations: Record<string, Presentation> = {
-  demo,
-};
 
 interface Props {
   params: Promise<{
-    name: string;
     slideIndex: string;
   }>;
 }
 
 export default async function SlidePage({ params }: Props) {
-  const { name, slideIndex } = await params;
-  const presentation = presentations[name];
-
-  if (!presentation) {
-    notFound();
-  }
+  const { slideIndex } = await params;
+  const presentation = demo;
 
   const index = parseInt(slideIndex, 10);
 
@@ -56,7 +46,6 @@ export default async function SlidePage({ params }: Props) {
   return (
     <>
       <SlideNavigation
-        presentationName={name}
         currentIndex={index}
         totalSlides={presentation.slides.length}
       />

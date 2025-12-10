@@ -186,12 +186,6 @@ export function QuestionSlide({ slide }: Props) {
           </div>
         </div>
 
-        {/* Instructions */}
-        <div className="pb-8 text-center">
-          <p className="text-sm text-slate-500">
-            Click option to count up | Arrow keys to navigate | Space to count up | Backspace to count down | Q to reset
-          </p>
-        </div>
       </div>
     </div>
   );
