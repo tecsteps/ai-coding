@@ -39,7 +39,7 @@ export function SlideHints({ slideIndex, slideType }: Props) {
 
   if (!mounted || !visible) return null;
 
-  const hints: { icon: React.ReactNode; text: string }[] = [];
+  const hints: { icon: React.ReactNode; text: string; isTextIcon?: boolean }[] = [];
 
   // Slide 0: Show how to navigate between slides
   if (slideIndex === 0) {
@@ -76,6 +76,7 @@ export function SlideHints({ slideIndex, slideType }: Props) {
     hints.push({
       icon: <div className="px-2 py-0.5 bg-slate-700 rounded text-xs font-mono">Space</div>,
       text: 'to count',
+      isTextIcon: true,
     });
   }
 
@@ -86,9 +87,13 @@ export function SlideHints({ slideIndex, slideType }: Props) {
       <div className="flex items-center gap-4 px-3 py-1.5 rounded-lg bg-slate-800/80 backdrop-blur-sm border border-slate-700/50">
         {hints.map((hint, index) => (
           <div key={index} className="flex items-center gap-1.5 text-slate-400 text-xs">
-            <span className="flex items-center justify-center w-6 h-6 rounded bg-slate-700 text-slate-300">
-              {hint.icon}
-            </span>
+            {hint.isTextIcon ? (
+              hint.icon
+            ) : (
+              <span className="flex items-center justify-center w-6 h-6 rounded bg-slate-700 text-slate-300">
+                {hint.icon}
+              </span>
+            )}
             <span>{hint.text}</span>
           </div>
         ))}

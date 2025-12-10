@@ -47,7 +47,7 @@ export function SpecGapSlide({ slide }: Props) {
   }, []);
 
   return (
-    <div className="relative flex min-h-screen flex-col bg-slate-950 text-white">
+    <div className="relative flex min-h-screen items-center justify-center bg-slate-950 text-white">
       <StaticLightRays
         className="opacity-60"
         color="rgba(239, 68, 68, 0.15)"
@@ -55,7 +55,7 @@ export function SpecGapSlide({ slide }: Props) {
         length="90vh"
       />
 
-      <div className="relative z-10 flex flex-1 flex-col">
+      <div className="slide-content relative z-10 flex flex-col">
         {/* Header */}
         <div className="pt-12 text-center">
           <BlurFade delay={0.1} duration={0.6}>
@@ -67,7 +67,7 @@ export function SpecGapSlide({ slide }: Props) {
         </div>
 
         {/* Main content */}
-        <div className="flex flex-1 items-start justify-center px-16 pt-8 pb-4">
+        <div className="flex flex-1 items-center justify-center px-16 py-8">
           <div className="w-full max-w-6xl">
             {/* The prompt */}
             <BlurFade delay={0.2} duration={0.5}>

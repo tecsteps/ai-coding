@@ -19,7 +19,7 @@ export function TitleSlide({ slide }: Props) {
         size={0.6}
         staticity={30}
       />
-      <div className="relative z-10 flex flex-col items-center">
+      <div className="slide-content relative z-10 flex flex-col items-center justify-center">
         <BlurFade delay={0.2} duration={0.8}>
           <SparklesText
             className="text-8xl font-bold tracking-tight text-white"

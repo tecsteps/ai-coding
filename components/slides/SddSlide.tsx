@@ -13,7 +13,7 @@ const stepIcons = [MessageSquare, FileText, Code, CheckCircle];
 
 export function SddSlide({ slide }: Props) {
   return (
-    <div className="relative flex min-h-screen flex-col bg-slate-950 text-white">
+    <div className="relative flex min-h-screen items-center justify-center bg-slate-950 text-white">
       <StaticLightRays
         className="opacity-60"
         color="rgba(59, 130, 246, 0.15)"
@@ -21,9 +21,9 @@ export function SddSlide({ slide }: Props) {
         length="90vh"
       />
 
-      <div className="relative z-10 flex flex-1 flex-col">
+      <div className="slide-content relative z-10 flex flex-col">
         {/* Header */}
-        <div className="pt-16 text-center">
+        <div className="pt-12 text-center">
           <BlurFade delay={0.1} duration={0.6}>
             <h1 className="text-5xl font-bold tracking-tight text-white">
               {slide.headline}

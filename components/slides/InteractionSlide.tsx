@@ -58,7 +58,7 @@ export function InteractionSlide({ slide }: Props) {
   }, [slide.capabilities.length]);
 
   return (
-    <div className="relative flex min-h-screen flex-col bg-slate-950 text-white">
+    <div className="relative flex min-h-screen items-center justify-center bg-slate-950 text-white">
       <StaticLightRays
         className="opacity-50"
         color="rgba(6, 182, 212, 0.12)"
@@ -66,7 +66,7 @@ export function InteractionSlide({ slide }: Props) {
         length="90vh"
       />
 
-      <div className="relative z-10 flex flex-1 flex-col">
+      <div className="slide-content relative z-10 flex flex-col">
         {/* Header */}
         <div className="pt-12 text-center">
           <BlurFade delay={0.1} duration={0.6}>

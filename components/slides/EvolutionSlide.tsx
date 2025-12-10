@@ -29,7 +29,7 @@ export function EvolutionSlide({ slide }: Props) {
   }, [slide.stages.length]);
 
   return (
-    <div className="relative flex min-h-screen flex-col bg-slate-950 text-white">
+    <div className="relative flex min-h-screen items-center justify-center bg-slate-950 text-white">
       <StaticLightRays
         className="opacity-70"
         color="rgba(34, 211, 238, 0.2)"
@@ -37,9 +37,9 @@ export function EvolutionSlide({ slide }: Props) {
         length="90vh"
       />
 
-      <div className="relative z-10 flex flex-1 flex-col">
+      <div className="slide-content relative z-10 flex flex-col">
         {/* Header with headline */}
-        <div className="pt-16 text-center">
+        <div className="pt-12 text-center">
           <BlurFade delay={0.1} duration={0.6}>
             <h1 className="text-6xl font-bold tracking-tight text-white">
               {slide.headline}

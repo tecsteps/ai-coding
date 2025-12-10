@@ -90,9 +90,9 @@ export const demo: Presentation = {
       headline: 'Who has experience with...',
       storageKey: 'question-2-counts',
       options: [
-        { label: 'A', text: 'MCPs (Model Context Protocol)' },
+        { label: 'A', text: 'MCPs' },
         { label: 'B', text: 'Sub-Agents' },
-        { label: 'C', text: 'Planning Mode' },
+        { label: 'C', text: 'Spec-Driven Development' },
       ],
     },
     {

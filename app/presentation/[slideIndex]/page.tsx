@@ -23,6 +23,7 @@ import { HandsOnSlide } from '@/components/slides/HandsOnSlide';
 import { SlideNavigation } from '@/components/slides/SlideNavigation';
 import { SlideHints } from '@/components/slides/SlideHints';
 import { LaserPointer } from '@/components/slides/LaserPointer';
+import { SlideContainer } from '@/components/slides/SlideContainer';
 import { demo } from '@/data/presentations/demo';
 
 interface Props {
@@ -44,7 +45,7 @@ export default async function SlidePage({ params }: Props) {
   const slide = presentation.slides[index];
 
   return (
-    <>
+    <SlideContainer>
       <SlideNavigation
         currentIndex={index}
         totalSlides={presentation.slides.length}
@@ -72,6 +73,6 @@ export default async function SlidePage({ params }: Props) {
       {slide.type === 'hands-on' && <HandsOnSlide slide={slide} />}
       <SlideHints slideIndex={index} slideType={slide.type} />
       <LaserPointer />
-    </>
+    </SlideContainer>
   );
 }

@@ -11,7 +11,7 @@ interface Props {
 
 export function EasyStartSlide({ slide }: Props) {
   return (
-    <div className="relative flex min-h-screen flex-col bg-slate-950 text-white">
+    <div className="relative flex min-h-screen items-center justify-center bg-slate-950 text-white">
       <StaticLightRays
         className="opacity-60"
         color="rgba(34, 197, 94, 0.2)"
@@ -19,7 +19,7 @@ export function EasyStartSlide({ slide }: Props) {
         length="90vh"
       />
 
-      <div className="relative z-10 flex flex-1 flex-col">
+      <div className="slide-content relative z-10 flex flex-col">
         {/* Header */}
         <div className="pt-12 text-center">
           <BlurFade delay={0.1} duration={0.6}>

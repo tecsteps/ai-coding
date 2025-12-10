@@ -20,8 +20,6 @@ export function SlideNavigation({
         router.push(`/presentation/${currentIndex - 1}`);
       } else if (event.key === 'ArrowRight' && currentIndex < totalSlides - 1) {
         router.push(`/presentation/${currentIndex + 1}`);
-      } else if (event.key === 'Escape') {
-        router.push(`/presentation/0`);
       }
     }
 

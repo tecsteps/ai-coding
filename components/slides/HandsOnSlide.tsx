@@ -10,8 +10,8 @@ interface Props {
 
 export function HandsOnSlide({ slide }: Props) {
   return (
-    <div className="relative flex min-h-screen flex-col bg-slate-950 text-white">
-      <div className="relative z-10 flex flex-1 flex-col">
+    <div className="relative flex min-h-screen items-center justify-center bg-slate-950 text-white">
+      <div className="slide-content relative z-10 flex flex-col">
         {/* Header */}
         <div className="pt-12 text-center">
           <BlurFade delay={0.1} duration={0.6}>
