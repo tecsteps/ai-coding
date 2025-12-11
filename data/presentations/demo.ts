@@ -57,13 +57,13 @@ export const demo: Presentation = {
         {
           multiplier: '1x',
           title: 'Developer writes code',
-          subtitle: 'Tab-completions',
-          description: 'Traditional coding with basic autocomplete',
+          subtitle: 'IDE',
+          description: 'Traditional coding by a human',
         },
         {
           multiplier: '1.3x',
           title: 'Developer writes code with AI',
-          subtitle: 'In-context editing',
+          subtitle: 'Tab-completions',
           description: 'AI assists within your editor',
         },
         {
