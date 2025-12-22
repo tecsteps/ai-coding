@@ -5,7 +5,7 @@ export const demo: Presentation = {
   slides: [
     {
       type: 'title',
-      title: 'AI-Coding',
+      title: 'Agentic Software\nDevelopment',
     },
     {
       type: 'regular',
@@ -58,20 +58,26 @@ export const demo: Presentation = {
           multiplier: '1x',
           title: 'Developer writes code',
           subtitle: 'IDE',
-          description: 'Traditional coding by a human',
+          description: 'Fully manual development',
         },
         {
           multiplier: '1.3x',
           title: 'Developer writes code with AI',
-          subtitle: 'Tab-completions',
-          description: 'AI assists within your editor',
+          subtitle: 'Tab completion',
+          description: 'AI assists inside the editor',
         },
         {
           multiplier: '10x',
-          title: 'AI writes code with developer',
-          subtitle: 'Coding Agents',
-          description: 'AI takes the lead, you guide',
+          title: 'AI writes code with the developer',
+          subtitle: 'Coding agents and SDD',
+          description: 'AI leads, developer steers',
           isHighlighted: true,
+        },
+        {
+          multiplier: '∞',
+          title: 'AI writes code independently',
+          subtitle: 'Fully autonomous',
+          description: 'AI plans, builds, and runs everything',
         },
       ],
     },
@@ -436,7 +442,7 @@ export const demo: Presentation = {
     {
       type: 'hands-on',
       headline: "Let's get our hands dirty!",
-      projectDescription: 'A small app for damage reporting for courier operations. Drivers upload photos of damaged packages, and the system automatically assesses severity and generates professional reports.',
+      projectDescription: 'A small internal control-center app for product teams. Everyone logs daily work as simple Markdown notes, and the system aggregates them into a single shared view. It summarizes progress, highlights changes, blockers, and next actions, and publishes a concise update or audio recap so the whole team stays aligned without digging through tools.',
       procedureItems: [
         'I will build it in front of you',
         'You are doing it in parallel locally',

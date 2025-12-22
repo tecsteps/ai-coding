@@ -22,7 +22,7 @@ export function TitleSlide({ slide }: Props) {
       <div className="slide-content relative z-10 flex flex-col items-center justify-center">
         <BlurFade delay={0.2} duration={0.8}>
           <SparklesText
-            className="text-8xl font-bold tracking-tight text-white"
+            className="text-6xl md:text-7xl font-bold tracking-tight text-white text-center whitespace-pre-line"
             colors={{ first: '#9E7AFF', second: '#38bdf8' }}
             sparklesCount={12}
           >
