@@ -68,27 +68,27 @@ export function InteractionSlide({ slide }: Props) {
 
       <div className="slide-content relative z-10 flex flex-col">
         {/* Header */}
-        <div className="pt-12 text-center">
+        <div className="pt-14 sm:pt-8 md:pt-12 text-center px-4">
           <BlurFade delay={0.1} duration={0.6}>
-            <h1 className="text-5xl font-bold tracking-tight text-white">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-white">
               {slide.headline}
             </h1>
           </BlurFade>
         </div>
 
         {/* Content */}
-        <div className="flex flex-1 flex-col items-center justify-center px-16 py-8">
+        <div className="flex flex-1 flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8 overflow-y-auto">
           <div className="w-full max-w-5xl">
             {/* Problem Statement */}
             <BlurFade delay={0.2} duration={0.5}>
-              <div className="mb-10 p-6 rounded-2xl border border-red-500/30 bg-gradient-to-br from-red-950/30 to-slate-900/60">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-red-500/20">
-                    <AlertTriangle className="h-6 w-6 text-red-400" />
+              <div className="mb-6 sm:mb-8 md:mb-10 p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl border border-red-500/30 bg-gradient-to-br from-red-950/30 to-slate-900/60">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-red-500/20">
+                    <AlertTriangle className="h-5 w-5 sm:h-5.5 sm:w-5.5 md:h-6 md:w-6 text-red-400" />
                   </div>
                   <div>
-                    <p className="text-xs text-red-400 uppercase tracking-wider mb-1">The Problem</p>
-                    <p className="text-xl text-slate-200 leading-relaxed">
+                    <p className="text-[10px] sm:text-xs text-red-400 uppercase tracking-wider mb-0.5 sm:mb-1">The Problem</p>
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-200 leading-relaxed">
                       {slide.problem}
                     </p>
                   </div>
@@ -98,14 +98,14 @@ export function InteractionSlide({ slide }: Props) {
 
             {/* Solution Statement */}
             <BlurFade delay={0.25} duration={0.5}>
-              <p className="text-center text-slate-400 text-lg mb-2">
+              <p className="text-center text-slate-400 text-sm sm:text-base md:text-lg mb-2">
                 We want to enable the Coding Agent to...
               </p>
             </BlurFade>
 
             {/* Capabilities Grid */}
             <BlurFade delay={0.3} duration={0.5}>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
                 {slide.capabilities.map((capability, index) => {
                   const Icon = iconMap[capability.icon];
                   const colors = colorMap[capability.icon];
@@ -115,22 +115,22 @@ export function InteractionSlide({ slide }: Props) {
                     <div
                       key={index}
                       className={cn(
-                        'p-5 rounded-xl border transition-all duration-300 h-[120px] flex items-center',
+                        'p-3 sm:p-4 md:p-5 rounded-lg sm:rounded-xl border transition-all duration-300 min-h-[80px] sm:min-h-[100px] md:h-[120px] flex items-center',
                         isActive
                           ? cn(colors.border, colors.activeBg)
                           : 'border-slate-700/30 bg-slate-900/30 opacity-30'
                       )}
                     >
-                      <div className="flex items-center gap-4 w-full">
+                      <div className="flex items-center gap-3 sm:gap-4 w-full">
                         <div
                           className={cn(
-                            'flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg',
+                            'flex-shrink-0 flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-lg',
                             isActive ? colors.bg : 'bg-slate-800/50'
                           )}
                         >
                           <Icon
                             className={cn(
-                              'h-6 w-6',
+                              'h-5 w-5 sm:h-5.5 sm:w-5.5 md:h-6 md:w-6',
                               isActive ? colors.text : 'text-slate-600'
                             )}
                           />
@@ -138,7 +138,7 @@ export function InteractionSlide({ slide }: Props) {
                         <div>
                           <h3
                             className={cn(
-                              'font-semibold text-lg',
+                              'font-semibold text-sm sm:text-base md:text-lg',
                               isActive ? 'text-white' : 'text-slate-600'
                             )}
                           >
@@ -146,7 +146,7 @@ export function InteractionSlide({ slide }: Props) {
                           </h3>
                           <p
                             className={cn(
-                              'text-sm mt-0.5',
+                              'text-xs sm:text-sm mt-0.5',
                               isActive ? 'text-slate-400' : 'text-slate-700'
                             )}
                           >
@@ -163,13 +163,13 @@ export function InteractionSlide({ slide }: Props) {
             {/* How? CTA */}
             <div
               className={cn(
-                'mt-12 flex justify-center transition-all duration-500',
+                'mt-6 sm:mt-8 md:mt-12 flex justify-center transition-all duration-500',
                 visibleCount > slide.capabilities.length
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-4 pointer-events-none'
               )}
             >
-              <span className="text-3xl font-semibold text-violet-400">
+              <span className="text-xl sm:text-2xl md:text-3xl font-semibold text-violet-400">
                 How?
               </span>
             </div>

@@ -292,8 +292,15 @@
   color: #1e293b !important;
 }
 
-/* Slide content wrapper - fixed height on large screens, responsive on small */
+/* Slide content wrapper - responsive sizing */
 .slide-content {
-  height: min(100vh, 866px);
-  width: min(100vw, 1914px);
+  height: 100vh;
+  width: 100%;
+  max-width: 1914px;
+}
+
+@media (min-width: 1024px) {
+  .slide-content {
+    height: min(100vh, 866px);
+  }
 }

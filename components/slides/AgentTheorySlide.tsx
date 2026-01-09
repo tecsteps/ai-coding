@@ -81,9 +81,9 @@ export function AgentTheorySlide({ slide }: Props) {
 
       <div className="slide-content relative z-10 flex flex-col">
         {/* Header */}
-        <div className="pt-12 text-center">
+        <div className="pt-6 sm:pt-8 md:pt-12 text-center px-4">
           <BlurFade delay={0.1} duration={0.6}>
-            <h1 className="text-5xl font-bold tracking-tight text-white">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white">
               {slide.headline}
             </h1>
           </BlurFade>
@@ -92,7 +92,7 @@ export function AgentTheorySlide({ slide }: Props) {
         {/* Main diagram */}
         <div
           ref={containerRef}
-          className="relative mx-auto flex flex-1 w-full max-w-7xl items-center justify-center px-8"
+          className="relative mx-auto flex flex-1 w-full max-w-7xl items-center justify-center px-4 sm:px-6 md:px-8 overflow-hidden"
         >
           {/* USER - Entry point (left) */}
           <div className="absolute left-[40px] top-[20%]">
@@ -312,10 +312,11 @@ export function AgentTheorySlide({ slide }: Props) {
 
         {/* Footer */}
         <BlurFade delay={1} duration={0.5}>
-          <div className="pb-6 text-center">
-            <p className="text-lg text-slate-400">
+          <div className="pb-4 sm:pb-6 text-center px-4">
+            <p className="text-sm sm:text-base md:text-lg text-slate-400">
               The ReAct Loop
             </p>
+            <p className="text-xs text-slate-600 mt-1 lg:hidden">Best viewed on larger screens</p>
           </div>
         </BlurFade>
       </div>

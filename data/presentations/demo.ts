@@ -5,7 +5,7 @@ export const demo: Presentation = {
   slides: [
     {
       type: 'title',
-      title: 'Agentic Software\nDevelopment',
+      title: 'Agentic\nEngineering',
     },
     {
       type: 'regular',
@@ -442,7 +442,7 @@ export const demo: Presentation = {
     {
       type: 'hands-on',
       headline: "Let's get our hands dirty!",
-      projectDescription: 'A small internal control-center app for product teams. Everyone logs daily work as simple Markdown notes, and the system aggregates them into a single shared view. It summarizes progress, highlights changes, blockers, and next actions, and publishes a concise update or audio recap so the whole team stays aligned without digging through tools.',
+      projectDescription: '...',
       procedureItems: [
         'I will build it in front of you',
         'You are doing it in parallel locally',
