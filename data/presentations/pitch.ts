@@ -96,39 +96,44 @@ export const pitch: Presentation = {
             subStatement: 'An order of magnitude.',
         },
 
-        // Slide 10 - Proof: What Industry Leaders Are Saying
+        // Slide 10 - Ryan Dahl
         {
-            type: 'quotes',
+            type: 'screenshot',
             headline: 'What Industry Leaders Are Saying',
-            quotes: [
-                {
-                    text: 'The era of humans writing code is over.',
-                    author: 'Ryan Dahl',
-                    imageSrc: '/ryan_dahl.png',
-                },
-                {
-                    text: 'The speed-up is undeniable.',
-                    author: 'DHH',
-                    imageSrc: '/dhh.png',
-                },
-                {
-                    text: 'Watching this execute is astonishing.',
-                    author: 'Sam Altman',
-                    imageSrc: '/sam.png',
-                },
-            ],
+            imageSrc: '/ryan_dahl.png',
+            author: 'Ryan Dahl',
+            authorDescription: 'Creator of Node.js and Deno',
         },
 
-        // Slide 11 - Signals in the Ecosystem
+        // Slide 11 - DHH
         {
-            type: 'trend',
-            headline: 'Signals in the Ecosystem',
-            subtitle: 'Attention is shifting even before the impact is visible',
-            imageSrc: '/trends.png',
-            annotation: 'Last 12 months',
+            type: 'screenshot',
+            headline: 'What Industry Leaders Are Saying',
+            imageSrc: '/dhh.png',
+            author: 'DHH',
+            authorDescription: 'Creator of Ruby on Rails',
         },
 
-        // Slide 12 - This Is Not Just a Tech Question
+        // Slide 12 - Sam Altman
+        {
+            type: 'screenshot',
+            headline: 'What Industry Leaders Are Saying',
+            imageSrc: '/sam.png',
+            author: 'Sam Altman',
+            authorDescription: 'CEO of OpenAI',
+        },
+
+        // Slide 13 - Performance Graph
+        {
+            type: 'performance-graph',
+            headline: 'The Exponential Rise of AI Agents',
+            xLabel: 'Time',
+            yLabel: 'Performance',
+            currentMarker: 'We are here',
+            futureNote: 'Most is yet to come',
+        },
+
+        // Slide 14 - This Is Not Just a Tech Question
         {
             type: 'split-question',
             headline: 'This Is Not Just a Tech Question',
@@ -175,7 +180,7 @@ export const pitch: Presentation = {
         // Slide 17 - Workshop Transition
         {
             type: 'transition',
-            preText: 'Tomorrow:',
+            preText: 'Deepdive Workshop:',
             headline: 'How to use coding agents to your own advantage',
         },
 

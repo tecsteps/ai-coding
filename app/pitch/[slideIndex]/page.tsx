@@ -14,6 +14,8 @@ import { WrongReactionSlide } from '@/components/slides/WrongReactionSlide';
 import { PracticeImplicationSlide } from '@/components/slides/PracticeImplicationSlide';
 import { TransitionSlide } from '@/components/slides/TransitionSlide';
 import { ClosingSlide } from '@/components/slides/ClosingSlide';
+import { ScreenshotSlide } from '@/components/slides/ScreenshotSlide';
+import { PerformanceGraphSlide } from '@/components/slides/PerformanceGraphSlide';
 import { SlideNavigation } from '@/components/slides/SlideNavigation';
 import { SlideHints } from '@/components/slides/SlideHints';
 import { LaserPointer } from '@/components/slides/LaserPointer';
@@ -60,6 +62,8 @@ export default async function PitchSlidePage({ params }: Props) {
       {slide.type === 'practice-implication' && <PracticeImplicationSlide slide={slide} />}
       {slide.type === 'transition' && <TransitionSlide slide={slide} />}
       {slide.type === 'closing' && <ClosingSlide slide={slide} />}
+      {slide.type === 'screenshot' && <ScreenshotSlide slide={slide} />}
+      {slide.type === 'performance-graph' && <PerformanceGraphSlide slide={slide} />}
       <SlideHints slideIndex={index} slideType={slide.type} />
       <LaserPointer />
     </SlideContainer>
