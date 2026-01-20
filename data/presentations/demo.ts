@@ -442,13 +442,62 @@ export const demo: Presentation = {
     {
       type: 'hands-on',
       headline: "Let's get our hands dirty!",
-      projectDescription: '...',
+      projectDescription: 'Governance Hub - A tool for regulated companies to manage cloud service approvals. Analyze services from AWS, GCP, and Azure with AI-powered assistance.',
       procedureItems: [
         'I will build it in front of you',
         'You are doing it in parallel locally',
         'Use whatever technology you like',
       ],
       techNote: 'We need UI, some business logic, and a database (e.g. SQLite)',
+    },
+    {
+      type: 'regular',
+      headline: 'The Challenge',
+      sections: [
+        {
+          title: 'Problem',
+          items: [
+            'Regulated companies must individually evaluate each cloud service',
+            'Approval decisions need documentation for auditors',
+            'Decision-makers (CISO, Data Protection) are not cloud experts',
+          ],
+        },
+        {
+          title: 'Solution',
+          items: [
+            'Standardized service analysis documents',
+            'Structured criteria for non-technical reviewers',
+            'Centralized approval workflow and history',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'regular',
+      headline: "What We're Building",
+      layout: 'cards',
+      sections: [
+        {
+          title: 'Service Analysis',
+          text: 'Evaluate cloud services on encryption, certifications, access control, and audit logging',
+          icon: 'target',
+        },
+        {
+          title: 'AI Assistant',
+          text: 'Prefill forms automatically, ask questions about services, run natural language queries',
+          icon: 'lightbulb',
+        },
+        {
+          title: 'Dashboard',
+          text: 'View statistics per hyperscaler, criteria distribution, and vendor lock-in analysis',
+          icon: 'presentation',
+        },
+        {
+          title: 'Teams & Workloads',
+          text: 'Manage team ownership, workload classification, and protection requirements',
+          icon: 'rocket',
+        },
+      ],
     },
   ],
 };

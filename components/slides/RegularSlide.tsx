@@ -145,7 +145,7 @@ export function RegularSlide({ slide }: Props) {
         {/* Content container - centered both horizontally and vertically */}
         <div className="flex flex-1 items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 py-4 sm:py-6 md:py-8 overflow-y-auto">
           {isCardsLayout ? (
-            <div className="flex w-full max-w-3xl flex-col gap-2 sm:gap-3 md:gap-4">
+            <div className="grid w-full max-w-5xl grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
               {slide.sections.map((section, index) => (
                 <AgendaCard
                   key={index}
