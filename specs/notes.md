@@ -143,24 +143,36 @@ computer, it can do everything a human can do."
 
 ---
 
-## Slide 8: Google Trends - Claude Code
-
-Comment: This is wrong. here I want to show, that Claude Code still isn't widly adopted and it's still very early, which
-means an opportunity. See trends.png
-Comment: The timeline of Claude Code can be an extra slide, which emphasizes the dramatic speed of execution. This slide
-can also show the quote from Sam Altman. Codex is catchig up fast. (see sam.png). The timeline needs to be drawn, as I
-have no image.
+## Slide 8: We Are Still Early
 
 **Tell them:**
-"Claude Code is the leading coding agent right now. Look at the adoption curve."
+"Claude Code is the leading coding agent right now. But look at this comparison."
 
-**Show:** Google Trends graph with timeline markers:
+**Show:** Google Trends graph (trends.png) comparing Claude Code vs WordPress
+
+- WordPress: ~75-100 interest (mature, established tech)
+- Claude Code: ~25-40 interest (and growing!)
+
+**Key insight:** "Claude Code is still a fraction of a mainstream technology like WordPress. This is NOT widely adopted yet. You are early. This is your window of opportunity."
+
+---
+
+## Slide 8b: The Speed of Execution
+
+**Tell them:**
+"But don't think you have forever. Look at how fast this is moving."
+
+**Show:** Timeline of Claude Code milestones:
 
 - Feb 2024: Public Preview
 - Oct 2024: V1 Release
 - Jan 2025: Opus 4.5
+- (Draw timeline showing compressed timeframes)
 
-Exponential growth visible.
+**Then show Sam Altman quote (sam.png):**
+> "So fun watching the Codex team execute; hard to imagine what it's going to look like at the end of this year if things keep compounding at this rate."
+
+**Key insight:** "The competition is accelerating. OpenAI's Codex is catching up fast. The window won't stay open forever."
 
 ---
 
@@ -197,11 +209,17 @@ Exponential growth visible.
 
 ## Slide 11: Consequences
 
-Comment: AI Agents are not just good in coding.
-
-
 **Tell them:**
-"Agents are in direct competition with humans who work on computers. This creates two paths."
+"AI Agents aren't just good at coding. They're good at ANY computer-based work. Agents are in direct competition with humans who work on computers."
+
+**Show:** Examples beyond coding (brief visual)
+- Data analysis & reporting
+- Document processing
+- Research & summarization
+- Customer support automation
+- Quality assurance
+
+"This creates two paths."
 
 **Show:** Split view
 
