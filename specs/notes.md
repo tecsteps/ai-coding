@@ -1,4 +1,5 @@
 # 15-Minute Pitch: Glimpse of the Future
+
 ## Target: Company just starting with AI coding
 
 ---
@@ -27,6 +28,7 @@ does not stop in coding. Everybody should look at your agents and open your mind
 ---
 
 # Visual Assets Available
+
 - Google Trend "Claude Code"
 - Early Adopter Cycle for Claude Code (needs to be prepared)
 - StackOverflow chart (stackoverflow_usage.csv - shows dramatic decline)
@@ -68,9 +70,11 @@ CTO & Entrepreneur
 ## Slide 3: The Disruption is Here
 
 **Tell them:**
-"We're living in a world where disruption happens at an unbelievable pace. Most people - including developers and politicians - are not aware. They think AI is just a chatbot you open, ask a question, and close."
+"We're living in a world where disruption happens at an unbelievable pace. Most people - including developers and
+politicians - are not aware. They think AI is just a chatbot you open, ask a question, and close."
 
-"Studies say AI hasn't changed the economy much. No visible jumps, no big layoffs. Most people's lives are totally unaffected."
+"Studies say AI hasn't changed the economy much. No visible jumps, no big layoffs. Most people's lives are totally
+unaffected."
 
 "But that perception is wrong."
 
@@ -84,6 +88,7 @@ CTO & Entrepreneur
 "For 15 years, StackOverflow was THE place developers went for answers. Look what happened."
 
 **Show:** Chart from stackoverflow_usage.csv
+
 - Peak: ~300k questions/month (2017-2020)
 - Today: ~3,500 questions/month (Jan 2026)
 - That's a 99% drop!
@@ -98,6 +103,7 @@ CTO & Entrepreneur
 "This isn't just hype. The people who built the tools we all use are saying this is real."
 
 **Show:** Grid with photos and quotes from:
+
 - Ryan Dahl (Node.js creator) - ryan_dahl.png
 - DHH (Rails creator) - dhh.png
 - Uncle Bob (Clean Code) - uncle.png
@@ -107,9 +113,11 @@ CTO & Entrepreneur
 ## Slide 6: What are Coding Agents?
 
 **Tell them:**
-"An LLM in a loop - sounds harmless, right? But an agent is pretty close to a living organism. When running on a computer, it can do everything a human can do."
+"An LLM in a loop - sounds harmless, right? But an agent is pretty close to a living organism. When running on a
+computer, it can do everything a human can do."
 
 **Show:** (animated reveal)
+
 - Open and write files
 - Web searches
 - Use websites
@@ -127,6 +135,7 @@ CTO & Entrepreneur
 "Here's where we've been and where we're going."
 
 **Show:** Evolution timeline (reuse existing slide type)
+
 - 1x - Developer writes code (IDE)
 - 1.3x - Developer writes code with AI (Tab completion)
 - 10x - AI writes code with developer (Coding agents) <- HIGHLIGHT: "We are here"
@@ -136,10 +145,17 @@ CTO & Entrepreneur
 
 ## Slide 8: Google Trends - Claude Code
 
+Comment: This is wrong. here I want to show, that Claude Code still isn't widly adopted and it's still very early, which
+means an opportunity. See trends.png
+Comment: The timeline of Claude Code can be an extra slide, which emphasizes the dramatic speed of execution. This slide
+can also show the quote from Sam Altman. Codex is catchig up fast. (see sam.png). The timeline needs to be drawn, as I
+have no image.
+
 **Tell them:**
 "Claude Code is the leading coding agent right now. Look at the adoption curve."
 
 **Show:** Google Trends graph with timeline markers:
+
 - Feb 2024: Public Preview
 - Oct 2024: V1 Release
 - Jan 2025: Opus 4.5
@@ -154,6 +170,7 @@ Exponential growth visible.
 "Where are we on the technology adoption curve? Still in early adopter territory. You have a window of opportunity."
 
 **Show:** Classic adoption curve:
+
 - Innovators (2.5%)
 - Early Adopters (13.5%) <- "Claude Code is here"
 - Early Majority (34%)
@@ -168,6 +185,7 @@ Exponential growth visible.
 "This is just the beginning. We're at the very start of an exponential curve."
 
 **Show:** Graph
+
 - X-axis: Time (2023 -> Future)
 - Y-axis: Productivity
 - Exponential curve going up
@@ -178,6 +196,9 @@ Exponential growth visible.
 ---
 
 ## Slide 11: Consequences
+
+Comment: AI Agents are not just good in coding.
+
 
 **Tell them:**
 "Agents are in direct competition with humans who work on computers. This creates two paths."
@@ -210,7 +231,8 @@ Option 1: Ignore it
 Option 2: Learn it. Master it. Leverage it.
 (highlighted)
 
-"Business models need adjusting. Some work simply doesn't make sense anymore. There's no point doing something an agent could do better and for a fraction of the cost."
+"Business models need adjusting. Some work simply doesn't make sense anymore. There's no point doing something an agent
+could do better and for a fraction of the cost."
 
 ---
 
@@ -220,6 +242,7 @@ Option 2: Learn it. Master it. Leverage it.
 "Let me show you what this actually looks like."
 
 **Show:** Brief demo or GIF of:
+
 - A simple prompt being entered
 - The agent working (tools, thinking)
 - The result appearing
@@ -231,12 +254,14 @@ Option 2: Learn it. Master it. Leverage it.
 ## Slide 14: Getting Started is Easy... But
 
 **Tell them:**
-"Getting started is easy. You can install Claude Code in 5 minutes. But doing it RIGHT - that's where the skill comes in."
+"Getting started is easy. You can install Claude Code in 5 minutes. But doing it RIGHT - that's where the skill comes
+in."
 
 **Show:**
 Simple prompt: "Change the button color to green"
 
 Then reveal the three pillars:
+
 1. Spec-Driven Development
 2. Knowledge & Guardrails
 3. Tools & MCPs
@@ -248,12 +273,14 @@ Then reveal the three pillars:
 ## Slide 15: Call to Action
 
 **Tell them:**
-"The window is open. The early adopters are moving. In 2 years, this will be table stakes. The question is: will you be ahead or behind?"
+"The window is open. The early adopters are moving. In 2 years, this will be table stakes. The question is: will you be
+ahead or behind?"
 
 **Show:**
 "The window is open."
 
 Next Steps:
+
 1. Start experimenting today
 2. Identify your first use case
 3. Invest in learning the right patterns
@@ -265,6 +292,7 @@ Optional: Offer follow-up workshop/consultation
 ## Slide 16: Questions?
 
 **Show:**
+
 - Contact info
 - LinkedIn: linkedin.com/in/fabian-wesner/
 
@@ -273,6 +301,7 @@ Optional: Offer follow-up workshop/consultation
 # PRESENTER NOTES
 
 ## Key Messages to Hammer Home:
+
 1. This is happening NOW, not in the future
 2. The data proves it (StackOverflow collapse is undeniable)
 3. Industry leaders are all-in
@@ -281,12 +310,14 @@ Optional: Offer follow-up workshop/consultation
 6. Getting started is easy, mastering it takes practice
 
 ## Timing Guide (15 min total):
+
 - Slides 1-5: ~4 min (The Disruption - shock and awe)
 - Slides 6-10: ~4 min (What & Why - education)
 - Slides 11-14: ~4 min (Implications & Practice - relevance)
 - Slides 15-16: ~3 min (CTA & Questions)
 
 ## Tone:
+
 - Urgent but not alarmist
 - Opportunity-focused
 - Backed by data, not hype
