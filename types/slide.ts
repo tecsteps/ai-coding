@@ -246,7 +246,126 @@ export interface HandsOnSlide {
   techNote?: string;
 }
 
-export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide;
+// Image slide for showing screenshots, tweets, charts
+export interface ImageSlide {
+  type: 'image';
+  headline: string;
+  imageSrc: string;
+  caption?: string;
+  insight?: string;
+}
+
+// Quotes grid for showing multiple industry leader quotes
+export interface QuoteItem {
+  imageSrc: string;
+  name: string;
+  title: string;
+}
+
+export interface QuotesGridSlide {
+  type: 'quotes-grid';
+  headline: string;
+  intro?: string;
+  quotes: QuoteItem[];
+}
+
+// Stats chart for visualizing data like StackOverflow decline
+export interface StatsChartSlide {
+  type: 'stats-chart';
+  headline: string;
+  chartType: 'stackoverflow';
+  insight: string;
+}
+
+// Technology adoption curve
+export interface AdoptionCurveSlide {
+  type: 'adoption-curve';
+  headline: string;
+  currentPosition: string;
+  insight?: string;
+}
+
+// Productivity/exponential curve
+export interface ProductivityCurveSlide {
+  type: 'productivity-curve';
+  headline: string;
+  insight: string;
+}
+
+// Timeline with quote
+export interface TimelineMilestone {
+  date: string;
+  label: string;
+}
+
+export interface TimelineSlide {
+  type: 'timeline';
+  headline: string;
+  milestones: TimelineMilestone[];
+  quoteSrc?: string;
+  quoteText?: string;
+  insight?: string;
+}
+
+// Two paths/consequences slide
+export interface PathOption {
+  title: string;
+  items: string[];
+  style: 'neutral' | 'opportunity' | 'warning';
+}
+
+export interface TwoPathsSlide {
+  type: 'two-paths';
+  headline: string;
+  intro?: string;
+  examples?: string[];
+  paths: [PathOption, PathOption];
+}
+
+// Choice slide (ignore vs learn)
+export interface ChoiceSlide {
+  type: 'choice';
+  headline: string;
+  intro?: string;
+  options: [
+    { label: string; description?: string; dismissed: boolean },
+    { label: string; description?: string; dismissed: boolean }
+  ];
+  conclusion?: string;
+}
+
+// CTA slide
+export interface CTASlide {
+  type: 'cta';
+  headline: string;
+  subheadline?: string;
+  steps: string[];
+  footer?: string;
+}
+
+// Agent capabilities slide
+export interface AgentCapability {
+  text: string;
+}
+
+export interface AgentCapabilitiesSlide {
+  type: 'agent-capabilities';
+  headline: string;
+  intro?: string;
+  capabilities: AgentCapability[];
+  conclusion?: string;
+}
+
+// Contact/Questions slide
+export interface ContactSlide {
+  type: 'contact';
+  headline: string;
+  name?: string;
+  linkedIn?: string;
+  imageSrc?: string;
+}
+
+export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | ImageSlide | QuotesGridSlide | StatsChartSlide | AdoptionCurveSlide | ProductivityCurveSlide | TimelineSlide | TwoPathsSlide | ChoiceSlide | CTASlide | AgentCapabilitiesSlide | ContactSlide;
 
 export interface Presentation {
   name: string;
