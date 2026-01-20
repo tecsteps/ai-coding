@@ -246,7 +246,119 @@ export interface HandsOnSlide {
   techNote?: string;
 }
 
-export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide;
+// Pitch-specific slide types
+export interface BigStatementSlide {
+  type: 'big-statement';
+  lines: string[];
+  subtitle?: string;
+  crossedOut?: string;
+  highlighted?: string;
+}
+
+export interface ChatbotMentalModelSlide {
+  type: 'chatbot-mental-model';
+  headline: string;
+  quote: string;
+  steps: string[];
+  tagline: string;
+}
+
+export interface SafetyChecklistSlide {
+  type: 'safety-checklist';
+  headline: string;
+  items: Array<{
+    text: string;
+    icon: 'briefcase' | 'graph' | 'calendar' | 'document';
+  }>;
+}
+
+export interface AgentLoopSlide {
+  type: 'agent-loop';
+  headline: string;
+  description: string;
+  loopSteps: string[];
+  tools: Array<{
+    name: string;
+    icon: 'file' | 'browser' | 'database' | 'terminal';
+  }>;
+}
+
+export interface AgentCapabilitiesSlide {
+  type: 'agent-capabilities';
+  headline: string;
+  capabilities: string[];
+  footer: string;
+}
+
+export interface HumansVsAgentsSlide {
+  type: 'humans-vs-agents';
+  headline: string;
+  automated: string[];
+  boosted: string[];
+}
+
+export interface MultiplierSlide {
+  type: 'multiplier';
+  headline: string;
+  from: string;
+  to: string;
+  statement: string;
+  subStatement: string;
+}
+
+export interface QuotesSlide {
+  type: 'quotes';
+  headline: string;
+  quotes: Array<{
+    text: string;
+    author: string;
+    imageSrc: string;
+  }>;
+}
+
+export interface TrendSlide {
+  type: 'trend';
+  headline: string;
+  subtitle: string;
+  imageSrc: string;
+  annotation?: string;
+}
+
+export interface SplitQuestionSlide {
+  type: 'split-question';
+  headline: string;
+  leftLabel: string;
+  leftBullets?: string[];
+  rightLabel: string;
+  rightBullets?: string[];
+}
+
+export interface WrongReactionSlide {
+  type: 'wrong-reaction';
+  headline: string;
+  items: string[];
+  direction: 'fading' | 'growing';
+}
+
+export interface PracticeImplicationSlide {
+  type: 'practice-implication';
+  lines: string[];
+}
+
+export interface TransitionSlide {
+  type: 'transition';
+  preText?: string;
+  headline: string;
+  subtitle?: string;
+}
+
+export interface ClosingSlide {
+  type: 'closing';
+  line1: string;
+  line2: string;
+}
+
+export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide;
 
 export interface Presentation {
   name: string;

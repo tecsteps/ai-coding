@@ -7,11 +7,13 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 interface Props {
   currentIndex: number;
   totalSlides: number;
+  basePath?: string;
 }
 
 export function SlideNavigation({
   currentIndex,
   totalSlides,
+  basePath = '/presentation',
 }: Props) {
   const router = useRouter();
   const touchStartX = useRef<number | null>(null);
@@ -19,22 +21,22 @@ export function SlideNavigation({
 
   const goToPrev = () => {
     if (currentIndex > 0) {
-      router.push(`/presentation/${currentIndex - 1}`);
+      router.push(`${basePath}/${currentIndex - 1}`);
     }
   };
 
   const goToNext = () => {
     if (currentIndex < totalSlides - 1) {
-      router.push(`/presentation/${currentIndex + 1}`);
+      router.push(`${basePath}/${currentIndex + 1}`);
     }
   };
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === 'ArrowLeft' && currentIndex > 0) {
-        router.push(`/presentation/${currentIndex - 1}`);
+        router.push(`${basePath}/${currentIndex - 1}`);
       } else if (event.key === 'ArrowRight' && currentIndex < totalSlides - 1) {
-        router.push(`/presentation/${currentIndex + 1}`);
+        router.push(`${basePath}/${currentIndex + 1}`);
       }
     }
 
@@ -55,10 +57,10 @@ export function SlideNavigation({
       if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
         if (deltaX > 0 && currentIndex > 0) {
           // Swipe right - go to previous
-          router.push(`/presentation/${currentIndex - 1}`);
+          router.push(`${basePath}/${currentIndex - 1}`);
         } else if (deltaX < 0 && currentIndex < totalSlides - 1) {
           // Swipe left - go to next
-          router.push(`/presentation/${currentIndex + 1}`);
+          router.push(`${basePath}/${currentIndex + 1}`);
         }
       }
 
@@ -75,7 +77,7 @@ export function SlideNavigation({
       window.removeEventListener('touchstart', handleTouchStart);
       window.removeEventListener('touchend', handleTouchEnd);
     };
-  }, [router, currentIndex, totalSlides]);
+  }, [router, currentIndex, totalSlides, basePath]);
 
   return (
     <>
