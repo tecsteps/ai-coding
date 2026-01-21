@@ -16,6 +16,7 @@ import { TransitionSlide } from '@/components/slides/TransitionSlide';
 import { ClosingSlide } from '@/components/slides/ClosingSlide';
 import { ScreenshotSlide } from '@/components/slides/ScreenshotSlide';
 import { PerformanceGraphSlide } from '@/components/slides/PerformanceGraphSlide';
+import { AdoptionCycleSlide } from '@/components/slides/AdoptionCycleSlide';
 import { SlideNavigation } from '@/components/slides/SlideNavigation';
 import { SlideHints } from '@/components/slides/SlideHints';
 import { LaserPointer } from '@/components/slides/LaserPointer';
@@ -64,6 +65,7 @@ export default async function PitchSlidePage({ params }: Props) {
       {slide.type === 'closing' && <ClosingSlide slide={slide} />}
       {slide.type === 'screenshot' && <ScreenshotSlide slide={slide} />}
       {slide.type === 'performance-graph' && <PerformanceGraphSlide slide={slide} />}
+      {slide.type === 'adoption-cycle' && <AdoptionCycleSlide slide={slide} />}
       <SlideHints slideIndex={index} slideType={slide.type} />
       <LaserPointer />
     </SlideContainer>

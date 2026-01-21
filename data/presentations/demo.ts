@@ -444,5 +444,88 @@ export const demo: Presentation = {
       ],
       techNote: 'We need UI, some business logic, and a database (e.g. SQLite)',
     },
+    {
+      type: 'regular',
+      headline: 'Funktionale Anforderungen',
+      layout: 'cards',
+      sections: [
+        {
+          title: 'Vorbereitung / Basis',
+          text: 'Minimalapplikation mit User Management, Login und Benutzerzuordnung. Nutzung der vorgegebenen Frontend-Technologien (React Router, MUI, MUI Toolpad).',
+          icon: 'rocket',
+        },
+        {
+          title: 'Cloud-Service-Katalog',
+          text: 'Zentrale Verwaltung aller Cloud-Services mit Suchen, Filtern, Anzeigen und Bearbeiten.',
+          icon: 'target',
+        },
+        {
+          title: 'Serviceanalysen',
+          text: 'Strukturierte Erfassung pro Cloud-Service mit einheitlichen Kriterien für Security, Datenschutz und Governance. Statusführung (Entwurf, freigegeben, abgelehnt, veraltet).',
+          icon: 'lightbulb',
+        },
+      ],
+    },
+    {
+      type: 'regular',
+      headline: 'Funktionale Anforderungen',
+      layout: 'cards',
+      sections: [
+        {
+          title: 'Freigabe & Versionierung',
+          text: 'Versionierung bei jeder Änderung. Genau eine freigegebene Version pro Service. Historische Nachvollziehbarkeit.',
+          icon: 'target',
+        },
+        {
+          title: 'Teams & Workloads',
+          text: 'Verwaltung von Teams und Workloads. Verknüpfung von Workloads und genutzten Services.',
+          icon: 'presentation',
+        },
+        {
+          title: 'Dashboards & Auswertungen',
+          text: 'Überblick über Freigaben und Verbote. Aggregierte Auswertungen über Kriterien und Hyperscaler.',
+          icon: 'lightbulb',
+        },
+      ],
+    },
+    {
+      type: 'regular',
+      headline: 'Funktionale Anforderungen',
+      layout: 'cards',
+      sections: [
+        {
+          title: 'AI-Unterstützung',
+          text: 'Vorbefüllen von Services und Analysen aus öffentlicher Doku. Begründete Vorschläge. Natürlichsprachliche Abfragen über Governance-Daten.',
+          icon: 'lightbulb',
+        },
+        {
+          title: 'Reporting & Export',
+          text: 'PDF-Export einzelner Serviceanalysen für Prüfer und Compliance-Zwecke.',
+          icon: 'presentation',
+        },
+        {
+          title: 'Audit-Trail',
+          text: 'Protokollierung aller Änderungen. Durchsuchbares Audit-Log mit Benutzername, Zeitpunkt und Aktion.',
+          icon: 'target',
+        },
+      ],
+    },
+    {
+      type: 'regular',
+      headline: 'Funktionale Anforderungen',
+      layout: 'cards',
+      sections: [
+        {
+          title: 'Strategische Bewertung',
+          text: 'Bewertung von Vendor Lock-in und Opportunity Gain. Visualisierung in einer Quadranten-Darstellung.',
+          icon: 'lightbulb',
+        },
+        {
+          title: 'Datenimport',
+          text: 'Import bestehender Serviceanalysen aus PDFs und Excel. Harmonisierung unterschiedlicher Formate mit KI.',
+          icon: 'code',
+        },
+      ],
+    },
   ],
 };

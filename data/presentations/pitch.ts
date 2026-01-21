@@ -44,7 +44,7 @@ export const pitch: Presentation = {
             type: 'agent-loop',
             headline: 'What an Agent Actually Is',
             description: 'An LLM in a loop with tools and autonomy',
-            loopSteps: ['Think', 'Act', 'Observe'],
+            loopSteps: ['Reason', 'Act', 'Observe'],
             tools: [
                 {name: 'File system', icon: 'file'},
                 {name: 'Browser', icon: 'browser'},
@@ -133,7 +133,21 @@ export const pitch: Presentation = {
             futureNote: 'Most is yet to come',
         },
 
-        // Slide 14 - This Is Not Just a Tech Question
+        // Slide 14 - Adoption Cycle
+        {
+            type: 'adoption-cycle',
+            headline: 'Innovation Adoption Lifecycle',
+            segments: [
+                { label: 'Innovators', percentage: '2.5%' },
+                { label: 'Early Adopters', percentage: '13.5%' },
+                { label: 'Early Majority', percentage: '34%' },
+                { label: 'Late Majority', percentage: '34%' },
+                { label: 'Laggards', percentage: '16%' },
+            ],
+            currentSegmentIndex: 1,
+        },
+
+        // Slide 15 - This Is Not Just a Tech Question
         {
             type: 'split-question',
             headline: 'This Is Not Just a Tech Question',
@@ -147,7 +161,7 @@ export const pitch: Presentation = {
         {
             type: 'wrong-reaction',
             headline: 'The Wrong Reaction',
-            items: ['Ignore it', 'Delay it', 'Hope it "goes away"'],
+            items: ['Ignore it', 'Debate it', 'Hope it "goes away"'],
             direction: 'fading',
         },
 
@@ -155,7 +169,7 @@ export const pitch: Presentation = {
         {
             type: 'wrong-reaction',
             headline: 'The Only Viable Strategy',
-            items: ['Learn it', 'Master it', 'Leverage it', 'Use it for your own advantage'],
+            items: ['Learn it', 'Master it', 'Use it for your own advantage'],
             direction: 'growing',
         },
 
@@ -181,14 +195,8 @@ export const pitch: Presentation = {
         {
             type: 'transition',
             preText: 'Deepdive Workshop:',
-            headline: 'How to use coding agents to your own advantage',
+            headline: 'Agentic Software Engineering',
         },
 
-        // Slide 18 - Closing
-        {
-            type: 'closing',
-            line1: 'You can\'t stop it.',
-            line2: 'You can master it.',
-        },
     ],
 };

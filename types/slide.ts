@@ -375,7 +375,33 @@ export interface PerformanceGraphSlide {
   futureNote: string;
 }
 
-export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide;
+export interface AdoptionSegment {
+  label: string;
+  percentage: string;
+}
+
+export interface AdoptionCycleSlide {
+  type: 'adoption-cycle';
+  headline: string;
+  segments: AdoptionSegment[];
+  currentSegmentIndex: number;
+  bottomLabel?: string;
+}
+
+export interface WorkflowStep {
+  label: string;
+  description?: string;
+  icon?: 'document' | 'analysis' | 'review' | 'decision' | 'cloud' | 'shield';
+}
+
+export interface WorkflowSlide {
+  type: 'workflow';
+  headline: string;
+  steps: WorkflowStep[];
+  outcomes?: string[];
+}
+
+export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide;
 
 export interface Presentation {
   name: string;

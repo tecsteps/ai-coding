@@ -104,7 +104,7 @@ export function PerformanceGraphSlide({ slide }: Props) {
                 {/* Current position marker - early on the curve */}
                 <div
                   className="absolute z-10"
-                  style={{ left: '15%', bottom: '4%' }}
+                  style={{ left: '15%', bottom: '2.5%' }}
                 >
                   {/* Pulsing dot */}
                   <div className="relative">
@@ -115,7 +115,7 @@ export function PerformanceGraphSlide({ slide }: Props) {
 
                   {/* Label */}
                   <div className="absolute left-8 sm:left-10 top-1/2 -translate-y-1/2 whitespace-nowrap">
-                    <div className="px-4 py-2 rounded-xl bg-green-500/20 border border-green-500/50 backdrop-blur-sm">
+                    <div className="px-4 py-2 rounded-xl bg-green-900/80 border border-green-500/50 backdrop-blur-sm">
                       <span className="text-sm sm:text-base md:text-lg font-bold text-green-400">
                         {slide.currentMarker}
                       </span>
@@ -128,7 +128,7 @@ export function PerformanceGraphSlide({ slide }: Props) {
                   className="absolute z-10"
                   style={{ right: '8%', top: '8%' }}
                 >
-                  <div className="px-4 py-3 rounded-xl bg-violet-500/20 border border-violet-500/50 backdrop-blur-sm">
+                  <div className="px-4 py-3 rounded-xl bg-violet-900/80 border border-violet-500/50 backdrop-blur-sm">
                     <span className="text-sm sm:text-base md:text-lg font-semibold text-violet-300">
                       {slide.futureNote}
                     </span>
