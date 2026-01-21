@@ -6,7 +6,7 @@ export const pitch: Presentation = {
         // Slide 1 - Title
         {
             type: 'title',
-            title: 'Foundational Disruption',
+            title: 'Massive Disruption',
             subtitle: 'Welcome to the Era of AI Agents',
         },
 
