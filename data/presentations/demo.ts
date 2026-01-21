@@ -73,12 +73,6 @@ export const demo: Presentation = {
           description: 'AI leads, developer steers',
           isHighlighted: true,
         },
-        {
-          multiplier: '∞',
-          title: 'AI writes code independently',
-          subtitle: 'Fully autonomous',
-          description: 'AI plans, builds, and runs everything',
-        },
       ],
     },
     {
@@ -442,7 +436,7 @@ export const demo: Presentation = {
     {
       type: 'hands-on',
       headline: "Let's get our hands dirty!",
-      projectDescription: '...',
+      projectDescription: 'Ein Governance Hub für Cloud-Serviceanalysen. Regulierte Unternehmen müssen jeden Cloud-Service der Hyperscaler (AWS, GCP, Azure) vor der Nutzung bewerten und freigeben. Wir bauen ein Tool, das Services, deren Analysen und Freigabe-Workflows verwaltet - mit KI-gestütztem Prefilling und einem Dashboard für die Compliance-Übersicht.',
       procedureItems: [
         'I will build it in front of you',
         'You are doing it in parallel locally',
