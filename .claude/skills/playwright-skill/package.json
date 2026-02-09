@@ -1,0 +1,13 @@
+{
+  "name": "playwright-skill",
+  "version": "1.0.0",
+  "description": "Playwright browser automation skill for Claude",
+  "main": "run.js",
+  "scripts": {
+    "setup": "npx playwright install chromium",
+    "test": "node run.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}
