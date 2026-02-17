@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI-Coding Workshop",
+  title: "Agentic Engineering Workshop",
   description: "A presentation about AI-Coding by Fabian Wesner",
 };
 

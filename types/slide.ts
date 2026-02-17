@@ -401,7 +401,19 @@ export interface WorkflowSlide {
   outcomes?: string[];
 }
 
-export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide;
+export interface PromptingGuideline {
+  title: string;
+  bad: string;
+  good: string;
+}
+
+export interface PromptingGuidelinesSlide {
+  type: 'prompting-guidelines';
+  headline: string;
+  guidelines: PromptingGuideline[];
+}
+
+export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide | PromptingGuidelinesSlide;
 
 export interface Presentation {
   name: string;

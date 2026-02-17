@@ -20,6 +20,7 @@ import { MentalModelSlide } from '@/components/slides/MentalModelSlide';
 import { AiFailuresSlide } from '@/components/slides/AiFailuresSlide';
 import { JobsSlide } from '@/components/slides/JobsSlide';
 import { HandsOnSlide } from '@/components/slides/HandsOnSlide';
+import { PromptingGuidelinesSlide } from '@/components/slides/PromptingGuidelinesSlide';
 import { SlideNavigation } from '@/components/slides/SlideNavigation';
 import { SlideHints } from '@/components/slides/SlideHints';
 import { LaserPointer } from '@/components/slides/LaserPointer';
@@ -71,6 +72,7 @@ export default async function SlidePage({ params }: Props) {
       {slide.type === 'ai-failures' && <AiFailuresSlide slide={slide} />}
       {slide.type === 'jobs' && <JobsSlide slide={slide} />}
       {slide.type === 'hands-on' && <HandsOnSlide slide={slide} />}
+      {slide.type === 'prompting-guidelines' && <PromptingGuidelinesSlide slide={slide} />}
       <SlideHints slideIndex={index} slideType={slide.type} />
       <LaserPointer />
     </SlideContainer>
