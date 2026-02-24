@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:localhost)",
-      "WebFetch(domain:fonts.googleapis.com)"
+      "WebFetch(domain:fonts.googleapis.com)",
+      "Bash(chmod:*)",
+      "WebFetch(domain:fonts.gstatic.com)"
     ]
   },
   "sandbox": {

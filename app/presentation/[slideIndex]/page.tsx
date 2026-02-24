@@ -21,6 +21,7 @@ import { AiFailuresSlide } from '@/components/slides/AiFailuresSlide';
 import { JobsSlide } from '@/components/slides/JobsSlide';
 import { HandsOnSlide } from '@/components/slides/HandsOnSlide';
 import { PromptingGuidelinesSlide } from '@/components/slides/PromptingGuidelinesSlide';
+import { ExistingCodebaseStepSlide } from '@/components/slides/ExistingCodebaseStepSlide';
 import { SlideNavigation } from '@/components/slides/SlideNavigation';
 import { SlideHints } from '@/components/slides/SlideHints';
 import { LaserPointer } from '@/components/slides/LaserPointer';
@@ -73,6 +74,7 @@ export default async function SlidePage({ params }: Props) {
       {slide.type === 'jobs' && <JobsSlide slide={slide} />}
       {slide.type === 'hands-on' && <HandsOnSlide slide={slide} />}
       {slide.type === 'prompting-guidelines' && <PromptingGuidelinesSlide slide={slide} />}
+      {slide.type === 'existing-codebase-step' && <ExistingCodebaseStepSlide slide={slide} />}
       <SlideHints slideIndex={index} slideType={slide.type} />
       <LaserPointer />
     </SlideContainer>

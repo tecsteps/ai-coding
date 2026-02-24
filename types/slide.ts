@@ -413,7 +413,19 @@ export interface PromptingGuidelinesSlide {
   guidelines: PromptingGuideline[];
 }
 
-export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide | PromptingGuidelinesSlide;
+export interface ExistingCodebaseStepSlide {
+  type: 'existing-codebase-step';
+  headline: string;
+  stepNumber: number;
+  totalSteps: number;
+  icon: 'search' | 'book' | 'code' | 'test' | 'play' | 'key' | 'wrench';
+  description: string;
+  points: string[];
+  prompt?: string;
+  tip?: string;
+}
+
+export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide | PromptingGuidelinesSlide | ExistingCodebaseStepSlide;
 
 export interface Presentation {
   name: string;
