@@ -4,7 +4,8 @@
       "WebFetch(domain:localhost)",
       "WebFetch(domain:fonts.googleapis.com)",
       "Bash(chmod:*)",
-      "WebFetch(domain:fonts.gstatic.com)"
+      "WebFetch(domain:fonts.gstatic.com)",
+      "Bash(npm run:*)"
     ]
   },
   "sandbox": {

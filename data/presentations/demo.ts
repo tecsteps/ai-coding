@@ -353,7 +353,7 @@ export const demo: Presentation = {
             type: 'prime-directive',
             headline: 'Prime Directive',
             directives: [
-                'The developer is fully responsible for the outcome.',
+                'The developer is fully accountable for the outcome.',
                 'Work produced by a Coding Agent is treated exactly like human-written code.',
                 'AI carries no blame and no accountability when things go wrong.',
             ],
@@ -446,8 +446,8 @@ export const demo: Presentation = {
                 },
                 {
                     title: 'Guide Continuously',
-                    bad: 'Patch the same issues repeatedly',
-                    good: 'Update instructions so it never happens again',
+                    bad: 'Fix this!',
+                    good: 'Fix this, then update your skills so it never happens again',
                 },
             ],
         },
@@ -475,20 +475,6 @@ export const demo: Presentation = {
                 'Write into docs/*.md, add visualizations',
             ],
             prompt: 'Explore the existing code base. Write documentation into docs/*.md. Cover: architecture, technologies, dependencies (incl. versions), workflows. Add visualizations when useful.',
-        },
-        {
-            type: 'existing-codebase-step',
-            headline: 'Add External Docs',
-            stepNumber: 2,
-            totalSteps: 7,
-            icon: 'book',
-            description: 'The agent needs context beyond the code.',
-            points: [
-                'Depending services and API contracts',
-                'Business domain and product context',
-                'Use WebFetch to pull in docs automatically',
-            ],
-            prompt: 'Add external documentation for depending services and APIs. Include what the company/product does. Use WebFetch to pull in relevant API docs.',
         },
         {
             type: 'existing-codebase-step',
@@ -540,24 +526,10 @@ export const demo: Presentation = {
             description: 'The agent needs to interact with the same systems a developer would.',
             points: [
                 'Logs and error tracking',
-                'Database (read-only where possible)',
+                'Database',
                 'External services and APIs',
             ],
-            tip: 'Use MCPs to provide structured, safe access.',
-        },
-        {
-            type: 'existing-codebase-step',
-            headline: 'Add Tooling',
-            stepNumber: 7,
-            totalSteps: 7,
-            icon: 'wrench',
-            description: 'Each tool you add gives the agent a new sense.',
-            points: [
-                'Linters and formatters as guardrails',
-                'IDE integration (e.g. JetBrains MCP)',
-                'Browser automation (Playwright MCP)',
-            ],
-            prompt: 'Add existing tooling to Claude Code: linters, sniffers, debuggers, and LSP via MCPs.',
+            tip: 'Be careful when connecting to business critical systems!',
         },
     ],
 };
