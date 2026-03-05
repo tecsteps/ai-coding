@@ -401,12 +401,10 @@ export const demo: Presentation = {
                     pros: [
                         'Most advanced coding agent',
                         'Maintained by Anthropic',
-                        'Flatrate pricing',
-                        'Works with JetBrains',
+                        'Semi-flatrate pricing (e.g. 100EUR/month per "premium" seat)',
                     ],
                     cons: [
-                        'Learning curve',
-                        'Raw CLI tool*',
+                        'Learning curve'
                     ],
                 },
                 {
@@ -416,7 +414,7 @@ export const demo: Presentation = {
                         'All LLMs available**',
                     ],
                     cons: [
-                        'Limited to VSCode',
+                        'API-based billing',
                     ],
                     highlight: 'main reason to use it',
                 },

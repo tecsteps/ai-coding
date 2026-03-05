@@ -195,7 +195,7 @@ export const pitch: Presentation = {
         {
             type: 'transition',
             preText: 'Deepdive Workshop:',
-            headline: 'Agentic Software Engineering',
+            headline: 'Agentic Engineering',
         },
 
     ],
