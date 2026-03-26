@@ -425,7 +425,62 @@ export interface ExistingCodebaseStepSlide {
   tip?: string;
 }
 
-export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide | PromptingGuidelinesSlide | ExistingCodebaseStepSlide;
+export interface CostComparisonSlide {
+  type: 'cost-comparison';
+  headline: string;
+  oldModel: {
+    label: string;
+    items: string[];
+  };
+  newModel: {
+    label: string;
+    items: string[];
+  };
+  punchline: string;
+  subPunchline?: string;
+}
+
+export interface ValueComparisonSlide {
+  type: 'value-comparison';
+  headline: string;
+  zeroValue: {
+    label: string;
+    items: string[];
+  };
+  highValue: {
+    label: string;
+    items: string[];
+  };
+  rule: string;
+}
+
+export interface AgencyOpportunitySlide {
+  type: 'agency-opportunity';
+  headline: string;
+  subtitle: string;
+  points: string[];
+  footer?: string;
+}
+
+export interface ImplementationDetailSlide {
+  type: 'implementation-detail';
+  headline: string;
+  matters: Array<{
+    title: string;
+    bullets: string[];
+  }>;
+  punchlines: string[];
+}
+
+export interface MoatsStorySlide {
+  type: 'moats-story';
+  headline: string;
+  story: string[];
+  moats: string[];
+  punchline: string;
+}
+
+export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide | PromptingGuidelinesSlide | ExistingCodebaseStepSlide | CostComparisonSlide | ValueComparisonSlide | AgencyOpportunitySlide | ImplementationDetailSlide | MoatsStorySlide;
 
 export interface Presentation {
   name: string;

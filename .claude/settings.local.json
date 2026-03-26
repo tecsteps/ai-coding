@@ -5,7 +5,9 @@
       "WebFetch(domain:fonts.googleapis.com)",
       "Bash(chmod:*)",
       "WebFetch(domain:fonts.gstatic.com)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot"
     ]
   },
   "sandbox": {

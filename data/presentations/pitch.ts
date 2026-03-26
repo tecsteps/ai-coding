@@ -97,6 +97,113 @@ export const pitch: Presentation = {
         },
 
 
+        // Slide A - The Math Your Clients Will Do
+        {
+            type: 'cost-comparison',
+            headline: 'The Math Your Clients Will Do',
+            oldModel: {
+                label: 'Old Model',
+                items: ['8 developers', '6 months', '300,000 EUR'],
+            },
+            newModel: {
+                label: 'New Reality',
+                items: ['2 engineers + agents', '6 weeks', '~50,000 EUR'],
+            },
+            punchline: 'Same output.',
+            subPunchline: '(but same sales effort)',
+        },
+
+        // Slide B - The Competitor You Don't See Coming
+        {
+            type: 'big-statement',
+            lines: [
+                'A 3-person team with agents',
+                'will outbid your 40-person agency.',
+            ],
+            subtitle: '',
+        },
+
+        // Slide C - What's Actually Valuable?
+        {
+            type: 'value-comparison',
+            headline: 'What\'s Actually Valuable?',
+            zeroValue: {
+                label: 'Zero Value',
+                items: ['Code', 'Hours', 'Team size'],
+            },
+            highValue: {
+                label: 'High Value',
+                items: [
+                    'Understanding the client',
+                    'Knowing WHAT to build',
+                    'Measuring business impact',
+                    'Envisioning AI solutions',
+                    'Domain expertise',
+                ],
+            },
+            rule: 'If AI can do it = zero value. If AI can\'t = extremely valuable.',
+        },
+
+        // Slide D1 - Help Clients Introduce AI Agents
+        {
+            type: 'agency-opportunity',
+            headline: 'Help Clients Introduce AI Agents',
+            subtitle: 'Help clients introduce AI agents to their offerings and operations',
+            points: [
+                'Replace human labor with agents at scale',
+                'Building agent orgs is a distributed systems challenge',
+                'Non-deterministic behavior requires real engineering',
+            ],
+        },
+
+        // Slide D2 - Challenge the Client's Portfolio
+        {
+            type: 'agency-opportunity',
+            headline: 'Challenge the Client\'s Portfolio',
+            subtitle: 'Their business model is under attack too',
+            points: [
+                'Envision solutions clients can\'t see yet',
+                'Most humans don\'t know what agents can do',
+                'Almost every company must transform - or competition will eat them',
+            ],
+            footer: '',
+        },
+
+        // Slide E - Code Is an Implementation Detail
+        {
+            type: 'implementation-detail',
+            headline: 'Code Is an Implementation Detail',
+            matters: [
+                {
+                    title: 'Know what to build',
+                    bullets: ['What increases revenue?', 'What decreases costs?'],
+                },
+                {
+                    title: 'Translate into requirements',
+                    bullets: ['Functional + technical specs', 'Clear success criteria'],
+                },
+                {
+                    title: 'Measure the business effect',
+                    bullets: ['Think it through in advance', 'Make success measurable', 'Show it to the customer'],
+                },
+            ],
+            punchlines: [],
+        },
+
+        // Slide F - Moats Matter More Than Ever
+        {
+            type: 'moats-story',
+            headline: 'Moats Matter More Than Ever',
+            story: [
+                'I built a full product as a solo engineer.',
+                'Competitor monitoring. Working. Ready to launch.',
+                'I didn\'t launch. Why? No moat.',
+                'Anyone could clone it in weeks.',
+            ],
+            moats: ['Patents', 'Hardware', 'Private Data', 'Land', 'Financing', 'Relationships'],
+            punchline: 'Everything else? Zero value.',
+        },
+
         // Slide 13 - Performance Graph
         {
             type: 'performance-graph',

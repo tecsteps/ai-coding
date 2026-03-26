@@ -17,6 +17,11 @@ import { ClosingSlide } from '@/components/slides/ClosingSlide';
 import { ScreenshotSlide } from '@/components/slides/ScreenshotSlide';
 import { PerformanceGraphSlide } from '@/components/slides/PerformanceGraphSlide';
 import { AdoptionCycleSlide } from '@/components/slides/AdoptionCycleSlide';
+import { CostComparisonSlide } from '@/components/slides/CostComparisonSlide';
+import { ValueComparisonSlide } from '@/components/slides/ValueComparisonSlide';
+import { AgencyOpportunitySlide } from '@/components/slides/AgencyOpportunitySlide';
+import { ImplementationDetailSlide } from '@/components/slides/ImplementationDetailSlide';
+import { MoatsStorySlide } from '@/components/slides/MoatsStorySlide';
 import { SlideNavigation } from '@/components/slides/SlideNavigation';
 import { SlideHints } from '@/components/slides/SlideHints';
 import { LaserPointer } from '@/components/slides/LaserPointer';
@@ -66,6 +71,11 @@ export default async function PitchSlidePage({ params }: Props) {
       {slide.type === 'screenshot' && <ScreenshotSlide slide={slide} />}
       {slide.type === 'performance-graph' && <PerformanceGraphSlide slide={slide} />}
       {slide.type === 'adoption-cycle' && <AdoptionCycleSlide slide={slide} />}
+      {slide.type === 'cost-comparison' && <CostComparisonSlide slide={slide} />}
+      {slide.type === 'value-comparison' && <ValueComparisonSlide slide={slide} />}
+      {slide.type === 'agency-opportunity' && <AgencyOpportunitySlide slide={slide} />}
+      {slide.type === 'implementation-detail' && <ImplementationDetailSlide slide={slide} />}
+      {slide.type === 'moats-story' && <MoatsStorySlide slide={slide} />}
       <SlideHints slideIndex={index} slideType={slide.type} />
       <LaserPointer />
     </SlideContainer>
