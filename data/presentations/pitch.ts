@@ -96,32 +96,6 @@ export const pitch: Presentation = {
             subStatement: 'An order of magnitude.',
         },
 
-        // Slide 10 - Ryan Dahl
-        {
-            type: 'screenshot',
-            headline: 'What Industry Leaders Are Saying',
-            imageSrc: '/ryan_dahl.png',
-            author: 'Ryan Dahl',
-            authorDescription: 'Creator of Node.js and Deno',
-        },
-
-        // Slide 11 - DHH
-        {
-            type: 'screenshot',
-            headline: 'What Industry Leaders Are Saying',
-            imageSrc: '/dhh.png',
-            author: 'DHH',
-            authorDescription: 'Creator of Ruby on Rails',
-        },
-
-        // Slide 12 - Sam Altman
-        {
-            type: 'screenshot',
-            headline: 'What Industry Leaders Are Saying',
-            imageSrc: '/sam.png',
-            author: 'Sam Altman',
-            authorDescription: 'CEO of OpenAI',
-        },
 
         // Slide 13 - Performance Graph
         {
