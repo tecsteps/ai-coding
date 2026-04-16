@@ -1,0 +1,38 @@
+- generic [active]:
+  - generic [ref=e1]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading "The era of single-stack identity is over" [level=1] [ref=e6]
+        - paragraph [ref=e8]: Agents collapse the specialisation moat.
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e13]:
+            - generic [ref=e14]: Frontend
+            - generic [ref=e15]: React
+          - generic [ref=e17]:
+            - generic [ref=e18]: Backend
+            - generic [ref=e19]: Java
+          - generic [ref=e21]:
+            - generic [ref=e22]: Data
+            - generic [ref=e23]: Python
+          - generic [ref=e25]:
+            - generic [ref=e26]: DevOps
+            - generic [ref=e27]: Docker
+        - img [ref=e29]
+        - generic [ref=e31]:
+          - img [ref=e32]
+          - paragraph [ref=e35]: New baseline
+          - list [ref=e36]:
+            - listitem [ref=e37]: Full-stack
+            - listitem [ref=e38]: + product sense
+            - listitem [ref=e39]: + architecture
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - img [ref=e44]
+        - generic [ref=e46]: to reveal
+      - generic [ref=e47]:
+        - generic [ref=e48]: H
+        - generic [ref=e49]: hide
+  - button "Open Next.js Dev Tools" [ref=e55] [cursor=pointer]:
+    - img [ref=e56]
+  - alert [ref=e59]

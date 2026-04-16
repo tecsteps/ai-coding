@@ -1,0 +1,19 @@
+- generic [active]:
+  - generic [ref=e3]:
+    - heading "Innovation Adoption Lifecycle" [level=1] [ref=e6]
+    - img [ref=e10]:
+      - generic [ref=e14]: Innovators
+      - generic [ref=e15]: Early Majority
+      - generic [ref=e16]: Late Majority
+      - generic [ref=e17]: Laggards
+      - generic [ref=e18]: 2.5%
+      - generic [ref=e19]: 13.5%
+      - generic [ref=e20]: 34%
+      - generic [ref=e21]: 34%
+      - generic [ref=e22]: 16%
+      - generic [ref=e23]:
+        - generic [ref=e28]: Early Adopters
+        - generic [ref=e29]: We are here
+  - button "Open Next.js Dev Tools" [ref=e35] [cursor=pointer]:
+    - img [ref=e36]
+  - alert [ref=e39]

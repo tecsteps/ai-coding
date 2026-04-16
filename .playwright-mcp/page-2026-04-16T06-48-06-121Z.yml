@@ -1,0 +1,28 @@
+- generic [active]:
+  - generic [ref=e1]:
+    - generic [ref=e3]:
+      - generic [ref=e6]:
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - strong [ref=e7]: Agentic Engineering
+      - paragraph [ref=e9]: Finanzfluss Offside - Fabian Wesner
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - img [ref=e14]
+        - generic [ref=e16]: to go to next slide
+      - generic [ref=e17]:
+        - generic [ref=e18]: H
+        - generic [ref=e19]: hide
+  - button "Open Next.js Dev Tools" [ref=e25] [cursor=pointer]:
+    - img [ref=e26]
+  - alert [ref=e29]

@@ -1,0 +1,54 @@
+- generic [active]:
+  - generic [ref=e1]:
+    - generic [ref=e3]:
+      - heading "Blind Coding leads to Low Accuracy" [level=1] [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e11]:
+          - img [ref=e13]
+          - generic [ref=e15]:
+            - paragraph [ref=e16]: The Problem
+            - paragraph [ref=e17]: Without feedback, the agent cannot validate its work or self-correct. It writes code blindly, likely to fail.
+        - paragraph [ref=e19]: We want to enable the Coding Agent to...
+        - generic [ref=e21]:
+          - generic [ref=e23]:
+            - img [ref=e25]
+            - generic [ref=e28]:
+              - heading "Try it out" [level=3] [ref=e29]
+              - paragraph [ref=e30]: Browser automation to verify UI changes
+          - generic [ref=e32]:
+            - img [ref=e34]
+            - generic [ref=e38]:
+              - heading "Query the Database" [level=3] [ref=e39]
+              - paragraph [ref=e40]: Validate data persistence and integrity
+          - generic [ref=e42]:
+            - img [ref=e44]
+            - generic [ref=e47]:
+              - heading "Read Logs" [level=3] [ref=e48]
+              - paragraph [ref=e49]: Analyze errors and debug issues
+          - generic [ref=e51]:
+            - img [ref=e53]
+            - generic [ref=e57]:
+              - heading "Use Scripts" [level=3] [ref=e58]
+              - paragraph [ref=e59]: Run custom validation commands
+          - generic [ref=e61]:
+            - img [ref=e63]
+            - generic [ref=e66]:
+              - heading "Do Research" [level=3] [ref=e67]
+              - paragraph [ref=e68]: Access docs and external knowledge
+          - generic [ref=e70]:
+            - img [ref=e72]
+            - generic [ref=e74]:
+              - heading "Run Tests" [level=3] [ref=e75]
+              - paragraph [ref=e76]: Execute test suites for verification
+        - generic:
+          - generic: How?
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - img [ref=e81]
+        - generic [ref=e83]: to reveal
+      - generic [ref=e84]:
+        - generic [ref=e85]: H
+        - generic [ref=e86]: hide
+  - button "Open Next.js Dev Tools" [ref=e92] [cursor=pointer]:
+    - img [ref=e93]
+  - alert [ref=e96]

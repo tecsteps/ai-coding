@@ -1,0 +1,65 @@
+- generic [active]:
+  - generic [ref=e1]:
+    - generic [ref=e3]:
+      - heading "Provide Guidance" [level=1] [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e11]:
+          - img [ref=e13]
+          - generic [ref=e15]:
+            - paragraph [ref=e16]: Knowledge
+            - paragraph [ref=e17]: Make sure the agent "knows" what it needs to know
+        - list [ref=e19]:
+          - listitem [ref=e20]: Full documentation of your systems
+          - listitem [ref=e22]: Schema, Architecture, Technologies
+          - listitem [ref=e24]: Your code conventions
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - paragraph [ref=e29]: Code Convention Examples
+            - generic [ref=e30]:
+              - generic [ref=e31]:
+                - button [ref=e32]
+                - button [ref=e33]
+              - generic [ref=e34]:
+                - button [ref=e35]:
+                  - img [ref=e36]
+                - button [ref=e38]:
+                  - img [ref=e39]
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - heading "No Magic Strings" [level=3] [ref=e43]
+              - generic [ref=e44]:
+                - generic [ref=e45]:
+                  - generic [ref=e46]:
+                    - img [ref=e47]
+                    - generic [ref=e50]: BAD
+                  - code [ref=e52]: if ($status === 'pending')
+                - generic [ref=e53]:
+                  - generic [ref=e54]:
+                    - img [ref=e55]
+                    - generic [ref=e57]: GOOD
+                  - code [ref=e59]: if ($status === Status::PENDING)
+            - generic:
+              - heading "Use DTOs, Not Associative Arrays" [level=3]
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic: BAD
+                  - generic:
+                    - code: return ['name' => $name, 'url' => $url];
+                - generic:
+                  - generic:
+                    - img
+                    - generic: GOOD
+                  - generic:
+                    - code: "return new CompanyData(name: $name, url: $url);"
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - img [ref=e64]
+        - generic [ref=e66]: to reveal
+      - generic [ref=e67]:
+        - generic [ref=e68]: H
+        - generic [ref=e69]: hide
+  - button "Open Next.js Dev Tools" [ref=e75] [cursor=pointer]:
+    - img [ref=e76]
+  - alert [ref=e79]

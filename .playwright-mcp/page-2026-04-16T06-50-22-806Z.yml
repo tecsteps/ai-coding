@@ -1,0 +1,19 @@
+- generic [active]:
+  - generic [ref=e3]:
+    - heading "The Three Pillars of Agentic Engineering" [level=1] [ref=e6]
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: "1"
+        - img [ref=e12]
+        - heading "Spec-Driven Development" [level=2] [ref=e20]
+      - generic [ref=e22]:
+        - generic [ref=e23]: "2"
+        - img [ref=e24]
+        - heading "Knowledge & Guardrails" [level=2] [ref=e26]
+      - generic [ref=e28]:
+        - generic [ref=e29]: "3"
+        - img [ref=e30]
+        - heading "Tools & MCPs" [level=2] [ref=e32]
+  - button "Open Next.js Dev Tools" [ref=e38] [cursor=pointer]:
+    - img [ref=e39]
+  - alert [ref=e42]

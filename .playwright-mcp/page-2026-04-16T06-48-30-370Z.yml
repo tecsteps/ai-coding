@@ -1,0 +1,19 @@
+- generic [active]:
+  - generic [ref=e1]:
+    - generic [ref=e3]:
+      - heading "Adoption doesn't happen automatically" [level=1] [ref=e6]
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: Most developers are still writing code by hand.
+        - paragraph [ref=e10]: It's not about seniority. Not about skill.
+        - paragraph [ref=e11]: It's that nobody has pushed you into the deep end yet.
+        - paragraph [ref=e12]: That's what this morning is for.
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - img [ref=e17]
+        - generic [ref=e19]: to reveal
+      - generic [ref=e20]:
+        - generic [ref=e21]: H
+        - generic [ref=e22]: hide
+  - button "Open Next.js Dev Tools" [ref=e28] [cursor=pointer]:
+    - img [ref=e29]
+  - alert [ref=e32]

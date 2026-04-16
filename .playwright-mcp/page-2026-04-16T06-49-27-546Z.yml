@@ -1,0 +1,45 @@
+- generic [active]:
+  - generic [ref=e1]:
+    - generic [ref=e3]:
+      - heading "The developer, end of 2026" [level=1] [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - generic [ref=e11]:
+              - img [ref=e17]
+              - paragraph [ref=e19]: "agent #1 feature A"
+            - generic [ref=e20]:
+              - img [ref=e26]
+              - paragraph [ref=e28]: "agent #2 tests"
+            - generic [ref=e29]:
+              - img [ref=e35]
+              - paragraph [ref=e37]: "agent #3 spec"
+            - generic [ref=e38]:
+              - img [ref=e44]
+              - paragraph [ref=e46]: "agent #4 review"
+            - generic [ref=e47]:
+              - img [ref=e53]
+              - paragraph [ref=e55]: "agent #5 migration"
+            - generic [ref=e56]:
+              - img [ref=e62]
+              - paragraph [ref=e64]: "agent #6 docs"
+          - generic [ref=e65]:
+            - img [ref=e66]
+            - paragraph [ref=e69]: You, orchestrating
+        - generic [ref=e70]:
+          - paragraph [ref=e71]: Top skills now
+          - list [ref=e72]:
+            - listitem [ref=e73]: "Abstraction: intent, specs, constraints"
+            - listitem [ref=e75]: "Speed: you are the bottleneck"
+            - listitem [ref=e77]: "Multi-tasking: many agents in parallel"
+      - paragraph [ref=e80]: Orchestrator. Not author.
+    - generic [ref=e82]:
+      - generic [ref=e83]:
+        - img [ref=e85]
+        - generic [ref=e87]: to reveal
+      - generic [ref=e88]:
+        - generic [ref=e89]: H
+        - generic [ref=e90]: hide
+  - button "Open Next.js Dev Tools" [ref=e96] [cursor=pointer]:
+    - img [ref=e97]
+  - alert [ref=e100]

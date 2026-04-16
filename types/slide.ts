@@ -480,7 +480,60 @@ export interface MoatsStorySlide {
   punchline: string;
 }
 
-export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide | PromptingGuidelinesSlide | ExistingCodebaseStepSlide | CostComparisonSlide | ValueComparisonSlide | AgencyOpportunitySlide | ImplementationDetailSlide | MoatsStorySlide;
+// Devs-presentation-specific slide types
+export interface IntroRoundSlide {
+  type: 'intro-round';
+  headline: string;
+  bullets: string[];
+  footer?: string;
+}
+
+export interface AdoptionWakeSlide {
+  type: 'adoption-wake';
+  headline: string;
+  reveals: string[];
+  punchline?: string;
+}
+
+export interface WalkingDrivingSlide {
+  type: 'walking-driving';
+  headline: string;
+  walking: {
+    label: string;
+    value: string;
+  };
+  driving: {
+    label: string;
+    value: string;
+  };
+  subtitle?: string;
+  punchline: string;
+}
+
+export interface NotAChoiceSlide {
+  type: 'not-a-choice';
+  headline: string;
+  points: string[];
+  punchline?: string;
+}
+
+export interface SingleStackSlide {
+  type: 'single-stack';
+  headline: string;
+  stacks: Array<{ role: string; example: string }>;
+  newBaseline: string[];
+  subtitle?: string;
+}
+
+export interface Dev2026Slide {
+  type: 'dev-2026';
+  headline: string;
+  terminalLabels: string[];
+  skills: string[];
+  punchline?: string;
+}
+
+export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide | PromptingGuidelinesSlide | ExistingCodebaseStepSlide | CostComparisonSlide | ValueComparisonSlide | AgencyOpportunitySlide | ImplementationDetailSlide | MoatsStorySlide | IntroRoundSlide | AdoptionWakeSlide | WalkingDrivingSlide | NotAChoiceSlide | SingleStackSlide | Dev2026Slide;
 
 export interface Presentation {
   name: string;

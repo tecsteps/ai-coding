@@ -1,0 +1,9 @@
+- generic [active]:
+  - generic [ref=e3]:
+    - paragraph [ref=e5]: You don't get it by watching.
+    - paragraph [ref=e7]: You get it by doing.
+    - paragraph [ref=e9]: Open your laptop.
+    - paragraph [ref=e11]: The click moment is on the other side of your first run.
+  - button "Open Next.js Dev Tools" [ref=e17] [cursor=pointer]:
+    - img [ref=e18]
+  - alert [ref=e21]

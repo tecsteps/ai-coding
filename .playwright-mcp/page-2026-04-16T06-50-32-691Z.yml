@@ -1,0 +1,24 @@
+- generic [active]:
+  - generic [ref=e1]:
+    - generic [ref=e3]:
+      - heading "Not a personal choice anymore" [level=1] [ref=e6]
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - img [ref=e11]
+          - paragraph [ref=e13]: Productivity boost = new normal. Expected, not optional.
+        - generic [ref=e14]:
+          - img [ref=e15]
+          - paragraph [ref=e17]: Mid-term nobody gets paid for hand-typing code.
+        - generic [ref=e18]:
+          - img [ref=e19]
+          - paragraph [ref=e21]: Don't adapt = out of the market.
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - img [ref=e26]
+        - generic [ref=e28]: to reveal
+      - generic [ref=e29]:
+        - generic [ref=e30]: H
+        - generic [ref=e31]: hide
+  - button "Open Next.js Dev Tools" [ref=e37] [cursor=pointer]:
+    - img [ref=e38]
+  - alert [ref=e41]

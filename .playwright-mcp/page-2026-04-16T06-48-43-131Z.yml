@@ -1,0 +1,27 @@
+- generic [active]:
+  - generic [ref=e1]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading "Walking vs driving" [level=1] [ref=e6]
+        - paragraph [ref=e8]: Same destination. Same outcome.
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - img [ref=e13]
+            - paragraph [ref=e16]: Walking
+            - paragraph [ref=e17]: 100 km / 1 week
+          - generic [ref=e18]:
+            - img [ref=e19]
+            - paragraph [ref=e23]: Driving
+            - paragraph [ref=e24]: 100 km / 1 hour
+        - paragraph [ref=e26]: If your time is valuable, you take the car.
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - img [ref=e31]
+        - generic [ref=e33]: to reveal
+      - generic [ref=e34]:
+        - generic [ref=e35]: H
+        - generic [ref=e36]: hide
+  - button "Open Next.js Dev Tools" [ref=e42] [cursor=pointer]:
+    - img [ref=e43]
+  - alert [ref=e46]

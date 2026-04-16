@@ -58,6 +58,12 @@ export function SlideHints({ slideIndex, slideType }: Props) {
     'spec-gap',
     'quality',
     'ai-failures',
+    'intro-round',
+    'adoption-wake',
+    'walking-driving',
+    'not-a-choice',
+    'single-stack',
+    'dev-2026',
   ];
 
   if (slidesWithDownArrow.includes(slideType)) {
