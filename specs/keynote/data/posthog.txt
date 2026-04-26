@@ -1,0 +1,17 @@
+So, you are using a coding agent to build software. Perfect!
+
+But what stops you from using that same agent to continuously improve your production system?
+
+Obviously you can stream all exceptions to the agent and auto-generate PRs. But that's not what I mean here.
+
+The main idea: use a system that records user behavior. Heatmaps, session replays, click tracking. These recordings are pure gold. But very often they are not used effectively. When the only person watching them is "someone" from marketing, it's a wasted opportunity.
+
+So why not connect your coding agent to your product analytics tools? If your tool of choice has no MCP server, you can still access everything via Playwright.
+
+Then use Claude Code's new /loop feature or (maybe better) the new Cursor Automations to auto-fetch all data every morning, deeply analyze it, and let the agent serve you fresh ideas on how to improve your app.
+
+And if you want to take it further: let the agent turn those ideas into code and open a PR. All you do is review and approve. The loop goes from user behavior to analysis to improvement to deployment. Fully autonomous, except for one human checkpoint.
+
+A self-improving loop... ∞
+
+Is anyone doing that already?
