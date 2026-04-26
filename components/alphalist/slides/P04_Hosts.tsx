@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { Linkedin } from 'lucide-react';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { AlphalistFrame } from '../AlphalistFrame';
 
@@ -13,62 +14,68 @@ const hosts = [
   {
     slug: 'fabian-wesner',
     name: 'Fabian Wesner',
-    title: 'Trainer & Coach · Co-Founder & MD, ROQ',
+    title: 'CTO · Passionate about AI and Entrepreneurship',
     bullets: [
       'Ex-CTO Rocket Internet & Project A',
       'Co-Founder & ex-CTO Spryker',
-      'Lead host of the bootcamp',
+      'Currently building something new',
     ],
+    linkedin: 'https://www.linkedin.com/in/fabian-wesner',
   },
   {
     slug: 'tereza-iofciu',
-    name: 'Tereza Iofciu',
-    title: 'Data & AI Leadership Coach',
+    name: 'Tereza Iofciu, PhD',
+    title: 'Helping data & AI professionals lead with purpose',
     bullets: [
-      'PhD in computer science (L3S)',
-      'Head of Data Science at neuefische',
+      '15+ years in data science & ML',
+      'PhD in computer science',
       'Founder of PyLadies Hamburg',
     ],
+    linkedin: 'https://www.linkedin.com/in/tereza-iofciu',
   },
   {
     slug: 'tim-niemeier',
     name: 'Tim Niemeier',
-    title: 'Co-Founder & MD, ROQ',
+    title: 'Technical Founder (Stealth) · Former CTO @ Rocket Internet',
     bullets: [
+      'Co-Founder & MD ROQ',
       'Ex-CTO Rocket Internet',
       'Scaled products to millions of users',
-      'Capture & logistics on the floor',
     ],
+    linkedin: 'https://www.linkedin.com/in/niemeier',
   },
   {
     slug: 'denis-turkov',
     name: 'Denis Turkov',
-    title: 'Trainer & Consultant · Founder, Execuro',
+    title: 'Agentic Engineering Trainer · Architect for Agentic Commerce',
     bullets: [
       'Ex-Chief Architect (VP) at Spryker',
       '15+ years in large-scale architecture',
-      'Hosts Day 2 Fireside Chat',
+      'Founder of Execuro',
     ],
+    linkedin: 'https://www.linkedin.com/in/turkovdenis',
   },
   {
     slug: 'benedikt-stemmildt',
     name: 'Benedikt Stemmildt',
-    title: 'CTO & Co-Lead, hackers&wizards',
+    title: 'Helping engineering teams thrive with AI',
     bullets: [
+      '20+ years enterprise experience',
       'Ex-CIO BLUME2000, ex-Breuninger',
-      'Co-founder Hacker School',
-      'Agentic engineering advocate',
+      'Founder hackers&wizards',
     ],
+    linkedin: 'https://www.linkedin.com/in/benedikt-stemmildt',
   },
   {
     slug: 'bjoern-rochel',
     name: 'Björn Rochel',
-    title: 'Engineering Leader · Agentic Tooling',
+    title: 'Coach & Consultant for Agentic Engineering',
     bullets: [
       '20 years in software engineering',
       'Ex-engineering lead XING / New Work',
       'Writes "Dude, where’s my Kaizen?"',
     ],
+    linkedin: 'https://www.linkedin.com/in/bjoern-rochel',
   },
 ];
 
@@ -95,11 +102,13 @@ function HostCard({
   name,
   title,
   bullets,
+  linkedin,
 }: {
   slug: string;
   name: string;
   title: string;
   bullets: string[];
+  linkedin?: string;
 }) {
   return (
     <div className="group flex h-full flex-col overflow-hidden rounded-xl border border-slate-200 bg-white">
@@ -123,6 +132,17 @@ function HostCard({
             </li>
           ))}
         </ul>
+        {linkedin && (
+          <a
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-auto flex items-center gap-1.5 pt-4 text-xs font-medium text-[#0A66C2] hover:underline"
+          >
+            <Linkedin className="h-3.5 w-3.5 shrink-0" strokeWidth={2} />
+            <span className="truncate">{linkedin.replace(/^.*\/in\//, '')}</span>
+          </a>
+        )}
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ export function K04_SelfAdoptionGap({ index, total }: Props) {
       slideNumber={index + 1}
       totalSlides={total}
       eyebrow="The Adoption Gap"
-      title="Stage two to stage three does not happen on its own."
+      title="Adoption doesn't happen on its own."
     >
       <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-[1fr_11rem_1fr_11rem_1fr] md:items-center md:gap-3">
           <StageCell

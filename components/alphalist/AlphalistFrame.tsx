@@ -76,7 +76,7 @@ export function AlphalistFrame({
 
       {showFooter && (
         <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between px-5 pb-4 text-[10px] uppercase tracking-[0.2em] text-slate-400 sm:px-8 sm:pb-5 sm:text-[11px] sm:tracking-[0.25em]">
-          <span>Berlin · 2026</span>
+          <span className="ml-16 sm:ml-20">Berlin · 2026</span>
           {typeof slideNumber === 'number' && typeof totalSlides === 'number' && (
             <span>
               {String(slideNumber).padStart(2, '0')} / {String(totalSlides).padStart(2, '0')}

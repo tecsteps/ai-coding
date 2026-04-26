@@ -34,7 +34,7 @@ const hardItems: Array<{ icon: LucideIcon; label: string; sub: string }> = [
 ];
 
 export function K08_EasyHard({ index, total }: Props) {
-  const step = useReveal(2);
+  const step = useReveal(1);
 
   return (
     <AlphalistFrame
@@ -68,13 +68,6 @@ export function K08_EasyHard({ index, total }: Props) {
           />
         </div>
 
-        {step >= 2 && (
-          <BlurFade duration={0.6}>
-            <p className="mt-12 text-center text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
-              That is why this room exists.
-            </p>
-          </BlurFade>
-        )}
       </div>
     </AlphalistFrame>
   );

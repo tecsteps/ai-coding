@@ -33,8 +33,8 @@ const tableTakeaways: { icon: LucideIcon; label: string; title: string; sub: str
   {
     icon: Megaphone,
     label: 'One headline',
-    title: 'A shared reality, in one sentence.',
-    sub: 'Not a platitude. Something another table would nod at, or push back on.',
+    title: 'One sentence the whole table agrees on.',
+    sub: 'Your most important shared insight. Concrete and specific, not a platitude.',
   },
   {
     icon: Pin,
@@ -118,10 +118,16 @@ export function P05a_ParticipantRound({ index, total }: Props) {
             ))}
           </div>
 
-          <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50/70 p-4 text-sm text-slate-600 md:text-base">
-            <span className="font-semibold text-slate-900">Nominee on the mic:</span> one
-            person per table reads the headline + the open question. ~40 seconds, no
-            elaboration.
+          <div className="mt-5 space-y-3">
+            <div className="rounded-xl border border-amber-300/60 bg-amber-50/70 p-4 text-sm text-slate-700 md:text-base">
+              <span className="font-semibold text-amber-700">Write it down:</span> put both
+              the headline and the open question on a card and pin it to the pin board.
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-4 text-sm text-slate-600 md:text-base">
+              <span className="font-semibold text-slate-900">Nominee on the mic:</span> one
+              person per table reads the headline + the open question. ~40 seconds, no
+              elaboration.
+            </div>
           </div>
         </section>
       </div>

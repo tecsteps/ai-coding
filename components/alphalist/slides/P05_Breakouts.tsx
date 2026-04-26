@@ -93,6 +93,15 @@ export function P05_Breakouts({ index, total }: Props) {
           </div>
         ))}
       </div>
+
+      <div className="mt-6 flex items-center justify-center gap-3 text-center">
+        <span className="hidden h-px flex-1 max-w-[6rem] bg-slate-200 md:block" />
+        <p className="text-sm font-medium text-slate-500 md:text-base">
+          Or bring your own topic — or pick one from the{' '}
+          <span className="font-semibold text-rose-500">pin board</span>.
+        </p>
+        <span className="hidden h-px flex-1 max-w-[6rem] bg-slate-200 md:block" />
+      </div>
     </AlphalistFrame>
   );
 }

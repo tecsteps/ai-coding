@@ -15,7 +15,8 @@ export function K16_HandOff({ index, total }: Props) {
       <div className="mx-auto flex w-full max-w-5xl flex-col items-center px-6 text-center sm:px-10 md:px-12">
         <BlurFade delay={0.15} duration={0.7}>
           <h1 className="text-3xl font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl">
-            We also don&#39;t have all the answers.
+            Transforming an entire company is the{' '}
+            <span className="text-rose-500">hardest mission any CTO will ever face.</span>
           </h1>
         </BlurFade>
         <BlurFade delay={0.5} duration={0.7}>
