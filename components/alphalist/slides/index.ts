@@ -16,6 +16,9 @@ import { K16_HandOff } from './K16_HandOff';
 import { P01_Agenda } from './P01_Agenda';
 import { P03_HouseRules } from './P03_HouseRules';
 import { P04_Hosts } from './P04_Hosts';
+import { P05_Breakouts } from './P05_Breakouts';
+import { P05a_ParticipantRound } from './P05a_ParticipantRound';
+import { P05_TakeAways } from './P05_TakeAways';
 import { S01_Maturity } from './S01_Maturity';
 import { S01a_NotLate } from './S01a_NotLate';
 import { S01b_AdoptionCurve } from './S01b_AdoptionCurve';
@@ -55,5 +58,8 @@ export const alphalistSlides: AlphalistSlide[] = [
   { id: 'P01', component: P01_Agenda },
   { id: 'P03', component: P03_HouseRules },
   { id: 'P04', component: P04_Hosts },
+  { id: 'P05a', component: P05a_ParticipantRound },
   { id: 'D01', component: D01_DemoWhat },
+  { id: 'P05', component: P05_Breakouts },
+  { id: 'P05b', component: P05_TakeAways },
 ];

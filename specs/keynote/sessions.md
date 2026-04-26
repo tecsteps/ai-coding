@@ -159,3 +159,79 @@ Once the room has talked through rollout, control, and proof, the strategic q
 ---
 
 
+# Solutions Workshop
+
+
+
+### Idea
+
+Each facilitator prepares topics based on day 1’s challenges. These are then discussed within the group. We might re-group participants based on individual demand.
+
+### Structure
+
+1. 10 min framing and topic presentation
+2. 90 min deep dive in solution mode (facilitator takes notes about the discussed and ideally agreed solutions)
+3. 30–45 min table presentations and cross-room synthesis
+
+### Handbook
+
+Based on he facilitator’s notes, we can generate a handbook with challenges and solutions, which we can then send to all participants.
+
+---
+
+# Fireside Chat: Ernst-Cornelius Koch (Google) + Q&A
+Head of Generative AI at Google
+
+---
+
+# Peer Rotations
+
+### **Who**
+
+- **Lead:** Fabian
+- **Support:** TBD (timing, bell, screen), trainers float for reassignment
+- **Everyone in the room:** nobody sits out
+
+### **What**
+
+Participants mostly work in the same group at their home table, so to enable more personal interaction, this session breaks everyone out into 1:1 conversations with peers they have not spoken to yet. Four rounds, four new people each. Pairings are pre-computed the evening between Day 1 and Day 2 using Day 1 data plus pre-survey intent. Nobody picks their own partner.
+
+- **2 min framing.** Fabian explains the rules and points at the screen.
+- **4 rounds × (10 min conversation + 5 min transition).** Bell at each transition. Big screen shows the current round's full pairing list (name A, name B, table number). People look up, find their pair, sit down, talk.
+----
+
+# Panel: The Future IT Organization
+
+
+### **When**
+
+17:00–18:00 (60 min). Dinner at 19:00.
+
+### **Who**
+
+- **Moderator:** Fabian, start to finish.
+- **4 panelists:** picked live during the day, not pre-selected. Fabian listens at the participant round, war stories, lunch and breakouts, then announces the 4 at the 15:30 coffee break. Target mix: one listed or legacy voice, one hypergrowth scaleup, one small or services firm, one wildcard from whoever surprised the room during the day.
+- **Silent note-taker:** one trainer captures 3 bullets per question
+
+### **What**
+
+By 17:00 the room has heard the frame (keynote), seen the tools (demo), the peer stories (war stories) and spent two hours in breakouts. The panel is the last plenary of the day before dinner and it should push one level up from adoption into org design: if implementation is no longer the bottleneck, what is the IT organization actually for?
+
+This is not a conference "future of work" platitude panel. Fabian comes in with a sharp point of view and uses the panelists to stress-test it. Off the record. No recording. No slides. That is what unlocks honest answers.
+
+- **Intro frame (5 min).** One sentence setting up the thesis. Introduce the 4 panelists by one line each, no CV, no company overview.
+- **Moderated Q&A (45 min).** 5 or 6 pre-cooked questions, about 7 min each, with pre-cooked follow-ups for when panelists dodge into platitudes.
+- **Room Q&A (10 min).** Hand-raised questions from the floor. Close with one line: "Dinner in 15 minutes. Keep arguing there."
+
+### **Core questions (pick 5 or 6 on the day)**
+
+1. If implementation is no longer the scarce resource, what is?
+2. In two years, your engineering headcount is higher, the same, or lower. Pick one.
+3. Name one role in your current org that will not exist in 2027.
+4. Feature teams of 2 to 4 people as the core unit. True for your org, or wrong?
+5. Painful migration vs. parallel reset. Which path are you actually on, and why didn't you pick the other one?
+6. Can you lead this transformation if you are not hands-on with coding agents yourself?
+
+### **Moderator job (Fabian)**
+
+Don't hide behind neutral moderation. Interrupt politely but firmly, 90-second cap on first answers, loosen in round two. Names not titles. If a panelist gives a LinkedIn answer, use contrast: "Lukasz, you run 15 engineers. Andreas, you run thousands. Is this really the same problem?"
