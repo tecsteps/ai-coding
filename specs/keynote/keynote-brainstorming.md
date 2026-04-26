@@ -377,3 +377,58 @@ If none of these land, write your own and I will use it.
 
 I will proceed and write `keynote-slides.md` using (a) as the working title. If you pick a different one before I deliver, easy swap.
 
+---
+
+## Round 5 (Claude): Missing "What can you expect?" + impact of agentic engineering
+
+Fabian's note: "I'm missing the 'What can you expect?' slide and overall I feel we didn't answer the impact of agentic engineering."
+
+### Where we are right now
+
+The deck talks *around* impact but never lands a concrete "this is what changes for you" slide.
+
+- **K12 — Productivity range** (http://localhost:3000/alphalist-cto-bootcamp/10). Eyebrow: "Is it worth the effort?". Title: "What's in it for me?". Three numbers stacked: +30% (orange) / 3 – 10× (green) / ∞ (black).
+- **K13 — Verification is the new cost center** (http://localhost:3000/alphalist-cto-bootcamp/22). Currently parked at the very end of the deck, divorced from K12.
+- **K14 — Intent / Steering / Verification / Accountability** (http://localhost:3000/alphalist-cto-bootcamp/11). Talks about the human role.
+- **K15 — Innovation outperforms structural change** (http://localhost:3000/alphalist-cto-bootcamp/12). Talks about org change.
+
+### Two gaps, in order of importance
+
+1. **K12 isn't doing the work it promises.** "What's in it for me?" sets up a concrete answer, then delivers three multipliers floating in space. A CTO can't act on that. They need to see what 3–10× means in their terms: time-to-market, scope, parallelism, cost structure, what their team can attempt that they couldn't before.
+2. **K13 is orphaned at the end.** It belongs right after K12 per the original Q7 plan. The one-two punch (no ceiling on speed → here's where the new bill shows up) was the whole point of pairing them.
+
+No, we keep these slides where they are
+
+### Q14: How do we fix the impact arc?
+
+Three options. Tick one or write your own.
+
+- [ ] **A) Keep K12 as the multiplier slide, add K12b "What this actually buys you".** Concrete before/after pairs (e.g. "8-week feature → 2 days", "3 engineers → 1 engineer + 5 agents", "ideas killed because of capacity → now shippable"). Then move K13 back to follow K12b.
+- [ ] **B) Replace K12's multipliers with dimensions of impact.** Speed, scope, cost shape, role, org boundary. Each revealed one by one. Drop the tier numbers entirely.
+- [ ] **C) Keep K12, but give it a punchline.** Add a final reveal that names the consequence of "no ceiling": you can now attempt things that weren't on the roadmap. Then K13 follows.
+
+**Recommendation: A.** Multipliers are good as a hook, but they need a concrete follow-up slide that translates them into CTO language. And move K13 back to where it belongs.
+
+**A14:**
+
+### Q15: When you say "impact of agentic engineering" — which lens?
+
+The answer changes which slide we build.
+
+- [ ] a) Impact on the **engineer's day** (what their week looks like).
+- [ ] b) Impact on the **product / business** (time-to-market, scope, cost structure).
+- [ ] c) Impact on the **org structure** (roles, headcount, boundaries between IT and the rest).
+- [ ] d) All three, one slide each.
+
+**A15:**
+
+### Q16: Move K13 (Verification is the new cost center) back to its planned slot?
+
+Currently at the very end. The original Round 2 plan put it directly after the productivity slide.
+
+- [ ] a) Yes, move K13 to slot directly after K12 (or K12b).
+- [ ] b) No, leave it at the end as a closing punch.
+- [ ] c) Drop K13 entirely if K12b already covers cost-shape change.
+
+**A16:**
+

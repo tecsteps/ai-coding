@@ -156,7 +156,7 @@ Slide index:
 **Type:** bullet-reveal (new or reuse a list slide)
 **Content:** five reasons, revealed one by one.
 
-- Headline: **"This is not a tooling problem. It is a human problem."**
+- Headline: **"This is not a tooling problem. It is a mindset problem."**
 - 1. They do not want to substitute themselves.
 - 2. They are afraid.
 - 3. They have to leave their comfort zone.

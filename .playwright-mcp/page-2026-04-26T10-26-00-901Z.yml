@@ -1,0 +1,21 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - paragraph [ref=e6]: Opening Keynote · Day 1
+      - heading "The impact of agentic engineering on your IT organization." [level=1] [ref=e9]:
+        - text: The impact of agentic engineering
+        - text: on your IT organization.
+      - generic [ref=e11]:
+        - generic [ref=e12]: Fabian Wesner
+        - generic [ref=e13]: ·
+        - generic [ref=e14]: alphalist CTO Bootcamp
+        - generic [ref=e15]: ·
+        - generic [ref=e16]: Berlin 2026
+    - generic:
+      - generic: Berlin · 2026
+      - generic: 01 / 24
+  - button "Open Next.js Dev Tools" [ref=e22] [cursor=pointer]:
+    - img [ref=e23]
