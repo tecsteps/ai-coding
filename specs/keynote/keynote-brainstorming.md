@@ -21,6 +21,8 @@ We also need:
 - 2 slides for the live-demo (see brainstorming-archive/day1/06-live-demo.md) that shows what we build (very brief) and how we do it, see /Users/fabianwesner/Workspace/alphalistbootcamp/brainstorming-archive/day1/06-live-demo.md) - This is not part of the key note, but we need to prepare the slides
 
 
+I wrote tons of posts about Atgetic engineering. You can have an overview here; you might pull some of them. I can also give you access to LinkedIn so you can see the images which I used. /Users/fabianwesner/Workspace/LinkedIn/agentic-engineering-posts.md just tell me which post you want to see and which image you need.
+
 ## My first thoughts on the content of the actual keynote: It's far too much for the time we have so let's sharpen it and make it a good flow overall. It needs to be inspiring and engaging.
 
 Let's start with why the whole topic is important:
