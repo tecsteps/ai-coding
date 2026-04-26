@@ -62,15 +62,4 @@ It doesn't even end with introducing AI agents to the work of people. You can al
 
 The job of the software developer and actually most humans boils down to two things: intent and accountability.
 
-
-
-
-
-
-# Prompt
-
-Let's brainstorm the content of the presentation. See my notes in brainstorming-archive/keynote/keynote-brainstorming.md
-The presentation will be built afterwards (as /alphalist-cto-bootcamp), we just focus on the content of the slides (textual and visual).
-
-I want you to ask me some relevant questions upfront to build up your understanding. You can show options and let me select; or let me answer freetext. We need to ensure we have a logical flow of thoughts and it fits to the context. We can do multiple rounds of Q&A. Only append to this file (except I tell you to do otherwise).
-When we are all done, write a file keynote-slides.md with every slide (textual content and visualization as ASCII and (if needed) animations).
+# Brainstorming
