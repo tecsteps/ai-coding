@@ -25,6 +25,8 @@ import { S02_BeyondIT } from './S02_BeyondIT';
 import { S02b_InternalPaaS } from './S02b_InternalPaaS';
 import { S03_NewBottleneck } from './S03_NewBottleneck';
 import { D01_DemoWhat } from './D01_DemoWhat';
+import { G01_Arthur } from './G01_Arthur';
+import { G02_Cornelius } from './G02_Cornelius';
 import { ComponentType } from 'react';
 
 export interface AlphalistSlide {
@@ -59,5 +61,7 @@ export const alphalistSlides: AlphalistSlide[] = [
   { id: 'P04', component: P04_Hosts },
   { id: 'P05a', component: P05a_ParticipantRound },
   { id: 'D01', component: D01_DemoWhat },
+  { id: 'G01', component: G01_Arthur },
   { id: 'P05', component: P05_Breakouts },
+  { id: 'G02', component: G02_Cornelius },
 ];

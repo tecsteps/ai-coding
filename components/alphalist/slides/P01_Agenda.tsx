@@ -8,17 +8,17 @@ interface Props {
   total: number;
 }
 
-type Row = { time: string; title: string; skip?: boolean };
+type Row = { time: string; title: string; skip?: boolean; hasSlide?: boolean };
 
 const day1: Row[] = [
   { time: '09:00', title: 'Arrival & Coffee', skip: true },
-  { time: '09:30', title: 'Opening Keynote: The Impact of Agentic Engineering' },
-  { time: '10:15', title: 'Participant Round' },
-  { time: '11:00', title: 'Live Demo: Agentic Engineering in Action' },
+  { time: '09:30', title: 'Opening Keynote: The Impact of Agentic Engineering', hasSlide: true },
+  { time: '10:15', title: 'Participant Round', hasSlide: true },
+  { time: '11:00', title: 'Live Demo: Agentic Engineering in Action', hasSlide: true },
   { time: '12:00', title: 'Lunch Break', skip: true },
   { time: '13:00', title: 'War Stories from CTOs' },
-  { time: '14:30', title: 'Arthur Viegers @ Cursor' },
-  { time: '15:30', title: 'Breakout Sessions' },
+  { time: '14:30', title: 'Arthur Viegers @ Cursor', hasSlide: true },
+  { time: '15:30', title: 'Breakout Sessions', hasSlide: true },
   { time: '19:00', title: 'Dinner & Networking' },
 ];
 
@@ -26,7 +26,7 @@ const day2: Row[] = [
   { time: '08:00', title: 'Breakfast', skip: true },
   { time: '09:00', title: 'Solutions Workshop' },
   { time: '12:00', title: 'Lunch Break', skip: true },
-  { time: '13:00', title: 'Fireside Chat: Ernst-Cornelius Koch (Google) + Q&A' },
+  { time: '13:00', title: 'Fireside Chat: Ernst-Cornelius Koch (Google) + Q&A', hasSlide: true },
   { time: '14:00', title: 'Peer Rotations' },
   { time: '15:00', title: 'Panel: The Future IT Organization' },
   { time: '16:00', title: 'Software Factory' },
@@ -118,6 +118,11 @@ function DayColumn({
               >
                 {r.title}
               </span>
+              {r.hasSlide && !isActive && (
+                <span className="ml-auto rounded-full border border-emerald-300 bg-emerald-50 px-2 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-[0.15em] text-emerald-600">
+                  slide ready
+                </span>
+              )}
               {isActive && (
                 <span className="ml-auto text-[10px] uppercase tracking-[0.3em] text-emerald-600">
                   ◄ now
