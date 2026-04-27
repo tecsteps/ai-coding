@@ -1,3 +1,4 @@
+import { K00_AboutMe } from './K00_AboutMe';
 import { K01_Title } from './K01_Title';
 import { K02_TurningPoint } from './K02_TurningPoint';
 import { K04_SelfAdoptionGap } from './K04_SelfAdoptionGap';
@@ -36,6 +37,7 @@ export interface AlphalistSlide {
 
 export const alphalistSlides: AlphalistSlide[] = [
   { id: 'K01', component: K01_Title },
+  { id: 'K00', component: K00_AboutMe },
   { id: 'K02', component: K02_TurningPoint },
   { id: 'K04', component: K04_SelfAdoptionGap },
   { id: 'K05', component: K05_WhyNoCross },
