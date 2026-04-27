@@ -9,12 +9,12 @@ interface Props {
 }
 
 const segments = [
-  { label: 'Too early to tell', value: 11, verification: false, note: "haven't seen it yet" },
-  { label: 'Code review', value: 7, verification: true },
-  { label: 'Testing and QA', value: 6, verification: true },
-  { label: 'Spec writing and decomposition', value: 5, verification: true },
+  { label: 'Too early to tell', value: 14, verification: false, note: "haven't seen it yet" },
+  { label: 'Code review', value: 11, verification: true },
+  { label: 'Testing and QA', value: 11, verification: true },
+  { label: 'Spec writing and decomposition', value: 11, verification: true },
   { label: 'Integration and deployment', value: 2, verification: false },
-  { label: 'Still code generation', value: 1, verification: false },
+  { label: 'Still code generation', value: 2, verification: false },
 ];
 
 const total = segments.reduce((s, x) => s + x.value, 0);

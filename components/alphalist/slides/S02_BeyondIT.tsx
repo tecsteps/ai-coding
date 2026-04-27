@@ -9,14 +9,14 @@ interface Props {
 }
 
 const departments = [
-  { label: 'Marketing', value: 16 },
-  { label: 'Executive', value: 15 },
-  { label: 'Customer Support', value: 12 },
-  { label: 'Operations', value: 11 },
-  { label: 'HR', value: 10 },
-  { label: 'Finance', value: 9 },
-  { label: 'Sales', value: 8 },
-  { label: 'Legal', value: 5 },
+  { label: 'Marketing', value: 22 },
+  { label: 'Executive', value: 21 },
+  { label: 'Operations', value: 19 },
+  { label: 'Customer Support', value: 16 },
+  { label: 'HR', value: 15 },
+  { label: 'Sales', value: 14 },
+  { label: 'Finance', value: 13 },
+  { label: 'Legal', value: 6 },
 ];
 
 const max = Math.max(...departments.map((d) => d.value));
