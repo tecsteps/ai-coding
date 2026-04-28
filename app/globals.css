@@ -261,10 +261,14 @@
     @apply border-border outline-ring/50;
   }
   html, body {
-    overflow: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
     background-color: #020617; /* slate-950 */
+  }
+  @media (min-width: 640px) {
+    html, body {
+      overflow: hidden;
+    }
   }
   html::-webkit-scrollbar,
   body::-webkit-scrollbar {

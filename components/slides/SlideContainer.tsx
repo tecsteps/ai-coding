@@ -8,7 +8,7 @@ interface Props {
 
 export function SlideContainer({ children }: Props) {
   return (
-    <div className="fixed inset-0 overflow-hidden">
+    <div className="relative min-h-screen sm:fixed sm:inset-0 sm:overflow-hidden">
       {children}
     </div>
   );

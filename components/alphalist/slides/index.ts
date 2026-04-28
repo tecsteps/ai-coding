@@ -25,6 +25,7 @@ import { S01b_AdoptionCurve } from './S01b_AdoptionCurve';
 import { S02_BeyondIT } from './S02_BeyondIT';
 import { S02b_InternalPaaS } from './S02b_InternalPaaS';
 import { S03_NewBottleneck } from './S03_NewBottleneck';
+import { D00_PromptingGuidelines } from './D00_PromptingGuidelines';
 import { D01_DemoWhat } from './D01_DemoWhat';
 import { G01_Arthur } from './G01_Arthur';
 import { G02_Cornelius } from './G02_Cornelius';
@@ -62,6 +63,7 @@ export const alphalistSlides: AlphalistSlide[] = [
   { id: 'P03', component: P03_HouseRules },
   { id: 'P04', component: P04_Hosts },
   { id: 'P05a', component: P05a_ParticipantRound },
+  { id: 'D00', component: D00_PromptingGuidelines },
   { id: 'D01', component: D01_DemoWhat },
   { id: 'G01', component: G01_Arthur },
   { id: 'P05', component: P05_Breakouts },
