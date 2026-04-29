@@ -19,6 +19,8 @@ import { P04_Hosts } from './P04_Hosts';
 import { P05_Breakouts } from './P05_Breakouts';
 import { P05a_ParticipantRound } from './P05a_ParticipantRound';
 import { P05_TakeAways } from './P05_TakeAways';
+import { P06_SolutionWorkshop } from './P06_SolutionWorkshop';
+import { P07_PeerRotations } from './P07_PeerRotations';
 import { S01_Maturity } from './S01_Maturity';
 import { S01a_NotLate } from './S01a_NotLate';
 import { S01b_AdoptionCurve } from './S01b_AdoptionCurve';
@@ -29,6 +31,7 @@ import { D00_PromptingGuidelines } from './D00_PromptingGuidelines';
 import { D01_DemoWhat } from './D01_DemoWhat';
 import { G01_Arthur } from './G01_Arthur';
 import { G02_Cornelius } from './G02_Cornelius';
+import { Z01_Feedback } from './Z01_Feedback';
 import { ComponentType } from 'react';
 
 export interface AlphalistSlide {
@@ -67,5 +70,8 @@ export const alphalistSlides: AlphalistSlide[] = [
   { id: 'D01', component: D01_DemoWhat },
   { id: 'G01', component: G01_Arthur },
   { id: 'P05', component: P05_Breakouts },
+  { id: 'P06', component: P06_SolutionWorkshop },
   { id: 'G02', component: G02_Cornelius },
+  { id: 'P07', component: P07_PeerRotations },
+  { id: 'Z01', component: Z01_Feedback },
 ];
