@@ -1,0 +1,886 @@
+The LeadDev
+
+
+Engineering
+Leadership
+Report 2026
+How engineering leadership is evolving,
+and what it means for the future of the role.
+     Editor’s note                                                                    A note from Postman
+     Software engineering leadership is operating under huge pressure.                Postman is an API platform for building and using APIs. It simplifies each
+     Organizations are flattening. AI is reshaping how code gets written, reviewed,   step of the API lifecycle and streamlines collaboration so you can create
+     and shipped. Job security anxieties are rising, even as actual layoff rates      better APIs – faster.
+     remain relatively stable.
+                                                                                      We built an API platform to transform API development from a fragmented,
+     Through it all, engineering leaders are being asked to do more: technically,     multi-tool challenge into a unified, collaborative process that spans design,
+     strategically, and managerially, often forcing them to work longer hours.        testing, documentation, and monitoring.
+
+     Based on responses from 600 engineering leaders, the data tells a story of an    The results in this report reinforce what we hear from the Postman
+     industry in genuine transformation under sustained and compounding forces.       community: as AI accelerates development, teams need more unified,
+                                                                                      collaborative ways to build, test, and scale.
+     This report synthesizes the findings across five key themes: how
+     organizations are changing, how the engineering leader’s role is evolving,       Built from a foundation of developer love and evolved to meet enterprise
+     the state of AI adoption, the impact on engineering talent, and the human        demands, Postman is architected for an AI-first future. It enables
+     cost of transformation.                                                          organizations to build AI-ready APIs across both human and agentic
+                                                                                      teams while maintaining the security controls, compliance frameworks,
+     The data won’t make the moment easier, but it will make it legible.              and governance standards that enterprises require. Automate your APIs,
+                                                                                      code, and workflows across dev, test, and production.
+     Michael Hill
+     Editor, LeadDev                                                                  Postman powers the world’s APIs, helping 40 million developers and
+                                                                                      500,000 organizations – including 98% of the Fortune 500 – build and
+                                                                                      scale APIs with confidence.
+
+
+
+
+2 // The engineering leadership report 2026 / Editor’s note
+Key findings
+
+                 84%                                         believe AI will make it harder
+                                                             for junior developers to enter
+                                                             and grow in the profession.      41%         say their team is
+                                                                                                          less motivated than
+                                                                                                          12 months ago.
+
+
+
+
+                 45%                                         of leaders are working
+                                                             more hours than this
+                                                             time last year.                  37%           of engineering
+                                                                                                            leaders are doing
+                                                                                                            more technical work.
+
+
+                 AI for internal use is now the
+                 #1 engineering priority – up from                                            One in three managers
+
+                 45% to 77%
+                                                                                              are considering ditching
+                                                                                              management to become an
+                                                                                              individual contributor.
+
+3 // The engineering leadership report 2026 / Key findings
+Organizations
+are changing,
+not falling apart
+                                                                                                                                      What significant changes has your company made
+                                                                                                                                      to its workforce in the last 12 months?
+
+                                                                                                                                                                                           67%
+         The dominant narrative around technology                                                    Re-organization of team or                                                            67%
+         companies in recent years has been one of                                                          division structures
+                                                                                                                                                                                           66%
+         contraction. Layoffs, hiring freezes, and the
+                                                                                                                                                                                45%
+         systematic thinning of management layers have                                                      Leadership changes                                                    49%
+         dominated headlines. The data from this year’s                                                                                                                           48%
+         report complicates that picture.
+                                                                                                                                                                          35%
+                                                                                                                    Hiring freeze                                         35%
+         Re-organization of team and division structures                                                                                                                          50%
+         represents the most common significant change,
+                                                                                                                                                                         33%
+         cited by 67% of respondents – a figure that has                                                                 Layoffs                                          34%
+         held steady across the last three years of this study.                                                                                                                 44%
+         Leadership changes affected 45% of respondents,
+                                                                                                                                                                  24%
+         while hiring freezes (35%) and layoffs (33%) were                                         Policy changes that required                                    25%
+         reported at similar rates to 2025.                                                              more time in the office
+                                                                                                                                                            18%
+
+                                                                                                                                             7%
+         Crucially, there has been no significant uptick                                               Eliminated DEI programs              5%
+         in either of those categories despite the economic                                                                           N/A
+         and technological turbulence of the past year.
+                                                                                                  Policy changes that allowed for           4%
+         For engineering leaders worried that the floor is                                    increased hybrid and remote work               5%
+         about to drop out, the data offers a measure of                                                                              0%
+         reassurance: most organizations are adapting,
+                                                                                                                                                  10%
+         not dismantling.                                                                                                 Other                  9%
+                                                                                                                                      N/A                                                             2026
+                                                                                                                                                                                                      2025
+                                                                                                                                                 5%
+                                                                                                                                                                                                      2024
+                                                                                                          Not sure or don’t know                  6%
+                                                                                                                                            2%
+
+                                                                                                                                    % 0                20                40           60         80     100
+
+
+
+
+5 // The engineering leadership report 2026 / Organizations are changing, not falling apart
+                                                                                                                           If the number of managers has decreased, which
+                                                                                                                           levels were significantly impacted?
+
+         The management layer picture is more nuanced,
+         with 22% of respondents reporting a decline                                                                                             23%
+         in managerial jobs and 19% seeing an increase                                           Upper management
+                                                                                                  (e.g. CTO, VP, Head                          18%
+         in 2026.                                                                                      of Engineering)
+                                                                                                                                         13%
+         Among respondents whose organizations saw
+         a decrease in manager roles, the impact was
+         concentrated at the line management (59%) and                                                                                                                   65%
+         middle management (65%) level.                                                          Middle management
+                                                                                              (e.g. Director and other                                             56%
+                                                                                              managers of managers)
+         However, a notable shift is occurring at the top:                                                                                                  43%
+         23% of those reporting manager decreases said
+         upper management has been significantly
+         impacted, up from 18% in 2025 and 13% in 2024.                                                                                                                59%
+         The flattening is becoming less selective in who                                         Line management
+                                                                                                    (e.g. Engineering                                                        67%
+         it affects.                                                                            Manager, Team Lead)
+                                                                                                                                                            42%
+         When organizations are hiring managers, the focus
+         remains on line (67%) and middle management
+         (50%). The demand for people-facing leadership                                                                             5%
+         has not disappeared. What is changing is the                                                           Other                    12%
+         expectation of what that leadership looks like and                                                                                                                             2026
+         what it requires of the individuals doing it.                                                                         1%                                                       2025
+                                                                                                                                                                                        2024
+
+
+                                                                                                                         % 0              20           40         60               80      100
+
+
+
+
+6 // The engineering leadership report 2026 / Organizations are changing, not falling apart
+         Looking at the type of work being prioritized                          and productivity improvements (52%),
+         over the next 12 months, one shift stands out:                         improving existing product quality (51%),
+         AI for internal use has jumped to the top of                           and technical debt and maintenance (48%).
+         the priority stack, cited by 77% of                                    Engineering teams are focused on doing
+         respondents, up from 45% in 2025.                                      more with what they already have, rather than
+                                                                                building for growth.
+         Beyond AI, the other top priorities tell
+         a consistent story: cost optimization
+
+
+
+
+                                                                                                                                                                              Discounting AI, which engineering
+                                                What type of work are you and your team(s)                                                                                    transformation initiative is currently the
+                                                prioritizing over the next 12 months?                                                                                         highest priority for your organization?
+
+                                                                                                               77%                   Improving engineering processes
+                       AI for internal use                                                                                                      and delivery maturity                                             32%
+
+                            Adding new                                                                   71%                    Improving reliability, observability, and
+                   features, capabilities                                                                                                                                                                  25%
+                                                                                                                                               operational excellence
+       Cost optimization, productivity                                                          52%
+            improvements, efficiency                                                                                                      Modernizing legacy systems                                 16%
+
+           Improving the quality of our                                                         51%                                      Reducing system complexity
+     existing product/service offering                                                                                                                                                         11%
+                                                                                                                                             and architectural sprawl
+
+                                                                                              48%                                              Building or improving an
+         Technical debt, maintenance                                                                                                                                                      8%
+                                                                                                                                           internal developer platform
+
+                                                                                              46%                                        Migrating to microservices or
+               AI for use by customers                                                                                                                                              4%
+                                                                                                                                             distributed architectures
+                  Adding new products                                                    44%                                                                      Other             4%
+                           or services
+
+                                             % 0                20               40                 60    80         100                                                    % 0          10           20     30         40   50
+
+
+
+
+7 // The engineering leadership report 2026 / Organizations are changing, not falling apart
+The engineering leader’s
+role is expanding
+                                                                                                                             How have your roles and responsibilities
+                                                                                                                             changed over the past 12 months?
+                                                                                                                                                                                                        3%
+
+                                                                                                       Scope and area
+                                                                                                       of responsibility                         63%                                33%                 1%
+
+
+         Perhaps the most striking finding in this year’s
+                                                                                                  Hands-on technical
+         report is the extent to which engineering leaders                                       work (e.g. coding, pair                 36%                        45%                    16%          3%
+         are being pulled in more directions simultaneously,                               programming, code reviews)
+         along with the speed at which those demands
+         are changing.
+                                                                                              Number of direct reports               29%                         50%                      16%            5%
+         Scope and area of responsibility increased for
+         63% of respondents, consistent with previous
+         years. However, the nature of that expansion is
+         shifting significantly.                                                                Teams reporting to me             22%                            61%                       9% 7%
+
+
+
+                                                                                                                           % 0             20           40              60           80               100
+
+
+
+                                                                                                                             Increased          Stayed about the same        Decreased          Not sure or don’t know
+
+
+
+
+9 // The engineering leadership report 2026 / The engineering leader’s role is expanding
+         Technical work is returning to the                        The balance between technical
+         leadership agenda in a way that                           and management work reflects
+         would have surprised many observers                       this shift. Nearly half of respondents          How have your hands-on technical roles and
+         just two years ago. More than a                           (48%) say they spend more time                  responsibilities changed over the last 12 months?
+         third (37%) of respondents say their                      on technical-related tasks than
+         hands-on technical responsibilities                       management-related ones, up from
+         have increased in the last 12 months,                     42% in 2025.                                                Software Engineer
+         compared to just 25% in 2025.                                                                              (e.g. junior/senior/full stack developer)                                           Manager of Engineers
+                                                                   Leaders across the board spent           2026        37%                   48%               15%             2026          35%                       47%         18%
+         All job roles except software                             more time doing hands-on coding
+                                                                                                            2025        38%                    56%                   6%         2025      20%                   53%             27%
+         engineers reported a jump in                              and code reviews compared to the
+         hands-on technical responsibilities.                      previous year, including tech leads
+         Most notably, 52% of advanced                             (41%), managers of engineers (31%),                       Advanced Engineer
+         engineers (staff, principal, and                          managers of managers (30%) and                    (e.g. Staff, Principal, Distinguished)                                             Manager of Managers
+         distinguished) report an increase, up                     CTOs (or equivalent) (44%).              2026            52%                     38%          10%            2026         25%                    61%              14%
+         from 30% in 2025. Even managers
+                                                                                                            2025      30%               44%                26%                  2025      18%                     59%               23%
+         of managers are feeling this: 25%                         Architectural decisions and technical
+         now say they spend more time on                           strategy saw the most respondents
+         technical-related tasks than a year                       citing increased time dedicated to it,                         Tech Lead
+                                                                                                                           (no people management)                                                        CTO or Equivalent
+         ago, up from 18% in 2025.                                 up from 44% in 2025. Communication
+                                                                   with team members, customers,            2026         42%              34%                  25%              2026            41%                      46%         14%
+         “Given that most leaders come from                        and stakeholders also increased for                 33%              35%               31%
+                                                                                                            2025                                                                2025         28%                      59%            14%
+         an IC path, and now that AI tooling                       60% of respondents, consistent with
+         makes it so much easier to contribute,                    previous years.
+                                                                                                              % 0         20       40         60          80          100           % 0            20        40          60    80          100
+         I’m not surprised leaders are getting
+         more hands on, especially when it                         AI is simultaneously expanding what
+         comes to building prototypes and                          leaders can do technically and what
+         internal tooling,” says James Stanier,                    is expected of them organizationally,                                  Increased                  Stayed about the same          Decreased
+         CTO at Nordhealth. “I’m having a lot of                   without reducing the demands on their
+         fun too!”                                                 time in either dimension.
+
+
+
+
+10 // The engineering leadership report 2026 / The engineering leader’s role is expanding
+                                                                                                   Are you working more or less hours each week
+                                                                                                   than this time last year?
+
+
+                                                                                                                Software Engineer
+                                                                                                     (e.g. junior/senior/full stack developer)                             Manager of Engineers
+         That tension is reflected in the data on working
+                                                                                            2026        35%                 54%               11%          2026      44%                     50%               6%
+         hours. Just under half (45%) of respondents report
+         working more hours each week than at this point                                    2025        31%                 60%                9%          2025      38%                 57%                   5%
+         last year, up from 38% in 2025 and 35% in 2024.
+         The biggest increase was among advanced                                                              Advanced Engineer
+         engineers, 53% in 2026 compared to 28% in 2025,                                              (e.g. Staff, Principal, Distinguished)                               Manager of Managers
+         followed by managers of engineers (44% vs. 38%)                                    2026              53%                  40%         7%          2026       46%                    49%               5%
+         and managers of managers (46% vs. 42%).
+                                                                                            2025       28%                 61%                11%          2025      42%                     52%               6%
+         The trajectory is consistent, while also concerning.
+         As the scope of the role expands, the hours                                                                 Tech Lead
+         required to meet it are rising too.                                                                  (no people management)                                        CTO or Equivalent
+
+                                                                                            2026          44%                     49%          7%          2026       46%                     51%              3%
+                                                                                            2025             48%                  43%          9%          2025        52%                   38%         10%
+
+
+                                                                                               % 0         20       40       60          80      100           % 0    20           40   60          80     100
+
+
+
+
+                                                                                                                             More                   About the same          Less
+
+
+
+
+11 // The engineering leadership report 2026 / The engineering leader’s role is expanding
+                            One measure that reveals the human weight of this expansion is the number of                              recalibration or a warning sign about sustainability in the leadership pipeline is a
+                            leaders considering a return to individual contributor (IC) roles. A third (32%)                          question the industry will need to take seriously.
+                            of those in managerial positions say they are currently considering this transition,
+                            up from 24% in 2025. Managers of managers (29%) are less likely to transition                             “Now more than ever, leaders must keep their technical skills sharp in order to
+                            back to IC roles compared with managers of engineers and CTOs (both 34%).                                 understand, adopt, measure, and validate their team’s usage of AI tools,” says
+                                                                                                                                      engineering leader Vaidehi Joshi. “In 2026, engineering leaders are juggling more
+                            The appeal of stepping back from management responsibilities, in favor of more                            responsibilities than they ever did before, all while there are fewer engineering
+                            focused technical work, is clearly growing. Whether that represents a healthy                             leadership roles in the market.”
+
+
+
+
+                               Have you considered transitioning back to an
+                               individual contributor role in the last year?
+
+                                          Manager of Engineers                                                      Manager of Managers                                                         CTO or Equivalent
+
+
+                       2026          34%            17%              50%                       2026          29%         10%                 61%                             2026       34%        17%           50%
+
+
+
+
+                       2025         30%           17%               53%                        2025       14% 13%                        74%                                 2025      30%        17%            53%
+
+
+
+                           % 0           20         40         60         80        100             % 0           20             40     60          80        100               % 0        20      40       60      80       100
+
+
+
+
+                                                                                            Yes, and I am still considering it          Yes, but I decided against it   No
+
+
+
+12 // The engineering leadership report 2026 / The engineering leader’s role is expanding
+AI adoption
+is widespread
+but poorly measured
+                                                                                                                                      Which of the following best describes the stage of your
+         AI-coding tools and agents are now mainstream                                                                                engineering organization’s adoption of AI-powered
+         in engineering organizations. More than half (54%)                                                                           coding tools and agents?
+         of respondents say their organization has widely or
+         totally adopted these tools. Only 1% say they have
+         no plans to use them at all. The debate about                                                    Adopted by all teams                       12%
+         whether to adopt AI has largely been resolved. The                                                  for all used cases
+         question of how to adopt it well is just beginning.
+                                                                                                      Widely adopted by many
+         For the first time in this study’s three-year history,                                      teams for many use cases
+                                                                                                                                                                                  42%
+         internal AI adoption (77%) has overtaken
+         feature development (71%) as the leading
+         engineering priority.                                                                              Selectively adopted                                  22%
+                                                                                                             for a few use cases
+         “Internal AI adoption has been a challenge, but it is
+         becoming easier over time as AI helps engineers
+                                                                                               Proof-of-concept: experimenting
+         be more productive and enjoy their work more                                                                                                      16%
+                                                                                                    with tools and pilot projects
+         (who wants to write boilerplate code any more?”
+         says Stanier.
+                                                                                                 Exploratory: researching tools                 8%
+         AI for customer-facing use cases has also                                                    and evaluating use cases
+         grown, cited by 46% of respondents, up from 40%
+         in 2025, but the internal adoption story is where the
+                                                                                                                 No plans to use
+         energy is concentrated. Engineering organizations                                                                                1%
+                                                                                                            AI tools and models
+         are no longer experimenting with AI at the edges. It
+         has become the central work.
+                                                                                                                                    % 0        10           20         30    40         50
+
+
+
+
+14 // The engineering leadership report 2026 / AI adoption is widespread but poorly measured
+                                                                                                                                                   Which of the following types of AI-powered
+         The tools being used reveal where AI adoption                                                                                             coding tools and agents do you personally use?
+         currently sits in practice. LLM-based chat
+         interfaces for architectural research and
+         debugging are the most widely used, cited by                                                        LLM-based chat interfaces for
+         79% of respondents.                                                                              architectural research,conceptual                                                         79%
+                                                                                                        guidance, and debugging assistance
+
+         IDE-based coding tools with autocomplete and                                                                IDE-based coding tools
+         inline suggestions follow at 71%. CLI-based coding                                            (e.g. autocomplete, inline refactoring,                                               71%
+                                                                                                                  and real-time suggestions)
+         agents, autonomous tools that can execute
+         terminal commands, run tests, and perform                                               CLI-based coding agents (e.g. autonomous
+         multi-file edits, are used by 64% of respondents,                                     agents that can execute terminal commands,                                              64%
+                                                                                                      run tests, and perform multi-file edits)
+         a figure that is higher than many might expect
+         and suggests agentic workflows are already
+                                                                                               AI-powered tools for automated code review,
+         more prevalent than the public conversation                                               security auditing, and quality governance                                           62%
+         acknowledges.
+                                                                                                      Vibe coding tools for rapid prototypin.                               48%
+         Vibe coding tools for rapid prototyping are
+         used by 48% of respondents overall, and 66%
+         of CTOs personally. This is a significant finding.                                                 AI-integrated observability tools
+         The most senior technical leaders in engineering                                                           for incident analysis and                    23%
+                                                                                                                 production troubleshooting
+         organizations are not just enabling AI adoption;
+         they are actively using the most experimental
+                                                                                                                        I do not currently use
+         and least governed category of AI tool for their                                                                   AI-powered tools           4%
+         own work.
+                                                                                                                                                 % 0        20         40         60           80         100
+
+
+
+
+15 // The engineering leadership report 2026 / AI adoption is widespread but poorly measured
+                                                                                                                                            Which area of AI adoption is currently the highest
+                                                                                                                                            priority for your engineering organization?
+
+
+                                                                                                     Developer productivity (i.e. using                                    55%
+                                                                                                coding assistants or code generation)
+
+
+                                                                                               Automating engineering workflows (i.e.                           19%
+                                                                                               withagentic tools or CI/CD automation)
+
+
+                                                                                                   Improving products and customer                    8%
+                                                                                                      experience/outcome/journeys
+         Developer productivity remains the dominant
+         AI priority, cited by 55% of respondents as their
+                                                                                                    Governance, security, and safety              7%
+         engineering organization’s highest area of AI focus.
+         Automating engineering workflows comes
+         second at 19%.                                                                                 We are still evaluating AI and            6%
+                                                                                                   have not prioritized a use case yet
+
+
+                                                                                                               Other (please specify)            3%
+
+
+                                                                                                                      Measuring ROI              3%
+                                                                                                              and productivity impact
+
+
+                                                                                                                     Platform and site      0%
+                                                                                                                reliability engineering
+
+
+                                                                                                                                          % 0              20         40   60      80        100
+
+
+
+
+16 // The engineering leadership report 2026 / AI adoption is widespread but poorly measured
+                                                                                                                       Which of the following emerging AI-related
+                                                                                                                       skills will you likely personally focus on
+                                                                                                                       developing in the next year?
+
+                                                                                                                                                                      73%
+                                                                                                 Managing AI agents
+                                                                                                                                                                60%
+
+
+                                                                                                                                                          53%
+         The gap between adoption velocity and                                                   Prompt engineering
+         governance maturity is one the data makes                                                                                                        53%
+         visible without understating: organizations are
+         moving fast, and the safety infrastructure has not                                           Coordinating                                      48%
+         kept pace.                                                                            autonomous systems                                 35%
+
+         The AI skills leaders want to develop reflect the                                                                                22%
+                                                                                                   Vector databases
+         direction this adoption is heading. Managing AI                                       and RAG architecture
+                                                                                                                        N/A
+         agents is now the top priority for personal skill
+         development, cited by 73% of respondents, up from
+         60% in 2025. Coordinating autonomous systems                                          Model customization                        22%
+                                                                                                  and optimization                              29%
+         has grown from 35% to 48% over the same period.
+
+         Interest in prompt engineering has held flat at 53%,                                                                       13%
+                                                                                                            MLOps
+         suggesting that engineers are beginning to look                                                                              17%
+         beyond basic prompt skills toward the harder
+         challenge of orchestrating AI systems at scale.                                                                      4%
+                                                                                                             Other
+                                                                                                                              3%
+
+
+                                                                                                                               6%
+                                                                                                                                                                            2026
+                                                                                                  None of the above                 12%
+                                                                                                                                                                            2025
+
+                                                                                                                      % 0            20           40      60          80      100
+
+
+
+
+17 // The engineering leadership report 2026 / AI adoption is widespread but poorly measured
+                                                                                                                                      Is your organization using or considering the following
+         Measuring the impact of AI systems, however,                                                                                 metrics to assess the impact of AI-powered coding
+         remains a significant gap. Employee feedback is                                                                              tools and agents on engineering productivity?
+         the most commonly used metric for assessing
+         AI’s impact on productivity (63%), but it is an
+         imprecise instrument.                                                                         Employee feedback about                            63%                          14%          14%       9%
+                                                                                                            the tools being used
+         More rigorous metrics like development time per
+         feature (31%), change failure and pull request                                                       Development time              31%                 20%                  31%                  18%
+         reversion rates (22%), weekly time saved per                                                               per feature
+         developer (22%), and time spent reviewing and
+         updating AI-suggested code (21%) are used by only                                                Change failure and pull         22%              26%                       34%                  18%
+         around a fifth of organizations.                                                                 request reversion rates
+
+
+         “Self-reported productivity has never been the best                                              Weekly time saved per           22%               27%                      33%                  18%
+         signal,” says Stanier. “It should be paired with other                                             developer/engineer
+         signals, like the traditional DORA metrics (are we
+         actually going faster?) and token spend (who is                                       Time spent reviewing and updating          21%              29%                       34%                    16%
+         using the tools the most?).”                                                            AI-suggested or generated code
+
+
+         The gap between adoption and measurement is                                                                                % 0           20              40            60              80                 100
+
+         one of the defining challenges today, and it has real
+         implications for whether organizations can learn                                                                                         Using         Considering using in the next 6-12 months
+         from their AI investments or are simply flying blind.                                                                                            Not using        Not sure or don’t know
+
+
+
+
+18 // The engineering leadership report 2026 / AI adoption is widespread but poorly measured
+AI concerns, risks,
+and the junior
+developer crisis
+                                                                                                                                                               What are your biggest concerns regarding the
+                                                                                                                                                               use of AI-powered coding tools and agents?
+
+         For all the momentum behind                                 can reason about. Until we invest in
+                                                                                                                         Impact on code maintainability                                                              73%
+         adoption of AI-powered coding tools                         better abstractions, testing strategies,
+         and agents, the concerns among                              and system boundaries, this gap will                             Quality of outputs                                                            71%
+         engineering leaders are substantial                         continue to widen.”
+         and deserve serious attention.                                                                           Impact on junior developers’ ability to
+                                                                                                                         enter and grow in the industry                                                       62%
+                                                                     Stanier encourages everyone to
+                                                                                                                        Security threats (i.e. deep fakes,
+         Impact on code maintainability tops                         think long-term. “Codebases have                    adversarial attacks on models)                                                      58%
+         the list of concerns at 73%, closely                        been structured and programming                Access to and use of sensitive data
+         followed by the quality of AI outputs                       languages have been designed for                                                                                               49%
+                                                                                                                        and/or data privacy concerns
+         at 71%. These are not abstract                              humans over the past few decades.                      Impact on what roles will be
+                                                                                                                                 available in the future                                          44%
+         worries. They reflect the daily reality                     Are we reaching an inflection point
+         of working with codebases that are                          where, in the not-too-distant future,                              Ethical concerns                                    37%
+         growing faster than they can be                             codebases will need to be designed
+         understood, reviewed, or maintained.                        and structured for AI instead?”                         Intellectual property rights                            28%
+         The verification gap is real, and it is
+         growing.                                                    The impact on junior developers is                The learning curve for engineers                             26%
+                                                                     the third most cited concern at 62%,
+                                                                                                                              Pushback from engineers                              22%
+         “These concerns point to a deeper                           and it is the one with the longest-
+         issue: we’ve accelerated code                               range implications for the industry.                          Attribution of outputs                    14%
+         generation without evolving our                             Based on another question, we know
+         verification and ownership models,”                         that 84% of respondents believe                                   Feedback from                    6%
+                                                                                                                                customers and/or users
+         says Mallika Rao, senior software                           AI-powered tools will generally have a
+         engineering manager at Zocdoc.                              negative impact on junior developers.                                         Other                7%
+         “Teams are producing more than they                         This finding demands attention.            I have no big concerns regarding the use
+                                                                                                                  of AI-powered coding tools and agents.           1%
+
+
+                                                                                                                                                             % 0             20            40           60           80    100
+
+
+
+
+20 // The engineering leadership report 2026 / AI concerns, risks, and the junior developer crisis
+         The traditional on-ramp to engineering                       Meanwhile, 18% are increasing
+         – writing code, making mistakes,                             productivity expectations from
+         learning from review – is being                              teams and 12% are rethinking hiring
+         systematically altered by AI tools that                      profiles and required skills.
+         do much of that work automatically. If
+         the learning pathways that created                           These are reasonable responses to                                                    How is AI most affecting your approach
+         today’s experienced engineers are                            the immediate demands of AI                                                          to engineering talent?
+         being bypassed, the pipeline of                              adoption, but they are insufficient for
+         experienced engineers a decade from                          longer-term questions about career
+         now may look very different.                                 pathways, skill development, and the            Upskilling existing engineers to
+                                                                                                                              work effectively with AI                                                    49%
+                                                                      sustainability of the engineering
+         However, the talent strategy response                        profession as a whole. On headcount,                   Increasing productivity
+                                                                                                                           expectations from teams                              18%
+         to this concern is strikingly thin. Only                     the picture is more measured than the
+         4% of respondents cited supporting                           disruption narrative suggests. Only 8%
+                                                                                                                            Rethinking hiring profiles
+         junior engineers’ development in an                          say AI reduced their headcount in                           and required skills                     12%
+         AI-assisted world as the primary way                         2025, far lower than the scale of the AI
+         AI is affecting their approach to                            adoption story might imply. However,           AI has not significantly changed
+                                                                                                                                                                          12%
+         engineering talent. The gap between                          21% believe AI will reduce headcount in                 our talent strategy yet
+         concern and action is significant.                           2026, suggesting a meaningful
+         Leaders who recognize the risk but                           expectation that the impact will                Redefining career progression               6%
+         have not yet addressed it are building a                     accelerate even if it has been limited
+         problem that will compound over time.                        to date.                                          Supporting junior engineers’
+                                                                                                                 development in an AI-assisted world            4%
+
+         The dominant talent response to AI is                        For engineering leaders managing
+                                                                                                                                                         % 0         10         20     30       40   50
+         upskilling. Just shy of half (49%) say                       team anxiety about job security, the
+         upskilling existing engineers to work                        distinction between current reality and
+         effectively with AI is the primary way AI                    anticipated future is important to
+         is affecting their talent strategy.                          communicate clearly.
+
+
+
+
+21 // The engineering leadership report 2026 / AI concerns, risks, and the junior developer crisis
+The human
+cost of
+transformation
+         If the data on organizational change and AI adoption tells the                 Job security concerns have risen for the third consecutive
+         story of external pressures, the data on team health tells                     year, with 46% of respondents more worried than at this point
+         the human story of what those pressures are doing to the                       last year, up from 42% in 2025 and 39% in 2024. Software
+         people inside engineering organizations. That story contains                   engineers are most concerned (61%), followed by tech leads
+         some of the report’s most urgent findings.                                     (49%) and managers of engineers (46%).
+
+
+
+
+                              Are you more or less concerned about your
+                              job security than at this point a year ago?
+                                                                                                                                          Software Engineer
+                                                                                                                               (e.g. junior/senior/full stack developer)                                      Manager of Engineers
+
+                                                                        46%                                           2026                61%                      39%                    2026          46%                     45%         10%
+
+       More concerned                                               42%                                               2025          41%                 46%              14%              2025          44%                     49%          8%
+
+                                                                  39%
+                                                                                                                                        Advanced Engineer
+                                                                                                                                (e.g. Staff, Principal, Distinguished)                                        Manager of Managers
+                                                                    43%
+                                                                                                                      2026          45%                      47%          8%              2026          45%                     47%          8%
+               The same                                                 47%
+                                                                                                                      2025         37%                   56%              7%              2025         37%                 56%               7%
+                                                                          50%
+                                                                                                                                             Tech Lead
+                                           11%                                                                                        (no people management)                                                   CTO or Equivalent
+        Less concerned                     11%                                                2026                    2026           49%                     38%         13%              2026          43%               37%              20%
+                                                                                              2025
+                                           11%                                                                        2025                61%                  30%        9%              2025        28%                62%                10%
+                                                                                              2024
+
+                           % 0                20             40               60   80            100                     % 0         20         40      60         80          100              % 0      20        40      60         80         100
+
+
+
+
+                                                                                                                                                     More concerned                  The same         Less concerned
+
+
+
+23 // The engineering leadership report 2026 / The human cost of transformation
+                                                                                                                                     At least once a week I feel emotionally
+                                                                                                                                     drained from my work
+
+                                                                                                               Software engineer                                       49%
+                                                                                                                                                                39%
+                                                                                                             Advanced Engineer                                     45%
+                                                                                                                                                                    46%
+                                                                                                                      Tech Lead                                 39%
+                                                                                                                                                                    46%
+                                                                                                                                                                     48%
+         Given that actual layoff rates have not                 Burnout indicators deserve specific        Manager of engineers
+                                                                                                                                                                      49%
+         increased significantly, this rising                    attention. CTOs show the most                                                                      46%
+                                                                                                            Manager of managers
+         anxiety is almost certainly being driven                dramatic shift: 54% report feeling                                                                       56%
+                                                                                                                                                                                     2026
+         by AI uncertainty rather than observed                  emotionally drained from their work at        CTO or equivalent                                         54%
+                                                                                                                                                   24%                               2025
+         job losses. The psychological cost of                   least once a week, compared to just
+         the transformation is already being                     24% in 2025. This represents a
+         paid, even before the predicted                         30-percentage-point increase in a                                 % 0        20           40            60     80     100
+
+         workforce impacts materialize.                          single year.
+
+         “The disconnect between stable                          “CTOs are burning out because AI has
+                                                                                                                                     At least once a week I receive positive
+         layoffs and rising anxiety highlights that              given teams virtually infinite capacity,
+         this is less about actual job loss and                  creating relentless pressure to write
+                                                                                                                                     feedback about my work
+         more about loss of clarity” says Rao.                   highly detailed product specs to ‘feed
+         “AI is changing what ‘valuable work’                    the beast,’” says Thomas Johnson,                                                              40%
+                                                                                                               Software engineer
+         looks like, and leaders haven’t yet                     CTO at Multiplayer.                                                                            41%
+         provided a clear narrative for how                                                                  Advanced Engineer                           30%
+                                                                                                                                                          31%
+         roles evolve. That ambiguity is what’s
+                                                                                                                      Tech Lead                           31%
+         driving unease.”                                                                                                                                        41%
+                                                                                                            Manager of engineers                    24%
+                                                                                                                                                   22%
+                                                                                                            Manager of managers                16%
+                                                                                                                                                 19%
+                                                                                                               CTO or equivalent                       26%                           2026
+                                                                                                                                                         28%                         2025
+
+
+                                                                                                                                   % 0        20           40            60     80     100
+
+
+
+
+24 // The engineering leadership report 2026 / The human cost of transformation
+                                                                                                                                     At least once a week, work demands
+                                                                                                                                     interfere with my personal life
+
+                                                                                                                                                              37%
+                                                                                                               Software engineer                           32%
+                                                                                                                                                               39%
+                                                                                                             Advanced Engineer                            31%
+                                                                                                                                                          31%
+                                                                                                                      Tech Lead
+                                                                                                                                                                41%
+         Additionally, leaders live in constant                  teams simultaneously, appears to be        Manager of engineers                             36%
+                                                                                                                                                         30%
+         fear that a business-killing bug is                     landing particularly heavily on those                                                        37%
+         lingering in some unread, AI-generated                  at the top.                                Manager of managers
+                                                                                                                                                                        51%
+         corner of the codebase, he adds.                                                                                                                               51%        2026
+                                                                                                               CTO or equivalent
+         “It is emotionally exhausting to manage                 Tech leads show a different but                                                                      48%          2025
+
+         an infinitely hungry AI workforce while                 concerning pattern. Their receipt of
+         knowing there is no longer direct                       regular positive feedback has                                     % 0        20           40            60   80      100
+
+         human ownership over every line                         dropped from 41% to 31%, while
+         of code.”                                               cynicism about their jobs is rising. The
+                                                                 people in the middle of the leadership
+         The burden of navigating AI                             structure and the ones translating
+                                                                                                                                     At least once a week I feel
+         transformation at an organizational                     strategy into delivery appear to be                                 cynical about my job
+         level, while managing the expectations                  under particular strain.
+         of boards, investors, and engineering                                                                                                                 41%
+                                                                                                               Software engineer                              39%
+                                                                                                                                                            37%
+                                                                                                             Advanced Engineer                                   44%
+                                                                                                                                                              39%
+                                                                                                                      Tech Lead                                  47%
+                                                                                                                                                           35%
+                                                                                                            Manager of engineers                              39%
+                                                                                                                                                                42%
+                                                                                                            Manager of managers                            35%
+                                                                                                                                                             38%                   2026
+                                                                                                               CTO or equivalent
+                                                                                                                                                   22%                             2025
+
+
+                                                                                                                                   % 0        20           40            60   80     100
+
+
+25 // The engineering leadership report 2026 / The human cost of transformation
+         Team motivation continues to be a                       These are not the words of people who
+         challenge, with 41% of respondents                      are opposed to AI. They are the words                       Do you feel like your team is more or less
+         saying their team feels less motivated                  of people who are experiencing a gap                        motivated to come to work than 12 months ago?
+         than 12 months ago, although this is a                  between the promise of AI adoption
+         slight improvement from 44% in 2025.                    and the reality of how it is being
+                                                                 implemented in their organizations.                                               18%
+         The free-text responses explaining                      That gap is a leadership problem as      More motivated
+         this motivation challenge are revealing:                much as a technology problem.
+                                                                                                                                            14%
+
+         • Several people noted that eams                        On diversity, equity, and inclusion
+           are finding that rewarding creative                   (DEI), the data shows an erosion of                                                              38%
+           work is being displaced by the                        these efforts. Over a quarter (27%) of
+                                                                                                               The same
+           maintenance and review of                             respondents say DEI is less of a
+                                                                                                                                                                  38%
+           AI-generated code.                                    priority than 12 months ago, up from
+                                                                 18% in 2025. Only 51% say DEI remains
+         • One respondent described being
+                                                                 a priority overall, down from 63% a
+           told to use a specific AI-coding tool                                                                                                                      41%
+                                                                 year ago.
+           or face being laid off, with an internal                                                       Less motivated
+           leaderboard based solely on token                                                                                                                                44%
+                                                                 “This is a concerning but somewhat
+           usage. “Something we were excited
+                                                                 predictable shift in periods of
+           about has been turned against us.”
+                                                                 uncertainty,” says Rao. “When pressure
+         • Another described a “TikTok-                          rises, organizations tend to revert to                          3%
+           ification” of engineering problem                     short-term execution metrics. The risk         Not sure
+           solving driven by AI, characterizing                  is that this erodes long-term                                    4%                                        2026
+           the result as making engineering “a                   organizational health and innovation                                                                       2025
+           babysitting chore, rather than doing                  capacity. DEI is not orthogonal to
+                                                                                                                           % 0         10         20     30      40            50
+           interesting work.”                                    performance; it’s foundational to it.”
+
+
+
+
+26 // The engineering leadership report 2026 / The human cost of transformation
+           What does                                                                          The 2026 Engineering Leadership Report paints a clear picture:
+                                                                                              this is a profession under pressure, and the forces driving it are
+
+
+           this mean for
+                                                                                              compounding.
+
+                                                                                              AI adoption is accelerating faster than the governance,
+
+
+           engineering
+                                                                                              measurement, and people frameworks needed to support it. The
+                                                                                              engineering leader’s role is expanding technically at the same time
+                                                                                              as it is expanding managerially, with no reduction in either dimension.
+
+
+           leaders?                                                                           Working hours are rising. Job security anxieties are growing despite
+                                                                                              stable layoff rates. Team motivation is fragile, particularly around the
+                                                                                              displacement of meaningful work by AI-driven maintenance tasks.
+                                                                                              The junior developer pipeline, the source of the next generation of
+                                                                                              experienced engineers, is at risk in ways that are recognized but not
+                                                                                              yet adequately addressed.
+
+                                                                                              What this moment demands of engineering leaders is not simply
+                                                                                              technical adaptation. It demands the kind of leadership that can hold
+                                                                                              the organization’s AI ambitions alongside its human responsibilities.
+
+                                                                                              The organizations that navigate this well will not be the ones that
+                                                                                              adopted AI fastest. They will be the ones that built the conditions – the
+                                                                                              trust, the clarity, the investment in people – that allows AI to amplify
+                                                                                              human capability rather than erode it.
+
+                                                                                              That is the leadership challenge of 2026, and the data in this report
+                                                                                              makes clear that many organizations are still in the early stages of
+                                                                                              rising to meet it.
+
+
+
+
+27 // The engineering leadership report 2026 / What does this mean for engineering leaders?
+          Methodology
+          This survey was conducted between 31 March and 16 April 2026. Results are based on
+          the responses of 600 engineers of which 530 completed all the questions that were
+          presented to them. Due to rounding, not all charts add up to 100%.
+
+
+                                                            1% – Africa
+                                                      3% – Oceana                                            3% – Other
+                              4% – Mexico, Central America,                                  6% – CTO or
+                                        and South America                                     equivalent
+                                           4% – Canada
+
+
+
+                                                                                                       9%
+                                                             5%                                   Software
+                                                             Asia                      32%        engineer
+                                                                                       USA                                                  37%
+                                                                                                                                          Manager of
+                                                       9%                                                                                 engineers
+                                                     Germany                                     11%
+                                                                     Location                 Tech lead                   Role
+
+
+                                                               20%                                     16%
+                                                                UK                              Senior individual
+                                                                             23%                  contributor
+                                                                            Europe                                               18%
+                                                                           (excluding UK                                      Manager
+                                                                           and Germany)                                     of managers
+
+
+
+
+28 // The engineering leadership report 2026 / Methodology
+

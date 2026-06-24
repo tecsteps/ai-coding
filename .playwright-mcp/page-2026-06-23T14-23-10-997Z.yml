@@ -1,0 +1,45 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - heading "Orgs know the role is changing. Almost none changed the org." [level=1] [ref=e9]:
+          - text: Orgs know the role is changing.
+          - text: Almost none changed the org.
+        - paragraph [ref=e10]: Leaders are hiring for judgment, orchestration, and verification. But only 19 respondents changed role definitions and only 15 changed onboarding.
+        - paragraph [ref=e11]: "Source: Augment Code, The State of AI-Native Engineering in 2026, p. 13."
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - paragraph [ref=e16]: Hiring priorities
+            - paragraph [ref=e17]: What leaders now value most
+          - paragraph [ref=e18]: respondents
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - paragraph [ref=e21]: Evaluating & verifying AI-generated code
+            - paragraph [ref=e24]: "41"
+          - generic [ref=e25]:
+            - paragraph [ref=e26]: Orchestrating and directing agents
+            - paragraph [ref=e29]: "35"
+          - generic [ref=e30]:
+            - paragraph [ref=e31]: Traditional systems skills
+            - paragraph [ref=e34]: "34"
+          - generic [ref=e35]:
+            - paragraph [ref=e36]: Product judgment
+            - paragraph [ref=e39]: "34"
+          - generic [ref=e40]:
+            - paragraph [ref=e41]: Traditional coding
+            - paragraph [ref=e44]: "31"
+          - generic [ref=e45]:
+            - paragraph [ref=e46]: Cross-functional communication
+            - paragraph [ref=e49]: "22"
+          - generic [ref=e50]:
+            - paragraph [ref=e51]: Writing specs
+            - paragraph [ref=e54]: "14"
+    - generic:
+      - generic: Munich · 2026
+      - generic: 08 / 37
+  - button "Open Next.js Dev Tools" [ref=e60] [cursor=pointer]:
+    - img [ref=e61]

@@ -1,0 +1,14 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - heading "Introducing Agentic Engineering is hard." [level=1] [ref=e8]
+      - img "A path from first workshop through fuzzy organizational changes to a high-performing IT organization at more than 10x speed" [ref=e11]
+    - generic:
+      - generic: Munich · 2026
+      - generic: 07 / 36
+  - button "Open Next.js Dev Tools" [ref=e17] [cursor=pointer]:
+    - img [ref=e18]
+  - alert [ref=e21]

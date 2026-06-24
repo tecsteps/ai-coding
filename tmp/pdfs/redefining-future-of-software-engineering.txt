@@ -1,0 +1,1072 @@
+       Produced in partnership with   Efficiency,
+                                      How   agentic AI
+                                                  resilience,
+                                                        will change
+                                      andway
+                                      the  the pathway
+                                               softwareto is 5G
+                                                             developed
+                                      and managed.
+
+
+
+
+Network the
+Redefining
+automation
+future of software
+engineering
+1 	 MIT Technology Review Insights
+
+
+
+
+                                     Preface
+                                     “Redefining the future of software engineering” is an MIT Technology Review
+                                     Insights report sponsored by SoftServe. This report, which is based on survey
+                                     research and executive interviews, seeks to understand how organizations intend to
+                                     adopt and deploy agentic AI in software engineering. Denis McCauley was the
+                                     author of the report, Virginia Wilson was the editor, and Nicola Crepaldi was the
+                                     publisher. The research is editorially independent and the views expressed are those
+                                     of MIT Technology Review Insights.
+
+                                     We would like to thank the following executives for their time and insights:
+
+                                     Nathaniel Barnes, Portfolio Chief Technology Officer, Hg Capital
+
+                                     Serge Haziyev, Chief Technology Officer, Advanced Technologies, SoftServe
+
+                                     Rick Kazman, Danny and Elsa Lui Distinguished Professor of Information
+                                      Technology Management, University of Hawaii
+
+                                     Shashi Prabakhar, Director, Americas Partner Solutions Architect, Amazon
+                                      Web Services
+
+                                     Martin Vesper, Managing Director and Chief Digital Officer, Pfeifer & Langen
+
+
+                                     Methodology
+                                     In December 2025 and January 2026, MIT Technology Review Insights conducted a
+                                     survey of 300 chief information officers, chief technology officers, chief data and
+                                     analytics officers, chief AI officers, and other senior software engineering, data, and
+                                     technology executives. The survey respondents work in organizations across seven
+                                     industries, each headquartered in one of six countries. Most of the organizations
+                                     earn $500 million or more in annual revenue, while a minority (13%) earn between
+                                     $250 million and $500 million.
+
+                                     In addition to the survey, a series of in-depth interviews with senior technology
+                                     executives and other experts offer firsthand insights into how agentic AI will impact
+                                     software engineering.
+                                                                                                  MIT Technology Review Insights   2
+
+
+
+
+CONTENTS   01 Executive summary.................................................................4
+
+
+           02 From performance-enhancer to game-changer...............5
+                		Enter agentic engineering.............................................................................. 6
+                		The longer-term outlook................................................................................. 7
+
+           03 The gains to be won.................................................................8
+                		From coding to lifecycle management..................................................... 9
+                		Hg Capital: Experimenting more for better outcomes...................... 9
+
+           04 Challenges of change............................................................13
+                		Industry-specific challenges....................................................................... 13
+                		Governance and reliability........................................................................... 13
+                		Change management: What is different this time..............................15
+
+           05 Roles rearchitected...............................................................16
+                		Wanted: AI-native engineers....................................................................... 16
+                		Reorienting roles towards ideation and creativity.............................17
+
+           06 Dreaming bigger.....................................................................18
+3 	 MIT Technology Review Insights
+
+
+
+
+                                                                                                                0
+                          Foreword
+                          The next era of software development
+
+                          2025 has marked a steep acceleration in how AI is used in software
+                          engineering, evolving from vibe coding experiments to more disciplined agentic
+                          engineering.
+
+                          For the software industry, the implication is profound: Productivity no longer
+                          scales linearly with headcount. It scales with how clearly we define the product
+                          vision, engineer context, and onboard agents.
+
+                          But technology alone will not deliver the promised leap. As this report highlights,
+                          organizations recognize both the opportunity and the barriers ahead, from
+                          establishing AI-native roles to fundamentally redesigning the software
+                          development lifecycle. This report captures where that shift stands today, and
+                          what separates the companies already pulling ahead from those still finding
+                          their footing.
+
+                          The turning point will come from rethinking people, processes, and tools in
+                          concert—not in isolation.
+
+                          Agentic engineering is ultimately about dreaming bigger. If teams use the
+                          productivity dividend merely to ship the same backlog faster, they will miss the
+                          moment. If instead they channel it into deeper user value and innovation, the
+                          business impact will extend far beyond gains in speed and quality.
+
+                          The history of technological progress suggests that the future of software is
+                          not human versus machine. It is human ambition amplified by autonomous
+                          systems. The organizations that understand this shift and act decisively will
+                          redefine what modern software engineering looks like for the next decade.
+
+                          Serge Haziyev, CTO, Advanced Technologies, SoftServe
+                                                                                                MIT Technology Review Insights   4
+
+
+
+
+01       Executive
+         summary
+                                                                 Key findings include the following:
+
+                                                                 • Adoption momentum is building. While half of
+                                                                  organizations deem agentic AI a top investment priority
+                                                                  for software engineering today, it will be a leading
+                                                                  investment for over four-fifths in three years. That
+                                                                  spending is driving accelerated adoption. Agentic AI is in
+                                                                  (mostly limited) use by 51% of software teams today, and
+                                                                  45% have plans to adopt it within the next 12 months.
+
+
+
+
+S
+            oftware engineering has experienced two              • Early gains will be incremental. It will take time for
+            seismic shifts this century. First was the rise of    software teams’ investments in agentic AI to start
+            the open source movement, which gradually             bearing fruit. Over the next two years, most expect the
+            made code accessible to developers and                improvements from agent use to be slight (14%) or at
+            engineers everywhere. Second, the adoption            best moderate (52%). But around one-third (32%) have
+of development operations (DevOps) and agile                      higher expectations, and 9% think the improvements will
+methodologies took software from siloed to collaborative          be game changing.
+development and from batch to continuous delivery. Now,
+a third such shift looks to be taking shape with the             • Agents will accelerate time-to-market. The chief gains
+adoption of agentic AI in software engineering.                   from agentic AI use over that two-year time frame will
+                                                                  come from greater speed. Nearly all respondents (98%)
+Thus far, engineering teams have mainly used AI to assist         expect their teams’ delivery of software projects from
+with coding, testing, and other individual tasks, within          pilot to production to accelerate, with the anticipated
+tightly designed parameters. But with agentic capabilities,       increase in speed averaging 37% across the group.
+AI agents become reasoning, self-directing entities that
+can manage not just discrete tasks but entire software           • The goal for most is full agentic lifecycle
+projects—and do so largely autonomously. If adopted and           management. Teams’ ambitions for scaling agentic AI
+fully embraced by engineering teams, agentic AI will usher        are high. Most aim for AI agents to be managing the
+in end-to-end software process automation and,                    product development and software development
+ultimately, agent-managed development and product                 lifecycles
+lifecycle automation.                                             (PDLC and SDLC) end to end relatively quickly. At 41% of
+                                                                  organizations, teams aim to achieve this for most or all
+This report, which is based on a survey of 300 engineering        products in 18 months. That figure will rise to 72% two
+and technology executives, finds that software                    years from now, if expectations are met.
+engineering teams are seeing the potential in agentic AI
+and are beginning to put it to use, but so far in a mainly       • Compute costs and integration pose key early
+limited fashion. Their ambitions for it are high, but most        challenges. For all survey respondents—but especially in
+realize it will take time and effort to reduce the barriers to    early-adopter verticals such as media and entertainment
+its full diffusion in software operations. As with DevOps         and technology hardware—integrating agents with
+and agile, reaping the full benefits of agentic AI in             existing applications and the cost of computing
+engineering will require sometimes difficult organizational       resources are the main challenges they face with agentic
+and process change to accompany technology adoption.              AI in software engineering. The experts we interviewed,
+But the gains to be won in speed, efficiency, and quality         meanwhile, emphasize the bigger change management
+promise to make any such pain well worthwhile.                    difficulties teams will face in changing workflows.
+5 	 MIT Technology Review Insights
+
+
+
+
+02               From performance-
+                 enhancer to
+                 game-changer
+
+
+
+
+        S
+                   oftware engineering is no stranger to agentic                  Adoption of AI assistants in two industry verticals—the
+                   AI. Developers and engineers have been using                   technology sector, particularly software producers, and
+                   AI tools known as AI assistants for over two                   media and entertainment—is much more advanced than in
+                   years. Nearly four-fifths (79%) of the                         others (see Figure 1). This industry divergence in the
+                   respondents in our survey say their engineering                development of AI capabilities is a pattern that holds
+        teams have adopted such tools, and almost one-third                       through much of the survey.
+        (30%) are using them widely.
+
+
+
+
+            Figure 1: Nearly four in five engineering teams have adopted AI assistants for specific software tasks
+            while 30% say they use them widely
+
+
+                                   1%
+                                                                                                           By industry
+
+                                           20%                      Financial services 3%           42%                  42%          12%
+
+                                                                               Retail 1% 3%                      93%                       3%
+                  30%
+                                 Total                           Consumer packaged
+                                                                             goods             42%                       55%               3%
+
+                                                                       Manufacturing 3%             36%            36%               24%
+                           49%
+                                                                        Health care &
+                                                                         life sciences        33%                     52%             15%
+
+                    Adopted, in widespread use
+                                                                             Media &
+                                                                       entertainment     9%     21%                      70%
+                    Adopted, in limited use
+                    Plan to adopt within 6-12 months            Technology - hardware 3%                        88%                    9%
+                    No immediate plans to adopt
+                                                                Technology - software 3%      19%                     78%
+                    Not sure
+                                                                      Technology - IT
+                                                                                                          43%                  46%
+                                                                  & software services 3% 9%
+          Source: MIT Technology Review Insights survey, 2026
+                                                                                                            MIT Technology Review Insights   6
+
+
+
+
+Such tools have helped developers become more                          Thanks to considerable advances in LLM intelligence, AI
+productive in executing discrete software tasks. Examples              agents can now execute more complex development
+include Claude Code, Cursor, and GitHub Copilot for                    tasks far more reliably than was possible just a year ago.
+coding, and Applitools and Testim for quality assurance.               Agentic engineering marks a shift from prompt
+                                                                       engineering to context and objective engineering, moving
+While a boon to software development, the very term “AI                toward a specification-first approach. This enables
+assistants” hints at these tools’ limitations in terms of their        learning from previous executions, planning, acting, and
+overall impact. They assist developers in specific tasks               refining in a largely autonomous manner.
+rather than taking on the execution of those tasks in their
+entirety. The work of those assistants is guided by the                With these capabilities, AI can automate entire tasks or
+natural language prompts written by developers for the                 lightweight user stories (brief, high-level descriptions of
+underlying large language models (LLMs).                               software requirements) across the SDLC, rather than
+                                                                       just individual steps. “In time, this will lead to more
+Enter agentic engineering                                              end-to-end software product management, in which
+Agentic AI systems deliver a step change in capabilities               autonomous agents handle the majority of routine
+when applied to software engineering. “What we call                    project work—freeing human teams to focus on higher-
+agentic engineering will bring a revolutionary shift in                order decisions and innovation,” says Shashi Prabakhar,
+software management,” says Serge Haziyev, chief                        director and Americas partner solutions architect at
+technology officer of advanced technologies at SoftServe.              Amazon Web Services (AWS).
+“While AI assistants have helped individuals boost their own
+productivity, agentic engineering has potential to boost               Judging by their technology investment intentions, the
+team productivity by an order of magnitude.”                           respondents’ organizations understand agentic AI’s
+
+
+
+    Figure 2: Half of software engineering teams prioritize investment in agentic and generative AI today
+    with 84% expecting to do so within three years
+
+
+                                                                         Today            In three years
+
+                                                                                                       63%
+                         Cloud, containerization, microservices
+                                                                                20%
+                                                                                                 51%
+                             Generative AI / agentic AI solutions
+                                                                                                                 84%
+
+                      AI-assisted developer productivity tools                                  47%
+                                                                                    28%
+                                                                                          37%
+                  Cybersecurity and zero-trust architectures
+                                                                              19%
+                                                                                    27%
+                                         Application modernization
+                                                                           12%
+
+                  Data platforms, analytics, data governance                    24%
+                                                                              19%
+
+                              AI agents for software engineering              17%
+                                                                                    26%
+
+                                   Low-code / no-code platforms            13%
+                                                                          9%
+
+                                       Digital twins and simulations        12%
+                                                                                  23%
+
+                                              Domain-specific LLMs        10%
+                                                                                                      60%
+  Source: MIT Technology Review Insights survey, 2026
+                                                                                                                                                0
+7 	 MIT Technology Review Insights
+
+
+
+
+            Figure 3: Just one in 10 say agentic AI is in widespread use in software engineering operations today
+            while four in 10 say it is used in limited ways
+
+                        2% 2%
+                                                                                                           By industry
+                                  12%
+                                                                    Financial services 3% 3%           55%                     30%         9%
+
+                                                                               Retail   6%                 67%                       27%
+                           Total
+                                                                 Consumer packaged
+                                                                             goods                   61%                        36%        3%
+
+                 45%                    39%
+                                                                       Manufacturing 3% 6%             52%                     33%         6%
+
+                                                                        Health care &
+                                                                                       3%                  73%                   15%       9%
+                                                                         life sciences
+                   Adopted, in widespread use
+                                                                             Media &
+                                                                                     3%        24%               55%                   18%
+                   Adopted, in limited use                             entertainment
+                   Plan to adopt within 6-12 months             Technology - hardware 3%        33%                      55%               9%
+                   No immediate plans to adopt
+                   Not sure                                     Technology - software   11%             54%                      35%
+
+                                                                      Technology - IT
+                                                                                      3%         40%                 40%               17%
+                                                                  & software services
+          Source: MIT Technology Review Insights survey, 2026
+
+
+
+
+        potential to deliver gains. Asked about their investment                  refactoring, and deployment, the changes that agentic AI
+        plans for software engineering, 51% list agentic AI among                 brings will be revolutionary.”
+        their top three priorities today, surpassed in frequency of
+        response only by spending on cloud, containerization, and                 Nathaniel Barnes, portfolio chief technology officer at Hg
+        microservices. Three years from now, it will be a top                     Capital, is similarly bullish about agentic AI’s long-term
+        priority for 84% of organizations, ranking far ahead of                   impact in software engineering. “I think it will eventually
+        other tech spending objectives (see Figure 2).                            be ubiquitous in this field,” he says. “The gains are
+                                                                                  potentially so transformative that software teams can’t
+        That investment will drive accelerated adoption. Having                   afford not to adopt it.”
+        become available only in the past year, agentic AI systems
+        are in more limited deployment today than AI assistants.
+        Just 12% of respondents report the widespread use of
+        agentic AI today in software engineering operations, while                “I see agentic AI coming into
+        39% say it is in limited use. But 45% report plans to adopt
+        it within the next six to 12 months. Here, too, software and
+                                                                                  widespread use around two
+        media and entertainment businesses are the earliest                       years from now. In areas like
+        adopters (see Figure 3).
+                                                                                  code generation, testing,
+        The longer-term outlook                                                   refactoring, and deployment,
+        The experts we interviewed expect it will take much
+        longer for agentic AI to diffuse throughout software
+                                                                                  the changes that agentic AI
+        engineering, but all are convinced that it will eventually                brings will be revolutionary.”
+        prove a game changer. “I see it coming into widespread
+        use around two years from now,” says Rick Kazman,                         Rick Kazman, Danny and Elsa Lui
+        Danny and Elsa Lui distinguished professor of                             Distinguished Professor of Information
+        information technology management at the University of                    Technology Management, University of
+        Hawaii. “In areas like code generation, testing,                          Hawaii
+03
+                                                                                                         MIT Technology Review Insights   8
+
+
+
+
+           The gains to
+           be won
+
+
+
+
+I
+   t will take time for software teams’ investments in                    Software producers, media and entertainment companies,
+   agentic AI to start bearing fruit. For most in the survey,             and health and life sciences organizations are most likely to
+   the expectations for software engineering                              expect major improvements (see Figure 4). Technology
+   improvements from agentic AI use are moderate (52%)                    executives at the smallest organizations in the survey
+   or slight (14%) over the next two years. That said, nearly             (earning between $250 million and $500 million in annual
+one-third (32%) believe the improvements will be bigger,                  revenue) have higher expectations of a significant early
+and for a handful (9%) even game changing.                                impact than the largest ones (earning over $10 billion).
+
+
+
+
+    Figure 4: Most organizations expect agentic AI to moderately or slightly improve software engineering
+    over the next two years while one third anticipate significant or even game-changing advances
+
+
+
+                                                                                                  By industry
+
+         23%                    52%                         Financial services   7%        36%             30%         21%     6%
+
+                                                                        Retail 1%3%3%                   83%                7% 3%
+                      Total
+                                                         Consumer packaged
+                                                                     goods       9%      21%                    67%            3%
+
+          9%                                                   Manufacturing       21%                  58%              18%    3%
+                      14%
+            1%                                                  Health care &
+                 1%                                                                              42%          15%
+                                                                 life sciences 1% 12%                                    30%
+         A game-changer: significant                                 Media &
+         improvement across all areas
+                                                               entertainment     9%      24%                    64%            3%
+         Significant improvement in most
+         areas                                          Technology - hardware 3%                         97%
+         Moderate improvement in some
+         or most areas                                  Technology - software 1% 8%               59%                    32%
+         Slight improvement in some
+                                                              Technology - IT
+         areas                                                                                                            14% 3%
+                                                          & software services 3% 17%                    63%
+         No impact
+         Not sure
+
+  Source: MIT Technology Review Insights survey, 2026
+9 	 MIT Technology Review Insights
+
+
+
+
+        Many of these are software producers themselves, which          job of documenting their decisions and their chain of
+        arguably have greater incentive to deploy agentic AI than       reasoning.”
+        other types of organizations, given that software delivery is
+        at the very core of their business model.                       From coding to lifecycle management
+                                                                        The areas of greatest early improvement vary widely by
+        In what areas will those early gains manifest? At AWS,          industry, according to the survey. In verticals where early
+        Prabakhar is seeing especially significant gains on the         agentic AI adopters are more prevalent—software
+        operations side of software engineering. “That’s where the      production, media and entertainment, and to some
+        most monotonous work is concentrated,” he says. “If it’s        extent retail—coding comes top of the list. For consumer
+        monotonous, you can automate it.” According to Kazman,          goods producers and manufacturers, quality
+        one of those monotonous areas is documentation.                 assurance—the prevention of defects—is the most
+        “Nobody loves this,” he says. “But agents do an amazing         frequent response. And financial services providers and
+
+
+
+        “Agentic AI is enabling us to accelerate prototyping. The pace
+        of that has increased dramatically, so we’re able to do more
+        iterations of product requirements. The more iterations we do in
+        the same time frame, the better the product quality will be.”
+        Martin Vesper, Managing Director and Chief Digital Officer, Pfeifer & Langen
+
+
+
+           Hg Capital: Experimenting more for better outcomes
+
+
+
+
+            W
+                               ithin its portfolio, Hg Capital has      experimenting more at the same time. That usually
+                               58 companies in a diverse range          leads to better results.”
+                               of industries from services to           Barnes provides an example: “I’ll often see a
+                               technology to manufacturing.             developer get a story and cut it into specs for agents
+                               The software engineering teams           in different horizontal tiers, such as APIs, database
+             at each of those companies can therefore differ            migrations, or the front end. Now that developer
+             widely in size, capabilities, and the roles they play      writes a spec in different ways and sends those to
+             in delivering on the overarching business strategy.        a few different agents. That way, they can pick the
+             That helps explain the different approaches those          spec they like best at the end of that process. So
+             teams are taking toward the use of agentic AI.             they’re not only getting more raw output, they’re also
+             “We have some engineering teams that are highly            able to experiment better with different solutions in
+             invested in agentic AI and others that don’t even          order to find the best result at the end.”
+             want to look at it yet,” says Nathaniel Barnes,
+             portfolio CTO at Hg Capital. “The teams that are
+             highly invested in it are getting big returns already,
+                                                                        “One area of significant uplift
+             with productivity growth more than doubling in             for the engineering teams is
+             some cases.”
+                                                                        experimentation.”
+             One area of significant uplift for the engineering
+             teams is experimentation, says Barnes.                     Nathaniel Barnes, Portfolio Chief
+             “We’re seeing teams producing more but also                 Technology Officer, Hg Capital
+                                                                                                          MIT Technology Review Insights   10
+
+
+
+
+  Figure 5a: Coding and quality assurance are the software engineering areas where respondents see
+  the greatest early benefits from agentic AI in year one
+
+                                                                         Total
+
+                                                                  Coding                                                44%
+
+                                                       Quality assurance                                        38%
+
+                                 End-to-end software development                                         31%
+
+                                                                  Testing                           28%
+
+                                  End-to-end product development                                   27%
+
+                                                      Architecture design                 19%
+
+                       Documentation / knowledge management                               19%
+
+
+
+                                                              Top areas by industry
+                 48%                                                               77%
+                                                                            73%                                58%
+                           39%
+                                    36%
+                                              33%
+
+                                                                                                  30%
+                                                           30%     27%                     24%
+                                                                                                         18%         18%
+
+
+
+
+                       Financial services                             Retail               Consumer packaged goods
+                                              39%
+                                                            45%                                                      70%
+                           33%                                                     42%
+
+                                      27%                                                           55%
+                 24%
+                                                                   27%
+                                                                             24%
+                                                                                           33%
+                                                                                                           27%
+
+
+
+
+                         Manufacturing                      Health care & life sciences         Media & entertainment
+
+                                                                                   68%
+                           61%                                                                                       60%
+                                                                            51%                     51%
+                                                                                                           43%
+                 39%                                        41%
+                                              30%                                          29%
+                                     21%                           19%
+
+
+
+
+                    Technology - hardware                     Technology - software                Technology - IT
+                                                                                                 & software services
+
+Source: MIT Technology Review Insights survey, 2026
+11   MIT Technology Review Insights
+
+
+
+
+           Figure 5b: Respondents expect to see the greatest benefits from agentic AI in overall lifecycle
+           management by year three
+
+
+                                                                                  Total
+
+                                           End-to-end product development                                                   37%
+                                          End-to-end software development                                                 34%
+                                                                Quality assurance                                 28%
+                                                               Architecture design                               27%
+                                                                           Coding                            25%
+                                                        Deployment / execution                             21%
+                                 Documentation / knowledge management                                 20%
+                                                                     Maintenance                     18%
+                                                                          Testing                    17%
+                                                                    Requirements 4%
+
+
+                                                                       Top areas by industry
+
+                                    48%                                              60%                                   39%
+                                                                    53%
+                                                                                              47%                                 33%
+                                                       33%                  40%                            30%      30%
+                          30%
+                                             27%
+
+
+
+
+                                Financial services                             Retail                      Consumer packaged goods
+
+
+
+                                    36%                                               48%                                         55%
+                                                                                                                           52%
+                                                       33%
+                          30%                30%                    36%                                    39%
+
+                                                                            21%               21%                   24%
+
+
+
+
+                                  Manufacturing                      Health care & life sciences             Media & entertainment
+
+
+                                                                                                                                  60%
+                                                       64%                                 49% 49%
+                                                                                     41%
+                                                                                                           37%             40%
+                                                                                                                    31%
+                          27%                 27%                   19% 19% 19%
+                                    21%
+
+
+
+
+                             Technology - hardware                     Technology - software                       Technology - IT
+                                                                                                                 & software services
+
+
+         Source: MIT Technology Review Insights survey, 2026
+                                                                                                           MIT Technology Review Insights    12
+
+
+
+
+technology hardware producers emphasize the gains                        hand in hand. “For example, agentic AI is enabling us to
+they expect in testing (the detection of defects). Health                accelerate prototyping,” he says. “The pace of that has
+and life sciences organizations, meanwhile, highlight                    increased dramatically, so we’re able to do more iterations
+early benefits in documentation and knowledge                            of product requirements. The more iterations we do in the
+management (see Figure 5a).                                              same time frame, the better the product quality will be.”
+
+Further out (in three years), teams in early-adopter                     In the long run, cost savings are also likely to prove a major
+industries (software, media and entertainment) expect                    benefit of agentic engineering. “Senior management is
+agentic engineering to be delivering its greatest value in               putting enormous pressure on project teams not just to be
+overall lifecycle management. Around half or more of                     more productive, but also to cut the cost of software
+respondents from these verticals point to the speed, quality,            development,” says Haziyev. “They want the same scope
+and other gains their teams will be realizing in end-to-end              of work but with smaller teams. Agentic engineering has
+software and product development (see Figure 5b). This is                strong potential to enable this.”
+the point at which agentic AI use starts to become game-
+changing for software engineering.                                       At present, the surveyed executives see the cost of agentic
+                                                                         AI use as a significant challenge. But as agents assume
+Over the long term, speed and time to market will be the                 end-to-end management of entire product lifecycles,
+biggest gains agentic engineering delivers to the business.              project teams are likely to become smaller and less
+“It’s the ability to build more features and more software               cost-intensive to support.
+products in the same time frame,” says Haziyev. That view
+is supported by the survey results. Almost all respondents               The software teams in our survey have ambitious plans to
+(98%) expect the speed of software engineering projects                  scale agentic AI to achieve full lifecycle management of
+from pilot to production to increase over the next two years,            their products. If their expectations prove accurate, in 18
+with the average increase of 37% across the survey group                 months from now, AI agents will be managing most or all of
+(and considerably higher in the technology and media and                 those products end to end at 41% of organizations. Two
+entertainment sectors).                                                  years from now, agents will be doing this at 72% of
+                                                                         organizations (see Figure 6). But software teams face
+For Martin Vesper, chief digital officer at Pfeifer & Langen, a          significant challenges in achieving that objective in these
+Germany-based food company, speed and quality gains go                   relatively short time frames.
+
+
+
+    Figure 6: Four in 10 respondents expect agentic AI to be fully managing aspects of their software
+    engineering operations in 18 months while seven in 10 foresee this in two years
+
+
+               6%
+                                             10%
+               11%                                                 15%
+                                                                                           24%
+                                             15%
+                                                                   22%
+              34%
+                                             29%                                           31%              72%
+                                                                                                                   Longer than two years
+                                                                   35%
+               31%                                                                                                 In the next two years
+                                             33%                                           27%          41%
+               13%                                                 20%                                             In the next 18 months
+                                              9%                             3%            10%        2%
+                            4%                          2%                   2%                       2%           In the next 6-12 months
+         Software                      Software                 End-to-end             End-to-end
+      development of                development of            management of          management of                 In the next six months
+     selected software             most or all software      selected software      most or all software
+         products                      products                  products               products                   Fully managed today
+
+
+
+  Source: MIT Technology Review Insights survey, 2026
+13   MIT Technology Review Insights
+
+
+
+
+04               Challenges
+                 of change
+
+
+
+
+      N
+                    either the survey respondents nor the            a high-level automation widely that worked once
+                    experts we interviewed are under the illusion    elsewhere and then find there are bugs in it. They’ll burn
+                    that scaling agentic AI in software              through a lot of tokens without a lot of outcome.”
+                    engineering will be straightforward. The
+                    executives point to a wide range of factors      As with any new technology capability, integrating AI
+      that block their organizations’ way to agentic engineering.    agents with existing applications, especially legacy ones, is
+                                                                     a major headache. “It’s essentially a challenge of
+      Industry-specific challenges                                   orchestration,” says Prabakhar. “In large enterprises like
+      In some of the early-adopter industries—particularly           ours, there are hundreds of development teams, thousands
+      media and entertainment and technology hardware—               of APIs, and hundreds of third-party and homegrown
+      the foremost challenges are the cost of computing              applications. That creates enormous complexity.”
+      resources and agent integration. Elsewhere,
+      governance issues like limited transparency and                Multi-agent orchestration—agents collaborating with one
+      auditability of agents pose big concerns to financial          another—is a related integration challenge. Orchestration
+      services providers and IT services firms. Respondents          agents exist to manage this but are not yet able to
+      in the software and health sectors say agent reliability       manage lifecycles end to end, partly because of that
+      is a key challenge to be addressed. And for consumer           complexity. Haziyev concurs but also points out that
+      goods producers, human and process-related                     agentic AI can simultaneously help to reduce integration
+      challenges—in talent and skills development and                challenges, as software modernization is one of its major
+      change management—are the chief concerns.                      use cases.
+
+      Notwithstanding the differing levels of emphasis,              Governance and reliability
+      organizations across industries need to monitor and, if        Governance of AI is not a new challenge, but the advent of
+      necessary, address all these issues to advance agentic         reasoning AI agents adds another layer of complexity to it.
+      engineering. For example, the costs of computing               “Most agents are currently unsuitable for autonomous
+      resources can easily escalate when teams are learning          operation,” Kazman explains. “That means human
+      how and where to apply AI agents. Token usage is a             oversight is a must for now, and there need to be rigorous
+      potential blind spot. “You have to control for errors,” says   and repeatable governance processes.”
+      Vesper. “If you’re paying as you go for cloud-based
+      compute power and teams are doing things incorrectly,          Limited auditability is by far the biggest concern of survey
+      you can use up a lot of money fast.” Barnes agrees: “This      respondents from the financial services industry, where
+      is a common source of cost overruns. A team might apply        compliance and fiduciary responsibilities are heavier than in
+                                                                                                                                                                       MIT Technology Review Insights    14
+
+
+
+
+ Figure 7: Agent integration and the cost of computing resources are the biggest challenges
+ organizations face with agentic AI in software engineering
+
+                                                                                                       Total
+
+                                        Ongoing cost of computing resources                                                                                                                44%
+
+       Agent integration with existing enterprise applications                                                                                                                             44%
+
+                                                                               Governance                                                                                     37%
+
+                                                                           Talent and skills                                                                         30%
+
+                                                                                     Reliability                                                                 29%
+
+                                                          Initial infrastructure costs                                                                    26%
+
+                                                          Multi-agent collaboration                                                                22%
+
+                                                                        Security / privacy                                                   20%
+
+                                                                 Change management                                         12%
+
+                                                                       Vendor landscape 3%
+
+
+
+
+                                                                                                  Industry
+                                  91%                                                      91%
+                                        85%
+                                                                                     79%
+                                                                                                               76%
+
+                                                                                                                                                               66%
+                                                                63%
+
+          53%                                                                                                                    52%
+
+                                                                                                                           42%
+                                                          39%                                          40%                             39%
+                                                    37%
+                33%
+                            30%               30%
+                                                                      27% 27% 27%
+                      24%                                                                                                                                24%
+
+    12%                                                                                                                                      12%
+                                                                                                                     7%                            9%
+                                                                                                 5%
+
+
+
+     Ongoing cost of computing                                  Agent integration with                                       Governance
+                                                                                                                                                                           Financial services
+            resources                                            existing enterprise
+                                                                    applications                                                                                           Retail
+
+                                                                                                 81%
+                                                                                                                                                   76%
+                                                                                                                                                                           Consumer packaged goods
+                                                    69%
+                                                                                                                                                                           Manufacturing
+
+                55%
+                                                                                                                                                                           Health care & life sciences
+          47%                                             45%
+                                                                           42% 42%
+                                                                                                                                                                           Media & entertainment
+                            33%                                                                                                              33%
+                                                                                                                                 27%                                       Technology - hardware
+                                              24%
+                                                                                                                           21%                                 20%
+                      18%                                                                                            17%               18%
+    15%                                                                              15%                       15%
+                                                                                                                                                                           Technology - software
+                                  9%                            10%                                    9%
+                                                                                                                                                         5%
+                                        3%                            3%                   3%
+                                                                                                                                                                           Technology - IT & software
+                                                                                                                                                                           services
+                Talent and skills                                          Reliability                         Initial infrastructure costs
+
+
+
+
+Source: MIT Technology Review Insights survey, 2026
+15   MIT Technology Review Insights
+
+
+
+
+                                                                                                                                      0
+      others. “As with any AI model, things will go wrong at times,”   confirms Haziyev. “Any errors can be propagated widely
+      says Kazman. “There must be ways to find out the reasons         during automated code generation. Reliability today is
+      and to put controls in place to avoid future occurrences.”       the biggest factor we need to improve in agentic
+      Agent governance must, of course, be tried, tested, and          engineering.”
+      proven before agents are allowed to run autonomously.
+                                                                       Kazman points out that reliability concerns are a brake on
+      The surveyed executives are clearly worried about                wider agentic AI adoption, especially in safety-critical use
+      agent reliability and things going wrong, no more so             cases. “If you’re designing air traffic or railway-switching
+      than in the software industry itself. “Doubts about agent        control software, for example, the idea that agents could
+      reliability, especially hallucinations, is a big challenge,”     hallucinate is scary,” he says.
+
+
+
+       “The change coming this time is transformational. We’re not
+       talking about the need to adopt new tools. Software engineers
+       have to rethink how they’ve been working as a workforce.”
+       Shashi Prabakhar, Director, Americas Partner Solutions Architect, Amazon Web Services
+
+
+
+          Change management: What is different this time
+
+
+
+
+          C
+                         hange management is not high on               is a big change management problem.” Barnes
+                         the list of agentic AI challenges for         emphasizes that it is fundamentally an organizational
+                         survey respondents (see Figure 7).            and people management challenge, and not one of
+                         Exceptions are the consumer goods             technology. “The companies in our portfolio who are
+                         and retail industries, where 48% and          good at agentic AI don’t necessarily have the newest
+           27% of executives respectively, tag it as a major           tech stack. But they’ve fully embraced the change
+           concern. It is foremost on the minds of the experts         management aspect of it.”
+           we interviewed, however, which suggests that the            Taking advantage of leaps in enterprise technology
+           survey respondents may be underestimating the               (think cloud computing and software as a service
+           organizational difficulties that lie ahead in this area.    (SaaS), big data, containerization, and generative
+           The change management challenge comes in                    AI) has always demanded a rethinking of workflows
+           the form of resistance in the software team to              and processes. For software engineering, however,
+           redesigning the workflow and the SDLC. “Scrum               the changes needed will be even more profound.
+           was a big process redesign,” says Serge Haziyev,            According to Haziyev: “The complexity of change
+           chief technology officer, Advanced Technologies at          management with agentic AI is greater than with AI
+           SoftServe, of the agile team collaboration framework,       assistants, for example, in that we need to redesign
+           “and that took 15 years to become mainstream. It will       processes so that the team, not just individuals, can
+           take a few years, possibly more, to make the process        be more effective.”
+           changes needed for agentic engineering.”                    “The change coming this time is transformational,”
+           Nathaniel Barnes, portfolio chief technology officer        says Shashi Prabakhar, director, Americas partner
+           at Hg Capital, agrees: “Much like the early DevOps          solutions architect at Amazon Web Services.
+           movement, there is a fundamental change that                “We’re not talking about the need to adopt new
+           has to happen at ground level in how people write           tools. Software engineers have to rethink how
+           software, and that’s not an easy thing to do. This          they’ve been working as a workforce.”
+                                                                                                  MIT Technology Review Insights   16
+
+
+
+
+05  Roles
+    rearchitected
+
+
+
+
+T
+           here is no escaping the near certainty that             knowledgeable about DevOps, cloud platforms, and how
+           agentic AI, as an advanced form of intelligent          to manage application development across the entire
+           automation, will eventually replace human               technology stack. The growth of AI is changing that.
+           developers and engineers in the execution of
+           several software-related tasks. But it is a             For the past two years, organizations have prioritized the
+nascent technology capability that will take some years for        recruitment and development of DevOps, cloud, and full
+software teams to fully embed and scale.                           stack engineers. Looking ahead, however, organizations’
+                                                                   focus will shift markedly toward engineers who are
+Humans will remain in the loop, whether in governance,             proficient in working with AI. Over half (51%) of survey
+orchestration, or other roles, at least until teams are ready to   respondents cite this as a priority role to fill in the next
+allow agents to operate without supervision, if not longer.        two years. The roles of software architect and data
+Multi-agent orchestration—the ability to organize the agentic      engineer will also grow in importance.
+workflow—will be in high demand. Especially at early lifecycle
+stages, agents need input, context, and guidance from              Haziyev offers his company’s vision of AI-native
+engineers about the tasks they need to achieve. Meanwhile,         engineering roles. “What we call the intelligence engineer
+new engineer roles are taking shape that aim to harness the        is an AI-native role,” he says. “The individual performing it
+potential of AI agents and expedite their adoption.                is an operator of agents, able to configure them, feed
+                                                                   them with proper context, evaluate and improve the
+Wanted: AI-native engineers                                        agents’ work. They will also be the human in the loop
+For several years, software teams have placed a                    providing oversight and can also ensure that others in
+premium on hiring and developing engineers who are                 their teams are trained in this role.”
+
+
+
+
+“What we call agentic engineering will bring a revolutionary
+shift in software management. While AI assistants have helped
+individuals boost their own productivity, agentic engineering has
+potential to boost team productivity by an order of magnitude.”
+Serge Haziyev, Chief Technology Officer, Advanced Technologies, SoftServe
+                                                                                                                                                0
+17   MIT Technology Review Insights
+
+
+
+
+       Reorienting roles towards ideation                                       others, are newer roles that companies will find hard to
+       and creativity                                                           fill easily, internally or externally. That may be especially
+       If AI agents are assigned to the most monotonous and                     difficult for companies in traditional industries. According
+       repetitive software tasks, engineer activity will likely                 to Vesper at Pfeifer & Langen, which produces and
+       gravitate toward the front end of software projects,                     refines sugar: “We have plans in place to help staff upskill
+       believes Kazman. “This is where requirements engineering                 so that they can use agentic AI effectively, but they’re for
+       happens,” he says, “with the emphasis on figuring out what               our entire workforce, not specifically for software
+       the project team should build, specifying what’s needed in               engineers.”
+       a way that is clear and unambiguous. There will be less
+       emphasis on programming and more on these and other                      This is a challenge not just for organizations, but also for
+       skills like quality assurance.”                                          universities and other training institutions, says Kazman.
+                                                                                “For decades, institutions’ computer science and
+       Reorienting existing engineers toward roles that                         software engineering training has focused mostly on
+       emphasize ideation and creativity should not be too                      programming. We need to put more emphasis now on
+       complex, as roles in design and product management, for                  requirements engineering, prompt engineering, and
+       example, already exist within the engineering function.                  quality assurance, for instance. Those are going to be
+       But AI-native engineers and software architects, among                   key skills for software professionals.”
+
+
+
+          Figure 8: AI engineer is the software role expected to be the highest priority in the next two years
+
+
+
+                                                                                Past two years           Two years from now
+
+                                                                                                             41%
+                                                         DevOps engineer
+                                                                                             21%
+                                                                                                         37%
+                                                               Cloud engineer
+                                                                                              23%
+                                                       Full stack engineer                               36%
+                                                                                                 26%
+
+                                                                  AI engineer                          33%
+                                                                                                                   51%
+
+                                           Quality assurance engineer                              29%
+                                                                                           18%
+                                                                                       15%
+                                    Programmer / software engineer
+                                                                                     13%
+                                                                                     13%
+                                                          Business analyst
+                                                                                      14%
+                                                                                     12%
+                                                        Software architect
+                                                                                                    32%
+                                                                                    11%
+                                                           Project manager
+                                                                                   9%
+                                                                                    11%
+                                                                Data engineer
+                                                                                                   29%
+
+
+         Source: MIT Technology Review Insights survey, 2026
+06
+                                                                                               MIT Technology Review Insights    18
+
+
+
+
+         Dreaming
+         bigger
+
+
+
+
+U
+             ltimately, agentic engineering is about more
+             than faster and increasingly cost-efficient
+                                                              “Agentic AI must empower
+             software delivery, as desirable as those gains   teams to dream bigger.”
+             are for the business. It is also about better
+             software products. These are products that       Rick Kazman, Danny and Elsa Lui
+meet or exceed users’ expectations for functionality and      Distinguished Professor of Information
+value, doing so reliably at consistent performance levels.    Technology Management, University of
+They are also products that can potentially have a sizable    Hawaii
+impact on the results of a team, department, or even line
+of business.
+
+Agentic AI has the potential to free up the time and space    Wider, deeper collaboration. Engineers and developers
+for developers and engineers to create high-quality           must deepen collaboration with users. In-person
+products by removing the burden of monotony from their        discussions with users and in situ observation of
+day. The extra productivity that agentic AI generates in      their interaction with software can do more than lists
+software teams must be put to competitive advantage for       of requirements to foster deeper understanding of
+the business. As Kazman says: “Agentic AI must empower        user needs.
+teams to dream bigger.”
+                                                              Learning from non-software domains. Fields such as
+Where organizations best leverage the capabilities of         graphic design, architecture, finance, aviation,
+agentic AI, teams can dream bigger through:                   manufacturing, and medicine offer lessons to software
+                                                              engineers on ways of ensuring product reliability,
+Exploration of alternative approaches. Engineers should       scalability, auditability, and other attributes of high quality.
+follow the precepts of design thinking, which involves
+making time to study and experiment with multiple design      Critical thinking. This is the soft art of asking well-crafted
+ideas, challenging assumptions, and iterating before          questions and challenging the assumptions of both team
+converging on one tested and validated solution.              members and users alike. It also involves asking big
+                                                              questions, such as what success means, not just for the
+More and faster iteration of ideas. This involves reducing    product, but also for the team or department using it.
+the time required for iterations by, among other things,
+breaking down tasks into small components and putting         These are the types of activities that, in a multitude of
+tight limits on feedback loops. Agents themselves can         realms, lead to better innovation and enduring competitive
+help by automating testing.                                   advantage.
+      About MIT Technology Review Insights
+      MIT Technology Review Insights is the custom publishing division of MIT Technology Review, the world’s
+      longest-running technology magazine, backed by the world’s foremost technology institution—producing live
+      events and research on the leading technology and business challenges of the day. Insights conducts
+      qualitative and quantitative research and analysis in the US and abroad and publishes a wide variety of
+      content, including articles, reports, infographics, videos, and podcasts. This content was researched,
+      designed, and written by human writers, editors, analysts, and illustrators. This includes the writing of
+      surveys and collection of data for surveys. AI tools that may have been used were limited to secondary
+      production processes that passed thorough human review.
+
+
+
+
+      About SoftServe
+      SoftServe is a digital engineering and technology consulting company specializing in AI, data, and cloud
+      solutions. We decode complexities and reveal technology’s full potential to rapidly unlock new possibilities for
+      businesses, industries, and the communities they serve. Our global expertise is anchored in local
+      understanding. From strategy to execution, we elevate technology into a force for growth, progress, and lasting
+      impact. Visit the SoftServe website, blog, LinkedIn, and contact pages for more information.
+
+
+
+
+Designed by Shultz Design Collaborative, LLC. Illustrations provided by Adobe Stock.
+
+
+
+
+While every effort has been taken to verify the accuracy of this information, MIT Technology Review Insights cannot accept any responsibility or liability for reliance by any person
+in this report or any of the information, opinions, or conclusions set out in this report.
+
+© Copyright MIT Technology Review Insights, 2026. All rights reserved.
+
+
+To cite this report, please use: “Redefining the future of software engineering,” MIT Technology Review Insights and SoftServe, April 2026.
+MIT Technology Review Insights
+www.technologyreview.com
+insights@technologyreview.com
+

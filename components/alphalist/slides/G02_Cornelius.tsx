@@ -66,7 +66,7 @@ export function G02_Cornelius({ index, total }: Props) {
 
             <div className="mt-2 grid grid-cols-1 gap-3 sm:grid-cols-3">
               <Stat label="Role" value="Head of Generative AI" />
-              <Stat label="Based in" value="Berlin · Google" />
+              <Stat label="Based in" value="Munich · Google" />
               <Stat label="Education" value="ETH Zürich" />
             </div>
           </div>

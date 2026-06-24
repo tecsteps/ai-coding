@@ -1,0 +1,14 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - paragraph [ref=e6]: The Turning Point
+      - paragraph [ref=e8]: November 24, 2025
+    - generic:
+      - generic: Munich · 2026
+      - generic: 08 / 36
+  - button "Open Next.js Dev Tools" [ref=e14] [cursor=pointer]:
+    - img [ref=e15]
+  - alert [ref=e18]

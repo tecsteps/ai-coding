@@ -1,6 +1,6 @@
 'use client';
 
-import { Users2, Scale, BarChart3, Building2, type LucideIcon } from 'lucide-react';
+import { ClipboardCheck, MessageSquareText, NotebookPen, Presentation, type LucideIcon } from 'lucide-react';
 import { AlphalistFrame } from '../AlphalistFrame';
 
 interface Props {
@@ -8,46 +8,40 @@ interface Props {
   total: number;
 }
 
-const topics: { number: string; icon: LucideIcon; title: string; questions: string[] }[] = [
+const phases: {
+  number: string;
+  icon: LucideIcon;
+  title: string;
+  sub: string;
+  timebox: string;
+}[] = [
   {
     number: '01',
-    icon: Users2,
-    title: 'Rollout and resistance',
-    questions: [
-      'Where is adoption stalling, and why?',
-      'Who is pushing back, and what is really behind it?',
-      'Which part of the rollout keeps surprising you?',
-    ],
+    icon: ClipboardCheck,
+    title: 'Self-assessment',
+    sub: 'Each participant assesses themselves on the presented maturity ladder.',
+    timebox: '10 min',
   },
   {
     number: '02',
-    icon: Scale,
-    title: 'Governance, compliance and procurement',
-    questions: [
-      'Which legal or security concerns are blocking you today?',
-      'Where do your current code and data flows feel risky?',
-      'Which approvals or vendor processes are slowing you down most?',
-    ],
+    icon: MessageSquareText,
+    title: 'Present results & challenges',
+    sub: 'Each person shares their assessment. The table can discuss.',
+    timebox: '5–15 min each',
   },
   {
     number: '03',
-    icon: BarChart3,
-    title: 'Proof of value, metrics and budget',
-    questions: [
-      'Why is the impact so hard to measure?',
-      'Where does your cost and value story break down with the board or CFO?',
-      'Which numbers do you wish you had, but cannot get?',
-    ],
+    icon: NotebookPen,
+    title: 'Surface recurring patterns',
+    sub: 'Look for shared problems, concrete blockers, and open tensions.',
+    timebox: 'throughout',
   },
   {
     number: '04',
-    icon: Building2,
-    title: 'Org design, talent and management for 2027',
-    questions: [
-      'Which roles feel broken or unclear right now?',
-      'Where is your junior-to-senior pipeline at risk?',
-      'Which assumptions about your org no longer hold?',
-    ],
+    icon: Presentation,
+    title: 'Table shares top challenges',
+    sub: 'At the end, every table presents the main challenges they found.',
+    timebox: '~17:30',
   },
 ];
 
@@ -56,54 +50,42 @@ export function P05_Breakouts({ index, total }: Props) {
     <AlphalistFrame
       slideNumber={index + 1}
       totalSlides={total}
-      eyebrow="120 min · 15:30"
-      title="Breakout Sessions."
+      eyebrow="2.5h · Day 1"
+      title="Breakout 1: Experience & Problem Space."
     >
-      <p className="mb-5 text-center text-base font-medium leading-snug text-slate-700 md:text-lg">
-        Today we map the <span className="text-rose-600">challenges</span>.
-        Solutions come tomorrow in the workshop.
-      </p>
+      <div className="grid w-full grid-cols-1 gap-7 lg:grid-cols-[0.72fr_1.28fr] lg:gap-10">
+        <section className="flex flex-col justify-center">
+          <p className="text-3xl font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl">
+            Collect and discuss challenges.
+            <br />
+            <span className="text-rose-600">Do not solve them yet.</span>
+          </p>
+        </section>
 
-      <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
-        {topics.map(({ number, icon: Icon, title, questions }) => (
-          <div
-            key={number}
-            className="relative overflow-hidden rounded-2xl border border-rose-600/15 bg-gradient-to-br from-rose-50/70 via-white to-white p-6 shadow-[0_6px_24px_-12px_rgba(225,29,72,0.35)]"
-          >
-            <div className="absolute -right-6 -top-6 h-28 w-28 rounded-full bg-rose-500/10 blur-2xl" />
-            <div className="relative">
-              <div className="mb-3 flex items-center gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-rose-500 to-rose-600 text-white shadow-md shadow-rose-500/30">
-                  <Icon className="h-5 w-5" strokeWidth={2.2} />
+        <section className="grid gap-4 sm:grid-cols-2">
+          {phases.map(({ number, icon: Icon, title, sub, timebox }) => (
+            <div
+              key={number}
+              className="relative overflow-hidden rounded-2xl border border-rose-600/15 bg-gradient-to-br from-rose-50/70 via-white to-white p-5 shadow-[0_10px_32px_-24px_rgba(225,29,72,0.45)]"
+            >
+              <div className="mb-4 flex items-center gap-3">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-rose-100 text-rose-700">
+                  <Icon className="h-6 w-6" strokeWidth={1.9} />
                 </span>
-                <span className="font-mono text-xs uppercase tracking-[0.3em] text-rose-700">
-                  Topic {number}
+                <span className="font-mono text-xs uppercase tracking-[0.28em] text-rose-700">
+                  Phase {number}
+                </span>
+                <span className="ml-auto rounded-full bg-rose-500/10 px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-rose-700">
+                  {timebox}
                 </span>
               </div>
-              <p className="text-xl font-semibold leading-tight tracking-tight text-slate-900 md:text-2xl">
+              <p className="text-xl font-semibold leading-tight tracking-tight text-slate-900">
                 {title}
               </p>
-              <ul className="mt-4 space-y-2.5 text-sm text-slate-600 md:text-base">
-                {questions.map((q) => (
-                  <li key={q} className="flex items-start gap-2.5">
-                    <span
-                      aria-hidden
-                      className="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-rose-500"
-                    />
-                    <span className="leading-snug">{q}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="mt-2 text-base leading-snug text-slate-600">{sub}</p>
             </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-6 text-center">
-        <p className="text-sm text-slate-500 md:text-base">
-          Bring your own challenge, or pick one from the{' '}
-          <span className="font-semibold text-slate-700">pin board</span>.
-        </p>
+          ))}
+        </section>
       </div>
     </AlphalistFrame>
   );

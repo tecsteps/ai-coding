@@ -1,0 +1,76 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - paragraph [ref=e6]: Agenda
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: // DAY_01
+          - generic [ref=e13]: Understanding the shift
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - generic [ref=e16]: 09:00
+            - generic [ref=e19]: Arrival & Coffee
+          - generic [ref=e20]:
+            - generic [ref=e21]: 09:30
+            - generic [ref=e23]:
+              - generic [ref=e24]: "Opening Keynote: From AI Experiments to Engineering Operating Model"
+              - generic [ref=e25]: now
+          - generic [ref=e26]:
+            - generic [ref=e27]: 10:00
+            - generic [ref=e30]: "Introduction Round: CTO Reality Check"
+          - generic [ref=e31]:
+            - generic [ref=e32]: 11:00
+            - generic [ref=e35]: "Maturity Ladder: From Individual Productivity to System Change"
+          - generic [ref=e36]:
+            - generic [ref=e37]: 12:00
+            - generic [ref=e40]: Lunch Break
+          - generic [ref=e41]:
+            - generic [ref=e42]: 13:00
+            - generic [ref=e45]: "War Stories: Brownfield Agentic Engineering"
+          - generic [ref=e46]:
+            - generic [ref=e47]: 14:30
+            - generic [ref=e50]: "Fireside Chat: André Balleyguier, Anthropic"
+          - generic [ref=e51]:
+            - generic [ref=e52]: 15:30
+            - generic [ref=e55]: "Breakout 1: Experience & Problem Space"
+          - generic [ref=e56]:
+            - generic [ref=e57]: 19:00
+            - generic [ref=e60]: Dinner & Networking
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - generic [ref=e63]: // DAY_02
+          - generic [ref=e64]: Tools, practice & outlook
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]: 08:00
+            - generic [ref=e70]: CTO-Breakfast
+          - generic [ref=e71]:
+            - generic [ref=e72]: 09:00
+            - generic [ref=e75]: "Fireside Chat: Max Tschochohei, Google Cloud"
+          - generic [ref=e76]:
+            - generic [ref=e77]: 10:15
+            - generic [ref=e80]: "Breakout 2: Structured Solution Workshop"
+          - generic [ref=e81]:
+            - generic [ref=e82]: 12:45
+            - generic [ref=e85]: Lunch Break
+          - generic [ref=e86]:
+            - generic [ref=e87]: 13:45
+            - generic [ref=e90]: "Fireside Chat: Maximilian Hudlberger, OpenAI"
+          - generic [ref=e91]:
+            - generic [ref=e92]: 15:00
+            - generic [ref=e95]: Peer Rotations
+          - generic [ref=e96]:
+            - generic [ref=e97]: 16:45
+            - generic [ref=e100]: 30/60/90-Day Plan
+          - generic [ref=e101]:
+            - generic [ref=e102]: 17:30
+            - generic [ref=e105]: Closing & Group Photo
+    - generic:
+      - generic: Munich · 2026
+      - generic: 20 / 29
+  - button "Open Next.js Dev Tools" [ref=e111] [cursor=pointer]:
+    - img [ref=e112]
+  - alert [ref=e115]

@@ -13,13 +13,13 @@ const steps: { number: string; icon: LucideIcon; title: string; sub: string }[] 
     number: '01',
     icon: Binary,
     title: 'Count 0 - 1 around the table.',
-    sub: 'Everyone is either a 0 or a 1. No ties, no thirds.',
+    sub: 'Everyone gets one number so the rotation stays simple.',
   },
   {
     number: '02',
     icon: ArrowRightCircle,
     title: 'On the call, every "1" moves.',
-    sub: 'When Fabian says so, all the 1s walk clockwise to the next table.',
+    sub: 'All 1s move clockwise to the next table.',
   },
   {
     number: '03',

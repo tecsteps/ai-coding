@@ -1,0 +1,14 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - heading "Welcome to the alphalist CTO Bootcamp!" [level=1] [ref=e6]:
+      - text: Welcome to the
+      - text: alphalist CTO Bootcamp!
+    - generic:
+      - generic: Munich · 2026
+      - generic: 01 / 30
+  - button "Open Next.js Dev Tools" [ref=e12] [cursor=pointer]:
+    - img [ref=e13]
+  - alert [ref=e16]

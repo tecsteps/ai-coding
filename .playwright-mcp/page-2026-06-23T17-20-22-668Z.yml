@@ -1,0 +1,79 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - heading "The Frozen Org" [level=1] [ref=e7]
+        - paragraph [ref=e8]: Agents move fast. The organization around them doesn't.
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - img "Iceberg showing visible AI speed above the surface and frozen organizational structures below" [ref=e12]
+          - generic [ref=e14]:
+            - paragraph [ref=e15]: What's moving
+            - generic [ref=e16]:
+              - generic [ref=e17]:
+                - img [ref=e18]
+                - generic [ref=e21]: AI-generated code
+              - generic [ref=e22]:
+                - img [ref=e23]
+                - generic [ref=e25]: Speed & output
+          - generic [ref=e26]:
+            - paragraph [ref=e27]: What's frozen
+            - generic [ref=e28]:
+              - generic [ref=e31]: Org structure & roles
+              - generic [ref=e34]: Onboarding
+              - generic [ref=e37]: Code review & specs
+              - generic [ref=e40]: Hiring & career ladders
+              - generic [ref=e43]: Productivity measures
+        - generic [ref=e44]:
+          - heading "What holds leaders back" [level=2] [ref=e45]
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - generic [ref=e48]: "1"
+              - img [ref=e49]
+              - generic [ref=e51]:
+                - paragraph [ref=e52]: They treat AI as a tool, not an operating model change
+                - paragraph [ref=e53]: Focus on which assistant to use, not how engineering work has changed.
+            - generic [ref=e54]:
+              - generic [ref=e55]: "2"
+              - img [ref=e56]
+              - generic [ref=e59]:
+                - paragraph [ref=e60]: They see the risk, but only adjust code review
+                - paragraph [ref=e61]: Biggest concern is losing shared understanding, but changes stay shallow.
+            - generic [ref=e62]:
+              - generic [ref=e63]: "3"
+              - img [ref=e64]
+              - generic [ref=e67]:
+                - paragraph [ref=e68]: Role definitions are outdated
+                - paragraph [ref=e69]: Valued skills are shifting, but few orgs have updated roles or onboarding.
+            - generic [ref=e70]:
+              - generic [ref=e71]: "4"
+              - img [ref=e72]
+              - generic [ref=e74]:
+                - paragraph [ref=e75]: They avoid the people conversation
+                - paragraph [ref=e76]: Engineers worry their skills may become less relevant. In large orgs, it is even louder.
+            - generic [ref=e77]:
+              - generic [ref=e78]: "5"
+              - img [ref=e79]
+              - generic [ref=e84]:
+                - paragraph [ref=e85]: No shared definition of “AI-native”
+                - paragraph [ref=e86]: No common definition, no common roadmap, no org redesign.
+            - generic [ref=e87]:
+              - generic [ref=e88]: "6"
+              - img [ref=e89]
+              - generic [ref=e92]:
+                - paragraph [ref=e93]: They move too fast to pause
+                - paragraph [ref=e94]: Pressure for quick wins leads to skipping the hard organizational reflection.
+      - generic [ref=e96]:
+        - img [ref=e97]
+        - paragraph [ref=e101]: The org is frozen when agents move faster than the operating model.
+        - paragraph [ref=e102]: Code changes. Roles do not.
+        - paragraph [ref=e103]: Output rises. Understanding falls.
+        - paragraph [ref=e104]: Engineers adapt individually. The org does not.
+    - generic:
+      - generic: Munich · 2026
+      - generic: 08 / 37
+  - button "Open Next.js Dev Tools" [ref=e110] [cursor=pointer]:
+    - img [ref=e111]

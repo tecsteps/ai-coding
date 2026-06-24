@@ -23,28 +23,6 @@ const hosts = [
     linkedin: 'https://www.linkedin.com/in/fabian-wesner',
   },
   {
-    slug: 'tereza-iofciu',
-    name: 'Tereza Iofciu, PhD',
-    title: 'Helping data & AI professionals lead with purpose',
-    bullets: [
-      '15+ years in data science & ML',
-      'Ex Data Science lead at neuefische & FREE NOW',
-      'Creator of the Data Diplomat Framework',
-    ],
-    linkedin: 'https://www.linkedin.com/in/tereza-iofciu',
-  },
-  {
-    slug: 'tim-niemeier',
-    name: 'Tim Niemeier',
-    title: 'Hands-on Fractional CTO/CPO · Agentic from boardroom to code',
-    bullets: [
-      'Ex-CTO Rocket Internet',
-      'Co-Founded 3 startups',
-      'Trusted by idealo, METRO, bonprix, Swisscom, VCs & PEs',
-    ],
-    linkedin: 'https://www.linkedin.com/in/niemeier',
-  },
-  {
     slug: 'denis-turkov',
     name: 'Denis Turkov',
     title: 'Agentic Engineering Trainer · Architect for Agentic Commerce',
@@ -56,26 +34,37 @@ const hosts = [
     linkedin: 'https://www.linkedin.com/in/turkovdenis',
   },
   {
-    slug: 'benedikt-stemmildt',
-    name: 'Benedikt Stemmildt',
-    title: 'Helping engineering teams thrive with AI',
+    slug: 'tereza-iofciu',
+    name: 'Tereza Iofciu',
+    title: 'Helping data & AI professionals lead with purpose',
     bullets: [
-      '20+ years enterprise experience',
-      'Ex-CIO BLUME2000, ex-Breuninger',
-      'Founder hackers&wizards',
+      '15+ years in data science & ML',
+      'Ex Data Science lead at neuefische & FREE NOW',
+      'Creator of the Data Diplomat Framework',
     ],
-    linkedin: 'https://www.linkedin.com/in/benedikt-stemmildt',
+    linkedin: 'https://www.linkedin.com/in/tereza-iofciu',
   },
   {
-    slug: 'bjoern-rochel',
-    name: 'Björn Rochel',
-    title: 'Coach & Consultant for Agentic Engineering',
+    slug: 'alexey-krivitsky',
+    name: 'Alexey Krivitsky',
+    title: 'Organizational design for agentic engineering',
     bullets: [
-      '20 years in software engineering',
-      'Ex-engineering lead XING / New Work',
-      'Writes "Dude, where’s my Kaizen?"',
+      'Co-creator of Org Topologies',
+      'Author of "10X ORG"',
+      'Org design & scaling specialist',
     ],
-    linkedin: 'https://www.linkedin.com/in/bjoern-rochel',
+    linkedin: 'https://www.linkedin.com/in/alexeykrivitsky',
+  },
+  {
+    slug: 'brian-graham',
+    name: 'Brian Graham',
+    title: 'Independent consultant · Team Topologies Advocate',
+    bullets: [
+      'Independent consultant since 2022',
+      'Ex-architect at sennder, Forto & Spryker',
+      'Team Topologies Advocate',
+    ],
+    linkedin: 'https://www.linkedin.com/in/brianjg',
   },
 ];
 
@@ -86,7 +75,7 @@ export function P04_Hosts({ index, total }: Props) {
       totalSlides={total}
       eyebrow="Your hosts"
     >
-      <div className="grid w-full grid-cols-3 gap-3 sm:grid-cols-3 md:gap-4 lg:grid-cols-6">
+      <div className="grid w-full grid-cols-3 gap-3 sm:grid-cols-3 md:gap-4 lg:grid-cols-5">
         {hosts.map((h, i) => (
           <BlurFade key={h.slug} delay={0.25 + i * 0.07} duration={0.5} className="h-full">
             <HostCard {...h} />
@@ -127,7 +116,7 @@ function HostCard({
         <ul className="mt-3 space-y-1.5 text-sm leading-snug text-slate-600">
           {bullets.map((b) => (
             <li key={b} className="flex gap-1.5">
-              <span aria-hidden className="mt-1 inline-block h-1 w-1 shrink-0 rounded-full bg-emerald-500" />
+              <span aria-hidden className="mt-[0.45rem] inline-block h-1 w-1 shrink-0 rounded-full bg-emerald-500" />
               <span>{b}</span>
             </li>
           ))}

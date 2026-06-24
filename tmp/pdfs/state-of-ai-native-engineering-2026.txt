@@ -1,0 +1,790 @@
+The State of AI-Native
+Engineering in 2026:
+   EXCITED          ANXIOUS      INVIGORATED
+
+
+
+
+By Vinay Perneti and Emma Webb
+TABLE OF CONTENTS
+
+
+
+
+                    Executive Summary
+                           03 
+                    Survey Details
+                              04 
+                    The emotional state: two feelings at once
+   05 
+                    Where the strain is showing
+                 07 
+                    What the data shows: five contradictions
+    11
+
+                    The headcount signal
+                        15
+
+                    What this maps to in our own experience      17
+
+                    What you can do now
+                         19
+
+                    Sources and further reading                  22
+
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026              02
+EXEC SUMMARY
+
+
+
+
+         We surveyed 219
+         engineering leaders and
+         found an industry holding
+         excitement and dread  
+         in the same breath.
+
+
+                    Nearly half of all code in these organizations is now    It's the same people, holding both at once. That's
+                    AI-generated. Leaders say they're hiring for             what this moment feels like from inside it.
+
+                    judgment and systems thinking over coding ability.       The question engineers are sitting with is not "will I
+                    And they rate their teams as more competitive than       lose my job." It's "will I recognize it." That's a harder
+                    a year ago. 
+                                            question, and a more interesting one, because the
+                                                                             answer is something we get to shape.
+
+
+
+                    However, AI generated code’s speed comes at a
+                    cost. They also say they don't trust what they're
+                    shipping, that nearly half their engineers are worried   This isn't a split between optimists and pessimists.
+                    about the relevance of their own skills, and that role   It's the same people, holding both at once. That's
+                    definitions and onboarding have barely changed.          what this moment feels like from inside it.
+                    When we asked leaders for three words to describe
+                    how they feel, many put contradictory emotions in
+                    the same answer: "excited, anxious, invigorated."
+                    "Insecurity, mistrust, hope." "Optimistic, excited,
+                    threatened."
+
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                03
+                    Why Augment Code ran this survey                                  DEFINITIONS
+
+
+                    We ran this survey because we were having the                        “AI NATIVE”
+                    same conversation and we wanted to dive deeper.
+
+                    Augment has been documenting our own AI-native                    Orgs where agents are writing code that ships to
+                    journey in public, including the course corrections.              production. Not autocomplete. Not chat-in-the-
+                    Six months ago, we pushed hard on agent-                          sidebar.
+                    generated code. Similar to others, our PR volume
+                    went up and confidence in what was shipping went
+                    down. Our team had to rethink how engineers stay                    “IDENTITY CRISIS”
+                    connected to the codebase.
+
+
+                                                                                      The questions engineers and their managers are
+                    We took two days off the roadmap to ask the team                  asking about craft and identity when the core act of
+                    how they were feeling. The word cloud that came                   the job, writing code, is increasingly done by
+                    back: frustration, uncertainty, curious, excited,                 something else.
+                    hopeful, agency. One breakout group named the shift
+                    directly: from "proud builder" to "proud coordinator."
+                    Another raised the fear of skill atrophy: if you stop
+                    writing code daily, you lose the understanding
+                    required to step in when things break. 
+
+                                                                                      Who responded
+                    Then we started hearing the same things at every
+                    dinner, event, and meetup. Other engineering leaders
+                    were nodding along. The same questions kept                       We asked 219 engineering leaders including
+                    coming up. How do you review code nobody on the                   managers, directors, senior managers, and CTOs.
+                    team wrote? How do you know if the system still                   The majority of our respondents lead teams of 1 to
+                    does what you think it does? What do I say to an                  50 engineers, with a tail of larger organizations (51
+                    engineer who asks if their skills still matter? What              respondents with 51+ engineers). See breakdowns
+                    does "senior engineer" even mean when agents                      below.
+
+
+                    write most of the code?
+
+
+                                                                                      We recruited through engineering leadership
+                    We wanted to know if this was just our circle, or                 networks, events, and inbound interest. The sample
+                    something broader. It wasn't just us.
+                            skews toward AI-forward leaders.
+
+
+
+  TEAM SIZE                                                 1-10                                                                        87
+                                                           11-50                                                                      85
+                                                          51-200                            33
+                                                       201-1,000                18
+                                                           1,000       2
+
+
+
+  SENIORITY                                           Managers                                                55
+                                                     Directors                                        46
+                                                  Sr. Managers                                   37
+                                               Technical Staff                           31
+                                                          CTOs                   20
+                                                 SR. DIRECTORS             11
+                                                          CIOS         4
+                                                           VPS     3
+
+
+
+  AI MATURITY                            SPECIFIC TASKS                                                                      67
+  [AGENT USE]         WORKFLOWS WITH ENGINEER OVERSIGHT                                                                 64
+                                MULTIPLE PARALLEL TASKS                                                            59
+                                  AUTONOMOUS END-TO-END                                28
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                     04
+The emotional state:
+two feelings at once.
+The emotional state: two feelings at once
+
+
+
+
+                                                            We asked leaders for three words to describe how they feel about AI and the
+                                                            future of software engineering. The most common pattern was some variation of
+                                                            "curious, cautious, optimistic." The question was open ended, and dozens of
+                                                            responses looked almost identical.
+
+
+
+                                                            The data is interesting on two levels: 
+
+                                                            [1] How many responses contain contradictory emotions in the same answer
+
+                                                            [2] That this tension was the general consensus among these engineering
+                                                            leaders. 
+
+
+
+                                                            Some of the answers included:
+                                                                            EXCITED         ANXIOUS         INVIGORATED
+
+                                                                            INSECURITY         MISTRUST           HOPE
+
+                                                                            OPTIMISTIC         EXCITED           THREATENED
+
+                                                                            EXCITED         WORRIED         EMPOWERED
+
+                                                                            LIFE-CHANGING OPPORTUNITY              TBD QUALITY
+
+                                                                            AMAZING         POWER         RISK
+
+                                                                            EXCITING         CONCERNED            CUSP
+
+                                                            And a consistent minority went to a harder place:
+                                                                            PRETTY DARN BLEAK
+
+                                                                            POTENTIAL DISASTER WAITING
+
+                                                                            UNCERTAIN         UNSETTLING           STRESSED
+
+                                                                            AGITATED         CURIOUS         TIRED
+
+                                                                            EXHAUSTED         ANXIOUS            CONCERNED
+
+                                                            At smaller sample sizes, this looked like two distinct groups: the optimists and the
+                                                            worried. At 219, the pattern is different. Many of these are the same person.
+                                                            They're holding both feelings at once, not choosing between them.
+
+   “
+
+   A mixture of excitement and
+   caution. I know that this tool
+                                                            That's the emotional baseline 
+   can enable great strides as
+   well as enable huge messes.
+                                                            this report is written against. 
+
+   - One RESPONDENT                                         Both, simultaneously.
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                     06
+Where the  
+strain is showing.
+Where the strain is showing
+
+
+
+
+                                                            The feelings are real. But what are they about, specifically? When we looked at
+                                                            where the anxiety clusters in the data, three patterns emerged. Margaret-Anne
+                                                            Storey's recent research on system health gives us a useful frame. She identifies
+                                                            three layers of debt that compound on each other. Our survey maps to all three.
+
+
+
+
+
+[1]                                                         Technical debt:  
+                                                            do you trust the code?
+
+
+                                                              48            % ofAI-generated.
+                                                                                   code is now                 MEAN
+
+                                                                                                               48.34%
+                                                                                                                               MEDIAN
+
+                                                                                                                              48%
+
+
+
+                                                            But more code doesn't mean more confidence. 39% of respondents (86/218) are
+                                                            worried or very worried about shipping with confidence as agents write more
+                                                            code and approve PRs. Another 70 are slightly worried. Only 12 said not worried
+                                                            at all.
+
+
+
+                              NOT WORRIED AT ALL                  12
+
+                                 SLIGHTLY WORRIED                                                                     70
+
+                                              NEUTRAL                                             50
+
+                                              WORRIED                                                             69
+
+                                       VERY WORRIED                    17
+
+
+
+   “
+                                                       The volume of AI-generated code also varies by team size in a way that tells its
+   It's great for being able to                             own story. Small and mid-sized teams (1-10 and 51-200 engineers) report the
+   quickly write code. Tradeoffs                            highest rates, above 50%. Large teams (201-1,000) report the lowest at 37%,
+   include not being familiar with                          despite being the most likely to have structured agent workflows: 61% of large
+   newly written code.                                      teams use agents running workflows with engineer oversight, compared to about
+                                                            a third of small teams. Larger orgs are more deliberate in how they deploy AI, and
+   - One RESPONDENT
+                                                            that governance appears to slow the volume of AI-generated code even as it
+                                                            matures the process around it.
+
+
+
+                                                            CircleCI's 2026 State of Software Delivery report, based on 28 million CI
+                                                            workflows, found the same pattern from a different angle: average throughput
+                                                            increased 59% year over year, but success rates on the main branch fell to their
+                                                            lowest level in five years (70.8%). More code is being written. More of it is
+                                                            breaking.
+
+
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                      08
+Where the strain is showing
+
+
+
+[2]                                                         Cognitive debt: does anyone
+                                                            understand the system?
+                                                            This is the loudest signal in the dataset. 
+
+                                                            55% of respondents (119/218) are concerned or very concerned about humans
+                                                            losing shared understanding of how the codebase is evolving. Only 9 said not at
+                                                            all concerned.
+
+                            NOT AT ALL CONCERNED                   9
+                              SLIGHTLY CONCERNED                                                                 63
+                                              NEUTRAL                             27
+                                           CONCERNED                                                                                    91
+                                    VERY CONCERNED                                 28
+
+                                                            Storey's research calls this cognitive debt: the gap that forms when shared
+                                                            understanding of a system erodes faster than it is replenished. Technical debt
+                                                            lives in code. Cognitive debt lives in people.
+
+
+                                                            Coding used to be how engineers built system intuition. You'd discover edge
+                                                            cases while writing. You'd feel the friction of a bad abstraction in your hands.
+                                                            When agents do the writing, that understanding doesn't form the same way.
+
+
+   “
+                                                       Shaw and Nave at the Wharton School published a paper that names the
+   Exciting and also very                                   behavioral risk: cognitive surrender. Different from cognitive offloading, which is
+   worrying, I already see                                  strategic (you know what you're delegating). Cognitive surrender is passive. You
+   knowledge decline and people                             stop applying your own judgment because the AI-generated output looks right
+   getting addicted to its usage.
+                                                            and checking it is expensive. It feels like efficiency right up until something breaks
+   - One RESPONDENT                                         and nobody can trace the cause.
+
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                        09
+Where the strain is showing
+
+
+
+
+[3]                                                         Intent debt: are the specs, roles,
+                                                            and processes current?
+                                                            Storey's third layer is intent debt: it accumulates when the goals and constraints
+                                                            that should guide a system are poorly captured or maintained. Our survey shows
+                                                            this debt building fast.
+
+
+
+                                                            Code review and specs are being reworked in equal measure: 57 respondents
+                                                            have formally changed each. But beyond those two, role definitions (19),
+                                                            onboarding (15), and even how productivity is measured (32) are still barely
+                                                            moving:
+
+                                        CODE REVIEW                                                    57
+
+                              Specs/requirements                                                       57
+
+                         Measuring productivitY                                     32
+
+                         Engineering operations                                24
+
+                                 Role definitionS                         19
+
+                                          ONBOARDING                 15
+
+                                     NONE OF THESE                 12
+
+
+
+                                                            The specs, the job descriptions, the career ladders, the things that tell humans
+                                                            and agents what "good" looks like, are still mostly written for the old world.
+
+
+
+                                                            These three debts compound. When the code is less understood (cognitive
+                                                            debt), and the specs describing what it should do are stale (intent debt), the
+                                                            technical debt becomes invisible until something breaks.
+
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                      10
+WhatThe
+      theemotional state:
+          data shows:
+fivetwo feelings at once
+     contradictions.
+What the data shows: five contradiction
+
+
+
+
+[1]                                                         Leaders feel more competitive
+                                                            than ever, but they don't trust
+                                                            what they're shipping.
+                                                                 Forward-looking confidence 
+               Retrospective confidence
+
+
+
+
+
+                                                                3.96/5                                      3.66/5
+                                                                 (12 months from now)                       (12 months ago)
+
+
+
+
+                                                            They believe AI is making them stronger. They also report that 39% are worried
+                                                            or very worried about shipping with confidence, that 55% are concerned about
+                                                            codebase comprehension, and that they haven't changed most of their org
+                                                            processes. Both are true at the same time.
+
+
+
+
+[2]                                                         Codebase comprehension is  
+                                                            the #1 concern, and it's the thing
+                                                            fewest orgs are doing anything
+                                                            about.
+
+                                                                55%                       flagged it as  
+                                                                                          a top concern
+
+                                                            It's the highest-anxiety question in the survey. And yet role definitions (19
+                                                            respondents changed), onboarding (15), and engineering operations (24) have
+                                                            barely moved. Everyone sees the problem. Almost nobody is building a response
+                                                            beyond code review.
+
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                    12
+What the data shows: five contradiction
+
+
+
+
+[3]                                                         Orgs know the role is changing,
+                                                            but almost none have changed
+                                                            anything.
+                                                            Leaders are hiring for a different job. But only 19 have formally changed role
+                                                            definitions. Only 15 have changed onboarding. The hiring bar has moved. The org
+                                                            structures around it have not. Here’s a breakdown of hiring priorities shared by
+                                                            the survey respondonts:
+
+Evaluating & verifying AI-generated code                                                                                     41
+        Orchestrating and directing agents                                                                           35
+                   Traditional systems skills                                                                       34
+                                 Product judgment                                                                   34
+                              Traditional coding                                                             31
+              Cross-functional communication                                                  22
+                                     Writing specs                           14
+
+                                                            Ajey Gore, writing about what becomes expensive when coding becomes free,
+                                                            described the reorg this implies: the Monday standup changes from "what did we
+                                                            ship" to "what did we validate." Our data doesn't go that far, but it points in the
+                                                            same direction. The skills leaders value most are already judgment, systems
+                                                            thinking, and orchestration.
+
+
+
+
+[4]                                                         Engineers are raising the alarm,
+                                                            and the org response is silence.
+                                                            Are engineers talking about their fears?                        Yes      NO     DON’T KNOW
+
+
+
+
+                                                                               63%say engineers on their team are
+                                                                                                                          45%
+                                                                                                                          ENGINEERS HAVE SAID AS MUCH  
+                                                                                  voicing concerns about their            (ESTIMATED BY LEADERS)
+                                                                                  skills becoming less relevant
+
+
+
+                                                            But the rate varies sharply by team size. 89% of leaders at large teams
+                                                            (201-1,000 engineers) say engineers are raising these fears, compared to 55% at
+                                                            the smallest teams (1-10). The anxiety conversations scale with the size of the
+                                                            org.
+
+
+                                                            Given how few orgs have changed role definitions (19), measurement (32), or
+                                                            onboarding (15), most managers are absorbing these conversations and then
+                                                            doing nothing.
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                                 13
+What the data shows: five contradiction
+
+
+
+
+[5]                                                         Everyone is going "AI-native,"  
+                                                            and nobody agrees on what  
+                                                            that means.
+                                                            We asked all 219 respondents to define "AI-native" in their own words. The range
+                                                            was enormous. Some describe a full organizational redesign. Others describe
+                                                            autocomplete with extra steps. Leaders are asking their teams to move toward
+                                                            something that has no shared definition.
+
+
+
+                                                            Autonomous agents that serve as core business
+                                                            drivers, not auxiliary tools.
+
+
+
+                                                            We don't usually try to define it.
+
+
+
+                                                            AI native currently sounds like just another buzz
+                                                            word to me, so I'd prefer not to define it at all."
+
+
+
+                                                            Using AI where possible to streamline and  
+                                                            improve processes.
+
+
+
+                                                            The greatest thing since sliced bread.
+
+
+
+
+                                                            I wouldn't, that's a nonsense marketing term.
+
+
+
+                                                            A workspace where both humans and AI share ownership
+                                                            of outcomes, not just tasks.
+
+
+
+                                                            Everything is implemented by AI from scratch.
+
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                  14
+TheThe
+    headcount  signal.
+       emotional  state:
+   two feelings at once
+The       headcount                signal
+
+
+
+
+                                                                              Overall, headcount is stable to
+
+                                                                              growing (in the next 12 months)
+
+                                                     Staying      Flat                                                                            81
+
+
+
+
+                                         MODESTLY       INCREASING                                                                    68
+
+
+
+
+                              Significantly             increasing                      14
+
+
+
+                                            Modestly      reducing                                    30
+
+
+
+
+                                   Significantly          reducing                6
+
+
+
+
+                                                                              But our sample is 79% teams under 50, and those teams are mostly staying flat
+
+                                                                              (~39%) with moderate growth. Mid-sized teams (201-1,000 engineers) tell a more
+
+                                                                              interesting story: 61% plan to grow headcount, the highest of any group, but they
+
+                                                                              also have the highest reduction rate at 22%. Larger orgs are making bigger bets
+
+                                                                              in both directions.
+
+
+
+
+
+
+                                                                              This is not a story about job losses. It's a story about job redefinition, and mid-
+
+                                                                              sized engineering orgs are moving the fastest.
+
+
+
+
+
+AUGMENT   CODE   |   The   State   of   AI-Native   Engineering   in   2026                                                                                         16
+What this maps to in
+our own experience.
+What this maps to in our own experience
+
+
+
+
+                                                            We don't share this because we
+                                                            have the answers. We share it
+                                                            because we've been going
+                                                            through the same thing, and what
+                                                            we've tried might be useful.
+   On cognitive debt                                        The more code our agents generated, the less confident the team was in what
+                                                            was shipping. We rethought code review entirely. We’ve been experimenting with
+                                                            a new process called Intent Review. For medium and high risk PRs, the agent
+                                                            guides the engineer through understanding how the change affects the system.
+                                                            The goal is comprehension, not approval. Most orgs in the survey haven't gotten
+                                                            past naming the concern.
+
+
+
+
+
+   On the frozen org.                                       Our CEO Matt McClernan wrote that the orgs falling behind "aren't losing
+                                                            because the AI doesn't work. They built their org structure, their decision-making,
+                                                            and their spending philosophy for a different era." We rewrote our hiring criteria
+                                                            around six dimensions: product taste, architectural judgment, agent leverage,
+                                                            communication, ownership, and learning velocity. Raw coding ability is no longer
+                                                            a standalone dimension. But we did this after a deliberate pause. Most orgs in the
+                                                            survey haven't taken that pause.
+
+
+
+
+
+   On the people side                                       Our breakout sessions surfaced that spec clarity is now where humans add the
+                                                            most value. Multiple groups independently concluded that spec reviews may
+                                                            matter more than code reviews. One group reframed the aspiration: not "ticket to
+                                                            PR" but "intent to production." This only happened because we gave the team
+                                                            space to say what they were feeling.
+
+
+
+
+
+   On the emotional gap                                     Our internal word cloud mirrors the survey's three-word responses almost
+                                                            exactly. Frustration and excitement. Uncertainty and agency. The gap between
+                                                            the official narrative ("we're excited about AI") and what people say when they're
+                                                            honest. Most orgs haven't created a space to surface this. The survey suggests
+                                                            the feelings are there whether you ask or not.
+
+
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                    18
+What you can do now.
+What you can do now
+
+
+
+
+                                                            This space is moving too fast for
+                                                            a thorough playbook. But these
+                                                            are concrete starting points.
+[1]                                                         Rethink how you hire. The survey shows leaders are prioritizing judgment,
+                                                            systems thinking, and orchestration over coding ability. But most haven't updated
+                                                            their interview loops, leveling criteria, or job descriptions. If the skill you value
+                                                            most is evaluating AI-generated work, your hiring process should test for it.
+
+
+
+[2]                                                         Get good at writing specs, but don't treat them like documents.
+                                                            Spec-driven development will fail for the same reason every documentation-first
+                                                            initiative has failed: it asks developers to do maintenance work nobody sees and
+                                                            nobody rewards. The fix is making specs a living contract that both humans and
+                                                            agents read from and write to. When an agent discovers an assumption in the
+                                                            spec was wrong, it updates the spec itself, the way a good junior engineer would
+                                                            update the ticket.
+
+
+
+[3]                                                         Write down what your team knows. Agents replicate what's already there. If
+                                                            your conventions, architectural decisions, and reasoning live in people's heads,
+                                                            agents will never learn them. Write guidelines. Write skills files. One survey
+                                                            respondent defined AI-native as "a workspace where both humans and AI share
+                                                            ownership of outcomes, not just tasks." That's only possible if the knowledge is
+                                                            written down in a form agents can consume.
+
+
+
+[4]                                                         Treat agent productivity as a discipline. Agents do their best work
+                                                            when they have both independence and autonomy. Independence is about
+                                                            context. Autonomy is about action. Agents need both to be productive. The
+                                                            Agent Productivity team’s job is to make sure agents have the context to make
+                                                            good decisions and the tools, permissions, and guardrails to act on them.
+
+
+
+[5]                                                         Make space for the feelings. When you are going really fast, the only way
+                                                            to change direction is to first slow down before reorienting and reaccelerating in
+                                                            the new direction. 63% of respondents said their engineers are voicing concerns
+                                                            about their skills. At large teams, it's 89%. These feelings don't go away if you
+                                                            don't ask. They go underground. They show up as passive resistance, quiet
+                                                            disengagement, people going through the motions while privately wondering if
+                                                            their skills still matter. I wrote about this after Augment's own offsite: one breakout
+                                                            group named the shift from "proud builder" to "proud coordinator." Another raised
+                                                            the fear of skill atrophy. These conversations only happened because the team
+                                                            was given permission to have them. Take time off the roadmap. Ask your team
+                                                            how they're feeling. Name the shift out loud. The orgs that do this will keep their
+                                                            best people. The orgs that don't will lose them to companies that did.
+
+
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                        20
+                                                              Cosmos
+                                                            At Augment, we're moving
+                                                            from agents to orchestration.
+                                                            Every problem in this report traces           That's why we built Cosmos: an
+                                                            back to the same gap: individual              operating system for agentic software
+                                                            engineers have adopted agents, but            development. Agents that run
+                                                            the organization hasn't changed               anywhere, work across the SDLC, with
+                                                            around them. Setups fragment.                 humans steering where judgment
+                                                            Expertise gets trapped. The review            matters. Cosmos is built for teams:
+                                                            queue grows. More code gets written           shared context and memory, self-
+                                                            and less gets understood. Individual          improving agent loops, connections to
+                                                            adoption is not organizational change.        all of your tools, multi-model by default.
+
+
+                                                            THE SHIFT
+
+
+
+
+                                                                    humans doing                                     HUMANS STEERING 
+                                                                                                     >>
+                                                                    agents assisting                                 AGENTS DOING
+
+
+
+
+                                                                                                            [ Try Cosmos for your team ]
+
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                                         21
+Sources and further reading
+
+
+
+
+                    VINAY PERNETI                           Confidence Is the New Bottleneck
+
+                    VINAY PERNETI                           The Hardest Part About Going AI-Native Isn't Just Technical
+
+                    VINAY PERNETI                           We're in an Exponential
+
+                    VINAY PERNETI                           You Don't Have an AI Problem. You Have a Transformation Problem.
+
+                    VINAY PERNETI                           How We Hire AI-Native Engineers Now
+
+                    Amelia Wattenberger                     What Spec-Driven Development Gets Wrong
+
+                    Zizhuang Yang                           Specs Are Infrastructure in the Age of Agents
+
+                    Nikita Sirohi                           Prompts Are Infrastructure
+
+                    Margaret-Anne Storey                    Three Layers of System Health
+
+                    Shaw and Nave                           Tri-System Theory of Cognition
+
+                    Ajey Gore                               The Expensive Thing
+
+                    Martin Fowler                           Fragments: April 2
+
+                    CircleCI                                The 2026 State of Software Delivery
+
+
+
+
+The survey is now closed at 219 responses.  
+For questions about the methodology or findings, contact press@augmentcode.com
+
+
+
+AUGMENT CODE | The State of AI-Native Engineering in 2026                                                                      22
+

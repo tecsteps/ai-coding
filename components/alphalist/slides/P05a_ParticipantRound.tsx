@@ -1,6 +1,6 @@
 'use client';
 
-import { User, Sparkles, HelpCircle, Megaphone, Pin, type LucideIcon } from 'lucide-react';
+import { Building2, CircleHelp, UserRound, Workflow, type LucideIcon } from 'lucide-react';
 import { AlphalistFrame } from '../AlphalistFrame';
 
 interface Props {
@@ -8,39 +8,30 @@ interface Props {
   total: number;
 }
 
-const personalQuestions: { number: string; icon: LucideIcon; q: string; sub: string }[] = [
+const steps: { number: string; icon: LucideIcon; title: string; sub: string }[] = [
   {
     number: '01',
-    icon: User,
-    q: 'Who are you?',
-    sub: 'Name · company · team size · your role.',
+    icon: UserRound,
+    title: 'Who you are',
+    sub: 'Name, role, and what you are responsible for.',
   },
   {
     number: '02',
-    icon: Sparkles,
-    q: 'Where are you with agentic engineering?',
-    sub: 'In your org, today. Be honest about the level.',
+    icon: Building2,
+    title: 'Your company context',
+    sub: 'Team size, setup, and where engineering sits in the business.',
   },
   {
     number: '03',
-    icon: HelpCircle,
-    q: 'What is your biggest open question this week?',
-    sub: 'The one you actually want help with.',
-  },
-];
-
-const tableTakeaways: { icon: LucideIcon; label: string; title: string; sub: string }[] = [
-  {
-    icon: Megaphone,
-    label: 'One headline',
-    title: 'One sentence the whole table agrees on.',
-    sub: 'Your most important shared insight. Concrete and specific, not a platitude.',
+    icon: Workflow,
+    title: 'Your current reality',
+    sub: 'Where Agentic Engineering stands in your organization today.',
   },
   {
-    icon: Pin,
-    label: 'One open question',
-    title: 'The one nobody at this table can answer.',
-    sub: 'Goes on the wall board for the rest of the day.',
+    number: '04',
+    icon: CircleHelp,
+    title: 'One open question',
+    sub: 'What you want to better understand during the bootcamp.',
   },
 ];
 
@@ -49,86 +40,40 @@ export function P05a_ParticipantRound({ index, total }: Props) {
     <AlphalistFrame
       slideNumber={index + 1}
       totalSlides={total}
-      eyebrow="45 min · 10:15"
-      title="Participant Round."
+      eyebrow="Introduction Round"
+      title="Who is at your table?"
     >
-      <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-[1.2fr_1fr] lg:gap-10">
-        {/* Personal section */}
-        <section>
-          <div className="mb-4 flex items-center gap-3">
-            <span className="font-mono text-xs uppercase tracking-[0.3em] text-emerald-700">
-              At your table · everyone answers
-            </span>
-            <span className="h-px flex-1 bg-emerald-600/20" />
-          </div>
-          <div className="space-y-3">
-            {personalQuestions.map(({ number, icon: Icon, q, sub }) => (
-              <div
-                key={number}
-                className="relative overflow-hidden rounded-2xl border border-emerald-600/15 bg-gradient-to-br from-emerald-50/70 via-white to-white p-5 shadow-[0_6px_20px_-12px_rgba(16,185,129,0.3)]"
-              >
-                <div className="flex items-start gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-md shadow-emerald-500/30">
-                    <Icon className="h-5 w-5" strokeWidth={2.2} />
-                  </span>
-                  <div className="min-w-0">
-                    <div className="flex items-baseline gap-2">
-                      <span className="font-mono text-xs text-emerald-700">Q{number}</span>
-                    </div>
-                    <p className="text-lg font-semibold leading-snug text-slate-900 md:text-xl">
-                      {q}
-                    </p>
-                    <p className="mt-1 text-sm text-slate-500 md:text-base">{sub}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+      <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-[0.75fr_1.25fr] lg:gap-10">
+        <section className="flex flex-col justify-center">
+          <p className="max-w-xl text-3xl font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl">
+            Start with context.
+            <br />
+            Not pitches.
+          </p>
+          <p className="mt-6 max-w-lg border-l-2 border-emerald-500 pl-5 text-xl leading-snug text-slate-600">
+            Share enough of your current situation so the table can connect the
+            discussion to real organizations.
+          </p>
         </section>
 
-        {/* Table outcome */}
-        <section>
-          <div className="mb-4 flex items-center gap-3">
-            <span className="font-mono text-xs uppercase tracking-[0.3em] text-rose-600">
-              Then the table agrees
-            </span>
-            <span className="h-px flex-1 bg-rose-500/20" />
-          </div>
-          <div className="space-y-3">
-            {tableTakeaways.map(({ icon: Icon, label, title, sub }) => (
-              <div
-                key={label}
-                className="relative overflow-hidden rounded-2xl border border-rose-500/20 bg-gradient-to-br from-rose-50/70 via-white to-white p-5 shadow-[0_6px_20px_-12px_rgba(244,63,94,0.3)]"
-              >
-                <div className="flex items-start gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-rose-500 to-rose-600 text-white shadow-md shadow-rose-500/30">
-                    <Icon className="h-5 w-5" strokeWidth={2.2} />
-                  </span>
-                  <div className="min-w-0">
-                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-rose-600">
-                      {label}
-                    </p>
-                    <p className="mt-1 text-lg font-semibold leading-snug text-slate-900 md:text-xl">
-                      {title}
-                    </p>
-                    <p className="mt-1 text-sm text-slate-500 md:text-base">{sub}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-5 space-y-3">
-            <div className="rounded-xl border border-amber-300/60 bg-amber-50/70 p-4 text-sm text-slate-700 md:text-base">
-              <span className="font-semibold text-amber-700">Write it down:</span> put both
-              the headline and the open question on a card and pin it to the pin board.
+        <section className="grid gap-4 sm:grid-cols-2">
+          {steps.map(({ number, icon: Icon, title, sub }) => (
+            <div
+              key={number}
+              className="relative min-h-[12rem] overflow-hidden rounded-2xl border border-emerald-600/15 bg-gradient-to-br from-emerald-50/80 via-white to-white p-6 shadow-[0_12px_34px_-24px_rgba(16,185,129,0.45)]"
+            >
+              <span className="absolute right-5 top-5 font-mono text-xl font-semibold tracking-[0.16em] text-emerald-600/70">
+                {number}
+              </span>
+              <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+                <Icon className="h-6 w-6" strokeWidth={1.9} />
+              </span>
+              <p className="text-xl font-semibold leading-tight tracking-tight text-slate-900">
+                {title}
+              </p>
+              <p className="mt-3 text-base leading-snug text-slate-600">{sub}</p>
             </div>
-            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-4 text-sm text-slate-600 md:text-base">
-              <span className="font-semibold text-slate-900">Nominee on the mic:</span> one
-              person per table reads the headline + the open question. ~40 seconds, no
-              elaboration.
-            </div>
-          </div>
+          ))}
         </section>
       </div>
     </AlphalistFrame>

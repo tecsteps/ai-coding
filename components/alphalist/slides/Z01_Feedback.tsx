@@ -30,15 +30,9 @@ export function Z01_Feedback({ index, total }: Props) {
       totalSlides={total}
       align="center"
     >
-      <div className="flex w-full flex-col items-center justify-center gap-10 px-6">
-        <BlurFade delay={0.1} duration={0.6}>
-          <p className="text-center text-xs font-medium uppercase tracking-[0.4em] text-emerald-600 md:text-sm">
-            Bootcamp Feedback Tool
-          </p>
-        </BlurFade>
-
+      <div className="flex w-full flex-col items-center justify-center gap-4 px-6">
         <BlurFade delay={0.25} duration={0.7}>
-          <h1 className="text-center text-4xl font-semibold leading-tight tracking-tight text-slate-900 md:text-6xl">
+          <h1 className="text-center text-4xl font-semibold leading-tight tracking-tight text-slate-900 md:text-[2.8rem]">
             Tell us what worked.
           </h1>
         </BlurFade>
@@ -46,7 +40,7 @@ export function Z01_Feedback({ index, total }: Props) {
         <BlurFade delay={0.45} duration={0.7}>
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-emerald-200/60 via-emerald-100/40 to-transparent blur-2xl" />
-            <div className="relative flex h-[28rem] w-[28rem] items-center justify-center rounded-[2rem] border border-emerald-600/20 bg-white p-8 shadow-[0_30px_80px_-30px_rgba(5,150,105,0.5)] md:h-[34rem] md:w-[34rem] md:p-10">
+            <div className="relative flex h-[19rem] w-[19rem] items-center justify-center rounded-[2rem] border border-emerald-600/20 bg-white p-6 shadow-[0_30px_80px_-30px_rgba(5,150,105,0.5)] md:h-[22rem] md:w-[22rem] md:p-7">
               {qrSvg ? (
                 <div
                   className="h-full w-full [&_svg]:h-full [&_svg]:w-full"
@@ -63,7 +57,7 @@ export function Z01_Feedback({ index, total }: Props) {
         <BlurFade delay={0.7} duration={0.6}>
           <a
             href={FEEDBACK_URL}
-            className="font-mono text-xl tracking-tight text-emerald-700 underline-offset-8 hover:underline md:text-3xl"
+            className="font-mono text-lg tracking-tight text-emerald-700 underline-offset-8 hover:underline md:text-xl"
           >
             alphalist-cto-bootcamp.agentic-engineers.dev
           </a>

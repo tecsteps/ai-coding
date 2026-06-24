@@ -12,8 +12,8 @@ const steps: { number: string; icon: LucideIcon; title: string; sub: string }[] 
   {
     number: '01',
     icon: Target,
-    title: 'One participant drops a real challenge.',
-    sub: 'Something you actually care about. Not hypothetical, not sanitised.',
+    title: 'One participant brings a real challenge.',
+    sub: 'Use a concrete situation, not a generic example.',
   },
   {
     number: '02',
@@ -31,7 +31,7 @@ const steps: { number: string; icon: LucideIcon; title: string; sub: string }[] 
     number: '04',
     icon: Compass,
     title: 'As many topics as you like.',
-    sub: 'Or go completely off rails if that is better for your table.',
+    sub: 'Follow the discussion where it creates useful insight for your table.',
   },
 ];
 

@@ -1,0 +1,20 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - heading "Management is excited. Teams are concerned." [level=1] [ref=e7]:
+        - text: Management is excited.
+        - text: Teams are concerned.
+      - generic [ref=e9]:
+        - img "Management presents AI-native transformation while team members privately worry about skills, seniority, and future roles" [ref=e11]
+        - generic [ref=e13]:
+          - paragraph [ref=e14]: Challenge
+          - paragraph [ref=e15]: This change is as much about managing expectations and emotions as it is about tools.
+    - generic:
+      - generic: Munich · 2026
+      - generic: 14 / 43
+  - button "Open Next.js Dev Tools" [ref=e21] [cursor=pointer]:
+    - img [ref=e22]
+  - alert [ref=e25]

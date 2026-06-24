@@ -1,0 +1,19 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - heading "Fast agents. Deep review." [level=1] [ref=e7]:
+          - text: Fast agents.
+          - text: Deep review.
+        - paragraph [ref=e8]: Developers must stay accountable for the result while moving much faster than before.
+        - paragraph [ref=e9]: CTOs ask for both. Teams often experience it as a trade-off.
+      - 'img "Developer facing two paths: move fast with agents or review everything deeply" [ref=e12]'
+    - generic:
+      - generic: Munich · 2026
+      - generic: 11 / 40
+  - button "Open Next.js Dev Tools" [ref=e18] [cursor=pointer]:
+    - img [ref=e19]
+  - alert [ref=e22]

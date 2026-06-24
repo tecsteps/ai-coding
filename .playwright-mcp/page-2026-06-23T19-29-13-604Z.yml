@@ -1,0 +1,37 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - paragraph [ref=e6]: Day 1 · 14:30 · Fireside Chat
+      - 'heading "Fireside Chat: André Balleyguier (Anthropic) + Q&A" [level=1] [ref=e8]'
+    - generic [ref=e11]:
+      - generic [ref=e13]:
+        - img "André Balleyguier" [ref=e15]
+        - generic [ref=e16]:
+          - paragraph [ref=e17]: André Balleyguier
+          - paragraph [ref=e18]: Applied AI Leader, EMEA
+          - paragraph [ref=e19]: Anthropic
+          - link "linkedin.com/in/aballeyguier" [ref=e20]:
+            - /url: https://www.linkedin.com/in/aballeyguier
+            - img [ref=e21]
+            - text: linkedin.com/in/aballeyguier
+      - generic [ref=e26]:
+        - paragraph [ref=e27]: André leads Anthropic's Applied AI practice across EMEA. He previously founded and built DataRobot's EMEA practice and led global AI Solutions at Snorkel AI. He has 12 years of experience in applied AI/ML for the enterprise.
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - paragraph [ref=e30]: Background
+            - paragraph [ref=e31]: DataRobot · Snorkel AI
+          - generic [ref=e32]:
+            - paragraph [ref=e33]: Role
+            - paragraph [ref=e34]: Applied AI Leader, EMEA
+          - generic [ref=e35]:
+            - paragraph [ref=e36]: Education
+            - paragraph [ref=e37]: CentraleSupélec
+    - generic:
+      - generic: Munich · 2026
+      - generic: 23 / 29
+  - button "Open Next.js Dev Tools" [ref=e43] [cursor=pointer]:
+    - img [ref=e44]
+  - alert [ref=e47]

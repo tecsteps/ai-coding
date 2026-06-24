@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { AlphalistFrame } from '../AlphalistFrame';
 
@@ -32,6 +33,16 @@ export function S01b_AdoptionCurve({ index, total }: Props) {
         </>
       }
     >
+      <div className="pointer-events-none absolute bottom-0 right-0 z-0 h-[40vh] w-[38vw]">
+        <Image
+          src="/alphalist/take-home-rocket-bg.png"
+          alt=""
+          fill
+          sizes="40vw"
+          className="object-contain object-right-bottom opacity-75"
+          priority
+        />
+      </div>
       <div className="w-full">
         <BlurFade delay={0.3} duration={0.6}>
           <div

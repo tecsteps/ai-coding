@@ -1,0 +1,18 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - paragraph [ref=e7]: Same technology, different reactions
+        - heading "Opportunity for some. Threat for others." [level=1] [ref=e8]:
+          - text: Opportunity for some.
+          - text: Threat for others.
+      - img "AI transformation seen as opportunity by leaders and as threat by concerned team members" [ref=e11]
+    - generic:
+      - generic: Munich · 2026
+      - generic: 14 / 44
+  - button "Open Next.js Dev Tools" [ref=e17] [cursor=pointer]:
+    - img [ref=e18]
+  - alert [ref=e21]

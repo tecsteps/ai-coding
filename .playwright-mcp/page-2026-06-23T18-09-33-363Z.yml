@@ -1,0 +1,89 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - heading "The challenges arrive all at once." [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - img [ref=e13]
+            - heading "Tech challenges" [level=2] [ref=e24]
+          - list [ref=e25]:
+            - listitem [ref=e26]:
+              - generic [ref=e28]: Which coding agent? Which license?
+            - listitem [ref=e29]:
+              - generic [ref=e31]: Unify and deploy all the micro-apps?
+            - listitem [ref=e32]:
+              - generic [ref=e34]: API keys and environment variables?
+            - listitem [ref=e35]:
+              - generic [ref=e37]: Use an SDD framework?
+            - listitem [ref=e38]:
+              - generic [ref=e40]: Same skills across all teams?
+            - listitem [ref=e41]:
+              - generic [ref=e43]: Token budgets?
+            - listitem [ref=e44]:
+              - generic [ref=e46]: Security boundaries?
+            - listitem [ref=e47]:
+              - generic [ref=e49]: Observability for agent work?
+            - listitem [ref=e50]:
+              - generic [ref=e52]: Shared prompts and runbooks?
+            - listitem [ref=e53]:
+              - generic [ref=e55]: Local vs cloud execution?
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - heading "Org challenges" [level=2] [ref=e63]
+          - list [ref=e64]:
+            - listitem [ref=e65]:
+              - generic [ref=e67]: How do interviews work now?
+            - listitem [ref=e68]:
+              - generic [ref=e70]: Do we still need juniors?
+            - listitem [ref=e71]:
+              - generic [ref=e73]: Do we still need Scrum?
+            - listitem [ref=e74]:
+              - generic [ref=e76]: What should product managers do?
+            - listitem [ref=e77]:
+              - generic [ref=e79]: Do we still need testers?
+            - listitem [ref=e80]:
+              - generic [ref=e82]: Enough backlog for 100 engineers?
+            - listitem [ref=e83]:
+              - generic [ref=e85]: Where do future seniors come from?
+            - listitem [ref=e86]:
+              - generic [ref=e88]: How do career ladders change?
+            - listitem [ref=e89]:
+              - generic [ref=e91]: Who owns generated systems?
+            - listitem [ref=e92]:
+              - generic [ref=e94]: What does productivity mean?
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - img [ref=e98]
+            - heading "Team pushback" [level=2] [ref=e102]
+          - list [ref=e103]:
+            - listitem [ref=e104]:
+              - generic [ref=e106]: Managing emotions
+            - listitem [ref=e107]:
+              - generic [ref=e109]: Fear
+            - listitem [ref=e110]:
+              - generic [ref=e112]: Skepticism
+            - listitem [ref=e113]:
+              - generic [ref=e115]: Concerns
+            - listitem [ref=e116]:
+              - generic [ref=e118]: Resistance to change
+            - listitem [ref=e119]:
+              - generic [ref=e121]: Territory wars
+            - listitem [ref=e122]:
+              - generic [ref=e124]: Loss of craft identity
+            - listitem [ref=e125]:
+              - generic [ref=e127]: Skill atrophy anxiety
+            - listitem [ref=e128]:
+              - generic [ref=e130]: Trust in generated code
+            - listitem [ref=e131]:
+              - generic [ref=e133]: Silent disengagement
+    - generic:
+      - generic: Munich · 2026
+      - generic: 10 / 40
+  - button "Open Next.js Dev Tools" [ref=e139] [cursor=pointer]:
+    - img [ref=e140]
+  - alert [ref=e143]

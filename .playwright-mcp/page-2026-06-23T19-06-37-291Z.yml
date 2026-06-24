@@ -1,0 +1,18 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - paragraph [ref=e7]: Moving target
+        - heading "The org is changing on moving ground." [level=1] [ref=e8]
+        - paragraph [ref=e9]: Delivery continues. The technology keeps changing.
+        - paragraph [ref=e10]: You have to redesign the organization while new agents, models, and workflows keep arriving.
+      - img "CTO building an organizational change bridge while innovation keeps flowing underneath" [ref=e13]
+    - generic:
+      - generic: Munich · 2026
+      - generic: 19 / 29
+  - button "Open Next.js Dev Tools" [ref=e19] [cursor=pointer]:
+    - img [ref=e20]
+  - alert [ref=e23]

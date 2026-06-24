@@ -1,0 +1,87 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - paragraph [ref=e8]: Role redesign
+          - heading "The job description changes." [level=1] [ref=e9]:
+            - text: The job description
+            - text: changes.
+          - paragraph [ref=e10]: The role moves from implementing tickets to owning outcomes in an AI-native workflow.
+        - img "Product engineer working on impact metrics" [ref=e12]
+      - generic [ref=e14]:
+        - generic [ref=e16]:
+          - generic [ref=e18]:
+            - paragraph [ref=e19]: From
+            - heading "Software Developer" [level=2] [ref=e20]
+            - paragraph [ref=e21]: “Give me a clear ticket and I will implement it.”
+          - generic [ref=e22]:
+            - generic [ref=e23]:
+              - heading "Responsibilities" [level=3] [ref=e24]
+              - list [ref=e25]:
+                - listitem [ref=e26]:
+                  - generic [ref=e28]: Translate tickets into working code
+                - listitem [ref=e29]:
+                  - generic [ref=e31]: Implement predefined specs
+                - listitem [ref=e32]:
+                  - generic [ref=e34]: Fix bugs and maintain code
+                - listitem [ref=e35]:
+                  - generic [ref=e37]: Estimate and deliver sprint work
+                - listitem [ref=e38]:
+                  - generic [ref=e40]: Review PRs and follow standards
+            - generic [ref=e41]:
+              - heading "Success" [level=3] [ref=e42]
+              - list [ref=e43]:
+                - listitem [ref=e44]:
+                  - generic [ref=e46]: On-time tickets
+                - listitem [ref=e47]:
+                  - generic [ref=e49]: Low bug rate
+                - listitem [ref=e50]:
+                  - generic [ref=e52]: Clean code
+                - listitem [ref=e53]:
+                  - generic [ref=e55]: Reliable velocity
+        - img [ref=e58]
+        - generic [ref=e61]:
+          - generic [ref=e63]:
+            - paragraph [ref=e64]: To
+            - heading "AI-Native Product Engineer" [level=2] [ref=e65]
+            - paragraph [ref=e66]: “Give me a problem and I will ship a solution.”
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - heading "Responsibilities" [level=3] [ref=e69]
+              - list [ref=e70]:
+                - listitem [ref=e71]:
+                  - img [ref=e72]
+                  - generic [ref=e75]: Turn business problems into product outcomes
+                - listitem [ref=e76]:
+                  - img [ref=e77]
+                  - generic [ref=e80]: Use agents to research, build, test, and refactor
+                - listitem [ref=e81]:
+                  - img [ref=e82]
+                  - generic [ref=e85]: Write specs, prompts, checks, and acceptance criteria
+                - listitem [ref=e86]:
+                  - img [ref=e87]
+                  - generic [ref=e90]: Own quality through tests, review, and production feedback
+                - listitem [ref=e91]:
+                  - img [ref=e92]
+                  - generic [ref=e95]: Reduce handovers and improve the team workflow
+            - generic [ref=e96]:
+              - heading "Success" [level=3] [ref=e97]
+              - list [ref=e98]:
+                - listitem [ref=e99]:
+                  - generic [ref=e101]: Faster product impact
+                - listitem [ref=e102]:
+                  - generic [ref=e104]: Fewer handovers
+                - listitem [ref=e105]:
+                  - generic [ref=e107]: Judgment with AI
+                - listitem [ref=e108]:
+                  - generic [ref=e110]: Learning from users
+    - generic:
+      - generic: Munich · 2026
+      - generic: 12 / 45
+  - button "Open Next.js Dev Tools" [ref=e116] [cursor=pointer]:
+    - img [ref=e117]
+  - alert [ref=e120]

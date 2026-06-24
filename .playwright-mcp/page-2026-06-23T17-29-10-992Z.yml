@@ -1,0 +1,16 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - 'heading "The main problem: Own experience." [level=1] [ref=e7]'
+      - generic [ref=e9]:
+        - img "Manager asks engineers to transition to an AI-native workflow while nobody can explain what it means" [ref=e11]
+        - paragraph [ref=e13]: For every manager, this is a first-time challenge.
+    - generic:
+      - generic: Munich · 2026
+      - generic: 09 / 38
+  - button "Open Next.js Dev Tools" [ref=e19] [cursor=pointer]:
+    - img [ref=e20]
+  - alert [ref=e23]
