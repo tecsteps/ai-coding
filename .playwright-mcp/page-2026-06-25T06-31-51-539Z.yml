@@ -1,0 +1,25 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - paragraph [ref=e7]: AI Coding is here to stay.
+        - generic [ref=e9]:
+          - paragraph [ref=e10]: Google, 2026
+          - generic [ref=e11]:
+            - generic [ref=e12]: "75"
+            - generic [ref=e13]: "%"
+          - paragraph [ref=e14]: of all new code at Google is now AI-generated.
+          - generic [ref=e15]:
+            - paragraph [ref=e16]: Sundar Pichai
+            - paragraph [ref=e17]: CEO of Google and Alphabet
+        - paragraph [ref=e19]: "Source: Google Cloud Next 2026 https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/"
+      - heading "What’s your company’s AI-generated code share?" [level=2] [ref=e21]
+    - generic:
+      - generic: Munich · 2026
+      - generic: 04 / 31
+  - button "Open Next.js Dev Tools" [ref=e27] [cursor=pointer]:
+    - img [ref=e28]
+  - alert [ref=e31]

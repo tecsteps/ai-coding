@@ -1,11 +1,19 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export function useReveal(maxStep: number) {
-  const [step, setStep] = useState(0);
+  const pathname = usePathname();
+  const showAll = pathname.startsWith('/alphalist-cto-bootcamp-munich');
+  const [step, setStep] = useState(showAll ? maxStep : 0);
 
   useEffect(() => {
+    if (showAll) {
+      setStep(maxStep);
+      return;
+    }
+
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === 'ArrowDown' || event.key === ' ') {
         event.preventDefault();
@@ -18,7 +26,7 @@ export function useReveal(maxStep: number) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [maxStep]);
+  }, [maxStep, showAll]);
 
   return step;
 }
