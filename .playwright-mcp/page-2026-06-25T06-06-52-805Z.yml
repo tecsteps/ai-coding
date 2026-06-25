@@ -1,0 +1,33 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - heading "Solution Workshop." [level=1] [ref=e6]
+    - generic [ref=e9]:
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - img [ref=e15]
+          - generic [ref=e19]: Step 01
+        - paragraph [ref=e20]: One participant brings a real challenge.
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - img [ref=e26]
+          - generic [ref=e30]: Step 02
+        - paragraph [ref=e31]: Frame it with company context.
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e42]: Step 03
+        - paragraph [ref=e43]: The table discusses.
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - img [ref=e49]
+          - generic [ref=e52]: Step 04
+        - paragraph [ref=e53]: As many topics as you like.
+    - generic:
+      - generic: Munich · 2026
+      - generic: 29 / 31
+  - button "Open Next.js Dev Tools" [ref=e59] [cursor=pointer]:
+    - img [ref=e60]
+  - alert [ref=e63]

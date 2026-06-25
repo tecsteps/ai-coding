@@ -75,12 +75,20 @@ export function P04_Hosts({ index, total }: Props) {
       totalSlides={total}
       eyebrow="Your hosts"
     >
-      <div className="grid w-full grid-cols-3 gap-3 sm:grid-cols-3 md:gap-4 lg:grid-cols-5">
-        {hosts.map((h, i) => (
-          <BlurFade key={h.slug} delay={0.25 + i * 0.07} duration={0.5} className="h-full">
-            <HostCard {...h} />
-          </BlurFade>
-        ))}
+      <div className="w-full">
+        <BlurFade delay={0.15} duration={0.45}>
+          <p className="mb-5 font-mono text-sm font-semibold uppercase tracking-[0.34em] text-emerald-600">
+            Your hosts
+          </p>
+        </BlurFade>
+
+        <div className="grid w-full grid-cols-3 gap-3 sm:grid-cols-3 md:gap-4 lg:grid-cols-5">
+          {hosts.map((h, i) => (
+            <BlurFade key={h.slug} delay={0.25 + i * 0.07} duration={0.5} className="h-full">
+              <HostCard {...h} />
+            </BlurFade>
+          ))}
+        </div>
       </div>
     </AlphalistFrame>
   );

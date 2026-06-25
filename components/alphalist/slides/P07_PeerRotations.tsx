@@ -8,24 +8,21 @@ interface Props {
   total: number;
 }
 
-const steps: { number: string; icon: LucideIcon; title: string; sub: string }[] = [
+const steps: { number: string; icon: LucideIcon; title: string }[] = [
   {
     number: '01',
     icon: Binary,
     title: 'Count 0 - 1 around the table.',
-    sub: 'Everyone gets one number so the rotation stays simple.',
   },
   {
     number: '02',
     icon: ArrowRightCircle,
     title: 'On the call, every "1" moves.',
-    sub: 'All 1s move clockwise to the next table.',
   },
   {
     number: '03',
     icon: MessageCircle,
     title: 'Talk to the person on your right.',
-    sub: 'New table, new partner. Share what you just discussed.',
   },
 ];
 
@@ -37,41 +34,30 @@ export function P07_PeerRotations({ index, total }: Props) {
       eyebrow="Mechanic"
       title="Peer Rotations."
     >
-      <p className="mb-8 text-center text-base font-medium leading-snug text-slate-700 md:text-lg">
-        A simple rotation so you meet new people without breaking the round.
-      </p>
-
-      <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-3">
-        {steps.map(({ number, icon: Icon, title, sub }) => (
+      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3 md:gap-7">
+        {steps.map(({ number, icon: Icon, title }) => (
           <div
             key={number}
-            className="relative overflow-hidden rounded-2xl border border-amber-500/20 bg-gradient-to-br from-amber-50/80 via-white to-white p-6 shadow-[0_6px_24px_-12px_rgba(245,158,11,0.4)]"
+            className="relative min-h-[19rem] overflow-hidden rounded-[1.75rem] border border-amber-500/20 bg-gradient-to-br from-amber-50/85 via-white to-white p-8 shadow-[0_18px_60px_-44px_rgba(245,158,11,0.65)]"
           >
-            <div className="absolute -right-6 -top-6 h-28 w-28 rounded-full bg-amber-400/15 blur-2xl" />
-            <div className="relative">
-              <div className="mb-4 flex items-center gap-3">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-md shadow-amber-500/30">
-                  <Icon className="h-5 w-5" strokeWidth={2.2} />
+            <div className="absolute -right-8 -top-8 h-36 w-36 rounded-full bg-amber-400/15 blur-2xl" />
+            <div className="relative flex h-full flex-col justify-between gap-10">
+              <div className="flex items-center justify-between gap-4">
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-lg shadow-amber-500/30">
+                  <Icon className="h-7 w-7" strokeWidth={2.2} />
                 </span>
-                <span className="font-mono text-xs uppercase tracking-[0.3em] text-amber-700">
+                <span className="font-mono text-sm font-semibold uppercase tracking-[0.32em] text-amber-700">
                   Step {number}
                 </span>
               </div>
-              <p className="text-lg font-semibold leading-tight tracking-tight text-slate-900 md:text-xl">
+              <p className="text-3xl font-semibold leading-tight tracking-tight text-slate-900 md:text-4xl">
                 {title}
               </p>
-              <p className="mt-2 text-sm text-slate-600 md:text-base">{sub}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="mt-8 flex justify-center">
-        <div className="rounded-xl border border-slate-200 bg-slate-50/70 px-5 py-3 text-sm text-slate-600 md:text-base">
-          <span className="font-semibold text-slate-900">0s stay,</span>{' '}
-          <span className="font-semibold text-amber-700">1s rotate.</span>
-        </div>
-      </div>
     </AlphalistFrame>
   );
 }

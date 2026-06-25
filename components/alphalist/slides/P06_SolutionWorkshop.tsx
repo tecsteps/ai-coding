@@ -8,30 +8,26 @@ interface Props {
   total: number;
 }
 
-const steps: { number: string; icon: LucideIcon; title: string; sub: string }[] = [
+const steps: { number: string; icon: LucideIcon; title: string }[] = [
   {
     number: '01',
     icon: Target,
     title: 'One participant brings a real challenge.',
-    sub: 'Use a concrete situation, not a generic example.',
   },
   {
     number: '02',
     icon: Building2,
     title: 'Frame it with company context.',
-    sub: 'Business model, team size, stack, constraints. Context bounds the solution space.',
   },
   {
     number: '03',
     icon: Users,
     title: 'The table discusses.',
-    sub: 'Pull on the thread together. Challenge assumptions, share what worked, what did not.',
   },
   {
     number: '04',
     icon: Compass,
     title: 'As many topics as you like.',
-    sub: 'Follow the discussion where it creates useful insight for your table.',
   },
 ];
 
@@ -43,43 +39,28 @@ export function P06_SolutionWorkshop({ index, total }: Props) {
       eyebrow="Briefing · Day 2"
       title="Solution Workshop."
     >
-      <p className="mb-6 text-center text-base font-medium leading-snug text-slate-700 md:text-lg">
-        Focused workshops at your table.{' '}
-        <span className="text-emerald-600">A real challenge, a real round, real solutions.</span>
-      </p>
-
-      <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
-        {steps.map(({ number, icon: Icon, title, sub }) => (
+      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 md:gap-7">
+        {steps.map(({ number, icon: Icon, title }) => (
           <div
             key={number}
-            className="relative overflow-hidden rounded-2xl border border-emerald-600/15 bg-gradient-to-br from-emerald-50/70 via-white to-white p-6 shadow-[0_6px_24px_-12px_rgba(16,185,129,0.35)]"
+            className="relative min-h-[13.5rem] overflow-hidden rounded-[1.75rem] border border-emerald-600/15 bg-gradient-to-br from-emerald-50/80 via-white to-white p-8 shadow-[0_18px_60px_-44px_rgba(16,185,129,0.6)]"
           >
-            <div className="absolute -right-6 -top-6 h-28 w-28 rounded-full bg-emerald-500/10 blur-2xl" />
-            <div className="relative">
-              <div className="mb-3 flex items-center gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-md shadow-emerald-500/30">
-                  <Icon className="h-5 w-5" strokeWidth={2.2} />
+            <div className="absolute -right-8 -top-8 h-36 w-36 rounded-full bg-emerald-500/10 blur-2xl" />
+            <div className="relative flex h-full flex-col justify-between gap-8">
+              <div className="flex items-center justify-between gap-4">
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-lg shadow-emerald-500/30">
+                  <Icon className="h-7 w-7" strokeWidth={2.2} />
                 </span>
-                <span className="font-mono text-xs uppercase tracking-[0.3em] text-emerald-700">
+                <span className="font-mono text-sm font-semibold uppercase tracking-[0.32em] text-emerald-700">
                   Step {number}
                 </span>
               </div>
-              <p className="text-lg font-semibold leading-tight tracking-tight text-slate-900 md:text-xl">
+              <p className="max-w-xl text-3xl font-semibold leading-tight tracking-tight text-slate-900 md:text-4xl">
                 {title}
               </p>
-              <p className="mt-2 text-sm text-slate-600 md:text-base">{sub}</p>
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="mt-6 text-center">
-        <p className="text-sm text-slate-500 md:text-base">
-          Context is the constraint.{' '}
-          <span className="font-semibold text-slate-700">
-            Without it, every answer is generic.
-          </span>
-        </p>
       </div>
     </AlphalistFrame>
   );

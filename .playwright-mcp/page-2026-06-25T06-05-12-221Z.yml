@@ -1,0 +1,93 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - generic [ref=e6]:
+      - paragraph [ref=e8]: Your hosts
+      - generic [ref=e9]:
+        - generic [ref=e11]:
+          - img "Fabian Wesner" [ref=e13]
+          - generic [ref=e14]:
+            - paragraph [ref=e15]: Fabian Wesner
+            - paragraph [ref=e16]: CTO · Passionate about AI and Entrepreneurship
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - generic [ref=e20]: Ex-CTO Rocket Internet & Project A
+              - listitem [ref=e21]:
+                - generic [ref=e23]: Co-Founder & ex-CTO Spryker
+              - listitem [ref=e24]:
+                - generic [ref=e26]: Currently building something new
+            - link "fabian-wesner" [ref=e27]:
+              - /url: https://www.linkedin.com/in/fabian-wesner
+              - img [ref=e28]
+              - generic [ref=e32]: fabian-wesner
+        - generic [ref=e34]:
+          - img "Denis Turkov" [ref=e36]
+          - generic [ref=e37]:
+            - paragraph [ref=e38]: Denis Turkov
+            - paragraph [ref=e39]: Agentic Engineering Trainer · Architect for Agentic Commerce
+            - list [ref=e40]:
+              - listitem [ref=e41]:
+                - generic [ref=e43]: Ex-Chief Architect (VP) at Spryker
+              - listitem [ref=e44]:
+                - generic [ref=e46]: 15+ years in large-scale architecture
+              - listitem [ref=e47]:
+                - generic [ref=e49]: Founder of Execuro
+            - link "turkovdenis" [ref=e50]:
+              - /url: https://www.linkedin.com/in/turkovdenis
+              - img [ref=e51]
+              - generic [ref=e55]: turkovdenis
+        - generic [ref=e57]:
+          - img "Tereza Iofciu" [ref=e59]
+          - generic [ref=e60]:
+            - paragraph [ref=e61]: Tereza Iofciu
+            - paragraph [ref=e62]: Helping data & AI professionals lead with purpose
+            - list [ref=e63]:
+              - listitem [ref=e64]:
+                - generic [ref=e66]: 15+ years in data science & ML
+              - listitem [ref=e67]:
+                - generic [ref=e69]: Ex Data Science lead at neuefische & FREE NOW
+              - listitem [ref=e70]:
+                - generic [ref=e72]: Creator of the Data Diplomat Framework
+            - link "tereza-iofciu" [ref=e73]:
+              - /url: https://www.linkedin.com/in/tereza-iofciu
+              - img [ref=e74]
+              - generic [ref=e78]: tereza-iofciu
+        - generic [ref=e80]:
+          - img "Alexey Krivitsky" [ref=e82]
+          - generic [ref=e83]:
+            - paragraph [ref=e84]: Alexey Krivitsky
+            - paragraph [ref=e85]: Organizational design for agentic engineering
+            - list [ref=e86]:
+              - listitem [ref=e87]:
+                - generic [ref=e89]: Co-creator of Org Topologies
+              - listitem [ref=e90]:
+                - generic [ref=e92]: Author of "10X ORG"
+              - listitem [ref=e93]:
+                - generic [ref=e95]: Org design & scaling specialist
+            - link "alexeykrivitsky" [ref=e96]:
+              - /url: https://www.linkedin.com/in/alexeykrivitsky
+              - img [ref=e97]
+              - generic [ref=e101]: alexeykrivitsky
+        - generic [ref=e103]:
+          - img "Brian Graham" [ref=e105]
+          - generic [ref=e106]:
+            - paragraph [ref=e107]: Brian Graham
+            - paragraph [ref=e108]: Independent consultant · Team Topologies Advocate
+            - list [ref=e109]:
+              - listitem [ref=e110]:
+                - generic [ref=e112]: Independent consultant since 2022
+              - listitem [ref=e113]:
+                - generic [ref=e115]: Ex-architect at sennder, Forto & Spryker
+              - listitem [ref=e116]:
+                - generic [ref=e118]: Team Topologies Advocate
+            - link "brianjg" [ref=e119]:
+              - /url: https://www.linkedin.com/in/brianjg
+              - img [ref=e120]
+              - generic [ref=e124]: brianjg
+    - generic:
+      - generic: Munich · 2026
+      - generic: 02 / 31
+  - button "Open Next.js Dev Tools" [ref=e130] [cursor=pointer]:
+    - img [ref=e131]

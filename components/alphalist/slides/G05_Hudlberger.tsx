@@ -23,53 +23,53 @@ export function G05_Hudlberger({ index, total }: Props) {
         </>
       }
     >
-      <div className="grid w-full grid-cols-1 gap-10 md:grid-cols-[18rem_1fr] md:gap-12">
+      <div className="grid w-full grid-cols-1 gap-7 md:grid-cols-[21rem_1fr] md:gap-9 md:pl-12">
         <BlurFade delay={0.15} duration={0.6}>
-          <div className="flex flex-col items-center gap-4 md:items-start">
-            <div className="relative aspect-square w-56 overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm md:w-72">
+          <aside className="rounded-[1.75rem] border border-slate-200 bg-white p-4 shadow-[0_24px_70px_-46px_rgba(15,23,42,0.65)]">
+            <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-slate-100">
               <Image
                 src="/alphalist/guests/maximilian-hudlberger.jpg"
                 alt="Maximilian Hudlberger"
                 fill
-                sizes="(min-width: 768px) 18rem, 14rem"
+                sizes="(min-width: 768px) 21rem, 18rem"
                 className="object-cover"
               />
             </div>
-            <div className="flex flex-col items-center gap-1 md:items-start">
+            <div className="mt-4 rounded-2xl bg-slate-50 px-4 py-4">
               <p className="text-2xl font-semibold text-slate-900">Maximilian Hudlberger</p>
-              <p className="text-base text-slate-500">Solutions Architect, Applied AI</p>
-              <p className="text-base font-semibold text-emerald-600">OpenAI</p>
+              <p className="mt-1 text-base text-slate-500">Applied AI</p>
+              <p className="mt-1 text-base font-semibold text-emerald-600">OpenAI</p>
               <a
                 href="https://www.linkedin.com/in/maximilian-hudlberger-32b06b129"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-[#0A66C2] hover:underline"
+                className="mt-3 inline-flex max-w-full items-center gap-1.5 text-sm font-medium text-[#0A66C2] hover:underline"
               >
                 <Linkedin className="h-4 w-4" strokeWidth={2} />
-                linkedin.com/in/maximilian-hudlberger
+                <span className="truncate">linkedin.com/in/maximilian-hudlberger</span>
               </a>
             </div>
-          </div>
+          </aside>
         </BlurFade>
 
         <BlurFade delay={0.3} duration={0.6}>
-          <div className="flex flex-col gap-6">
-            <p className="text-lg leading-relaxed text-slate-700 md:text-xl">
-              A practitioner&apos;s view on deploying frontier AI in production, from
-              OpenAI&apos;s applied team working with European startups and enterprises.
+          <section className="flex h-full flex-col justify-center rounded-[1.75rem] border border-emerald-600/15 bg-gradient-to-br from-emerald-50/80 via-white to-white p-8 shadow-[0_24px_80px_-56px_rgba(16,185,129,0.55)]">
+            <p className="font-mono text-xs font-semibold uppercase tracking-[0.34em] text-emerald-600">
+              Speaker Bio
             </p>
-            <p className="text-base leading-relaxed text-slate-600 md:text-lg">
-              We&apos;ll cover Codex in real engineering work, designing long-running agents
-              with persistent memory, reusable skills and sub-agent delegation, and what is
-              actually working today.
+            <p className="mt-5 max-w-4xl text-2xl leading-snug text-slate-700">
+              Maximilian helps organizations deploy AI applications, from identifying
+              high-impact opportunities to prototyping, architecture, and production
+              scaling. He previously led EMEA Proof of Value projects at DataRobot and
+              built AI solutions in insurance at Allianz and PwC.
             </p>
 
-            <div className="mt-2 grid grid-cols-1 gap-3 sm:grid-cols-3">
-              <Stat label="Focus" value="Codex & agentic deployments" />
-              <Stat label="Works with" value="EU startups & enterprises" />
-              <Stat label="Education" value="TU München" />
+            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <Stat label="Company" value="OpenAI" />
+              <Stat label="Background" value="DataRobot · Allianz · PwC" />
+              <Stat label="Focus" value="Applied AI in production" />
             </div>
-          </div>
+          </section>
         </BlurFade>
       </div>
     </AlphalistFrame>
@@ -78,7 +78,7 @@ export function G05_Hudlberger({ index, total }: Props) {
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3">
+    <div className="rounded-2xl border border-emerald-600/10 bg-white/80 px-4 py-4 shadow-[0_12px_30px_-24px_rgba(15,23,42,0.5)]">
       <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-emerald-600">
         {label}
       </p>

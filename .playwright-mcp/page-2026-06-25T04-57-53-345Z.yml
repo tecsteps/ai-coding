@@ -1,0 +1,36 @@
+- generic [active]:
+  - generic [ref=e2]:
+    - generic:
+      - img "alphalist"
+      - generic: / CTO Bootcamp
+    - 'heading "Fireside Chat: Max Tschochohei (Google Cloud) + Q&A" [level=1] [ref=e6]'
+    - generic [ref=e9]:
+      - complementary [ref=e11]:
+        - img "Max Tschochohei" [ref=e13]
+        - generic [ref=e14]:
+          - paragraph [ref=e15]: Max Tschochohei
+          - paragraph [ref=e16]: Director, AI Practice EMEA
+          - paragraph [ref=e17]: Google Cloud
+          - link "linkedin.com/in/maxtsc" [ref=e18]:
+            - /url: https://www.linkedin.com/in/maxtsc
+            - img [ref=e19]
+            - generic [ref=e23]: linkedin.com/in/maxtsc
+      - generic [ref=e25]:
+        - paragraph [ref=e26]: Speaker Bio
+        - paragraph [ref=e27]: Max leads the AI Practice for EMEA at Google Cloud, helping customers adopt AI infrastructure and Cloud AI across the region.
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - paragraph [ref=e30]: Company
+            - paragraph [ref=e31]: Google Cloud
+          - generic [ref=e32]:
+            - paragraph [ref=e33]: Role
+            - paragraph [ref=e34]: Director, AI Practice EMEA
+          - generic [ref=e35]:
+            - paragraph [ref=e36]: Focus
+            - paragraph [ref=e37]: AI Infrastructure · Cloud AI
+    - generic:
+      - generic: Munich · 2026
+      - generic: 28 / 32
+  - button "Open Next.js Dev Tools" [ref=e43] [cursor=pointer]:
+    - img [ref=e44]
+  - alert [ref=e47]

@@ -35,7 +35,6 @@ import { S01b_AdoptionCurve } from './S01b_AdoptionCurve';
 import { G03_Balleyguier } from './G03_Balleyguier';
 import { G04_Tschochohei } from './G04_Tschochohei';
 import { G05_Hudlberger } from './G05_Hudlberger';
-import { Z01_Feedback } from './Z01_Feedback';
 import { ComponentType } from 'react';
 
 export interface AlphalistSlide {
@@ -76,10 +75,9 @@ export const alphalistSlides: AlphalistSlide[] = [
   { id: 'G03', component: G03_Balleyguier },
   { id: 'P05', component: P05_Breakouts },
   { id: 'G04', component: G04_Tschochohei },
-  { id: 'G05', component: G05_Hudlberger },
   { id: 'P06', component: P06_SolutionWorkshop },
+  { id: 'G05', component: G05_Hudlberger },
   // Hidden: Berlin guest (Ernst-Cornelius Koch)
   // { id: 'G02', component: G02_Cornelius },
   { id: 'P07', component: P07_PeerRotations },
-  { id: 'Z01', component: Z01_Feedback },
 ];
