@@ -1,0 +1,6 @@
+node_modules/
+.next/
+.idea/
+.playwright-mcp/
+*.tsbuildinfo
+next-env.d.ts
