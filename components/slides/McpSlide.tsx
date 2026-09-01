@@ -3,13 +3,15 @@
 import { McpSlide as McpSlideType } from '@/types/slide';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { StaticLightRays } from '@/components/ui/static-light-rays';
-import { Plug, Check } from 'lucide-react';
+import { Plug, Sparkles, Check } from 'lucide-react';
 
 interface Props {
   slide: McpSlideType;
 }
 
 export function McpSlide({ slide }: Props) {
+  const hasSkills = !!slide.skills && slide.skills.length > 0;
+
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-slate-950 text-white">
       <StaticLightRays
@@ -31,52 +33,79 @@ export function McpSlide({ slide }: Props) {
 
         {/* Content */}
         <div className="flex flex-1 items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8 overflow-y-auto">
-          <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 w-full max-w-5xl">
-            {/* Definition Box */}
-            <BlurFade delay={0.2} duration={0.5}>
-              <div className="flex items-center gap-4 sm:gap-6 p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl border border-purple-500/40 bg-gradient-to-br from-purple-950/40 to-slate-900/60">
-                <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-r from-purple-500 to-violet-500">
-                  <Plug className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-white" />
+          <div className={`grid grid-cols-1 ${hasSkills ? 'md:grid-cols-2' : ''} gap-4 sm:gap-6 w-full ${hasSkills ? 'max-w-6xl' : 'max-w-5xl'}`}>
+            {/* MCP column */}
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <BlurFade delay={0.2} duration={0.5}>
+                <div className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl border border-purple-500/40 bg-gradient-to-br from-purple-950/40 to-slate-900/60 h-full">
+                  <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-gradient-to-r from-purple-500 to-violet-500">
+                    <Plug className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs sm:text-sm md:text-base font-mono text-purple-300">MCP = Model Context Protocol</p>
+                    <p className="text-[11px] sm:text-xs md:text-sm text-slate-400 mt-0.5">{slide.definition}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm sm:text-base md:text-lg font-mono text-purple-300">MCP = Model Context Protocol</p>
-                  <p className="text-xs sm:text-sm md:text-base text-slate-400 mt-0.5 sm:mt-1">{slide.definition}</p>
-                </div>
-              </div>
-            </BlurFade>
+              </BlurFade>
 
-            {/* MCP Table - Responsive */}
-            <BlurFade delay={0.3} duration={0.5}>
-              <div className="rounded-lg sm:rounded-xl border border-slate-700/40 overflow-x-auto">
-                <table className="w-full min-w-[500px]">
-                  <thead>
-                    <tr className="bg-slate-800/60">
-                      <th className="text-left px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-xs sm:text-sm font-semibold text-slate-300 uppercase tracking-wider">MCP / Tool</th>
-                      <th className="text-left px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-xs sm:text-sm font-semibold text-slate-300 uppercase tracking-wider">Description</th>
-                      <th className="text-left px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-xs sm:text-sm font-semibold text-slate-300 uppercase tracking-wider hidden sm:table-cell">Enables</th>
-                      <th className="text-center px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-xs sm:text-sm font-semibold text-slate-300 uppercase tracking-wider">Built-in</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {slide.items.map((item, index) => (
-                      <tr
+              <BlurFade delay={0.3} duration={0.5}>
+                <div className="rounded-lg sm:rounded-xl border border-slate-700/40 divide-y divide-slate-700/40 overflow-hidden">
+                  {slide.items.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start justify-between gap-3 px-3 sm:px-4 py-2 sm:py-2.5 hover:bg-slate-800/30 transition-colors"
+                    >
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono text-xs sm:text-sm text-purple-400">{item.name}</span>
+                          {item.builtIn && <Check className="h-3.5 w-3.5 text-emerald-400 flex-shrink-0" />}
+                        </div>
+                        <p className="text-[11px] sm:text-xs text-slate-400 mt-0.5">{item.description}</p>
+                      </div>
+                      <span className="hidden sm:block text-[11px] sm:text-xs text-slate-500 text-right flex-shrink-0 max-w-[45%]">
+                        {item.enables}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </BlurFade>
+            </div>
+
+            {/* Skills column */}
+            {hasSkills && (
+              <div className="flex flex-col gap-3 sm:gap-4">
+                <BlurFade delay={0.25} duration={0.5}>
+                  <div className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl border border-amber-500/40 bg-gradient-to-br from-amber-950/30 to-slate-900/60 h-full">
+                    <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-gradient-to-r from-amber-500 to-orange-500">
+                      <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-xs sm:text-sm md:text-base font-mono text-amber-300">Skills</p>
+                      <p className="text-[11px] sm:text-xs md:text-sm text-slate-400 mt-0.5">{slide.skillsDefinition}</p>
+                    </div>
+                  </div>
+                </BlurFade>
+
+                <BlurFade delay={0.35} duration={0.5}>
+                  <div className="rounded-lg sm:rounded-xl border border-slate-700/40 divide-y divide-slate-700/40 overflow-hidden">
+                    {slide.skills!.map((item, index) => (
+                      <div
                         key={index}
-                        className="border-t border-slate-700/40 hover:bg-slate-800/30 transition-colors"
+                        className="flex items-start justify-between gap-3 px-3 sm:px-4 py-2 sm:py-2.5 hover:bg-slate-800/30 transition-colors"
                       >
-                        <td className="px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 font-mono text-xs sm:text-sm md:text-base text-purple-400">{item.name}</td>
-                        <td className="px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-xs sm:text-sm md:text-base text-slate-300">{item.description}</td>
-                        <td className="px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-xs sm:text-sm md:text-base text-slate-400 hidden sm:table-cell">{item.enables}</td>
-                        <td className="px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-center">
-                          {item.builtIn && (
-                            <Check className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-400 mx-auto" />
-                          )}
-                        </td>
-                      </tr>
+                        <div className="min-w-0">
+                          <span className="font-mono text-xs sm:text-sm text-amber-400">{item.name}</span>
+                          <p className="text-[11px] sm:text-xs text-slate-400 mt-0.5">{item.description}</p>
+                        </div>
+                        <span className="hidden sm:block text-[11px] sm:text-xs text-slate-500 text-right flex-shrink-0 max-w-[45%]">
+                          {item.enables}
+                        </span>
+                      </div>
                     ))}
-                  </tbody>
-                </table>
+                  </div>
+                </BlurFade>
               </div>
-            </BlurFade>
+            )}
           </div>
         </div>
 

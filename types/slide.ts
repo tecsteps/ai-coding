@@ -140,11 +140,19 @@ export interface McpItem {
   builtIn?: boolean;
 }
 
+export interface SkillItem {
+  name: string;
+  description: string;
+  enables: string;
+}
+
 export interface McpSlide {
   type: 'mcp';
   headline: string;
   definition: string;
   items: McpItem[];
+  skillsDefinition?: string;
+  skills?: SkillItem[];
   footer?: string;
 }
 
@@ -178,6 +186,7 @@ export interface GuardrailsSlide {
 
 export interface VsTool {
   name: string;
+  logos: string[];
   pros: string[];
   cons: string[];
   highlight?: string;
@@ -186,7 +195,8 @@ export interface VsTool {
 export interface VsSlide {
   type: 'vs';
   headline: string;
-  tools: [VsTool, VsTool];
+  tools: VsTool[];
+  infoBox?: string;
   footnotes?: string[];
 }
 
@@ -533,7 +543,35 @@ export interface Dev2026Slide {
   punchline?: string;
 }
 
-export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide | PromptingGuidelinesSlide | ExistingCodebaseStepSlide | CostComparisonSlide | ValueComparisonSlide | AgencyOpportunitySlide | ImplementationDetailSlide | MoatsStorySlide | IntroRoundSlide | AdoptionWakeSlide | WalkingDrivingSlide | NotAChoiceSlide | SingleStackSlide | Dev2026Slide;
+export interface GlossaryTerm {
+  term: string;
+  description: string;
+  source?: string;
+}
+
+export interface GlossarySlide {
+  type: 'glossary';
+  headline: string;
+  intro?: string;
+  terms: GlossaryTerm[];
+  footer?: string;
+}
+
+export interface TermDemystifySlide {
+  type: 'term-demystify';
+  headline: string;
+  term: string;
+  prompt: string;
+}
+
+export interface BigQuoteSlide {
+  type: 'big-quote';
+  kicker?: string;
+  quote: string;
+  points?: string[];
+}
+
+export type Slide = TitleSlide | RegularSlide | EvolutionSlide | QuestionSlide | AgentTheorySlide | EasyStartSlide | SpecGapSlide | WaysSlide | PillarsSlide | SddSlide | QualitySlide | InteractionSlide | McpSlide | GuidanceSlide | GuardrailsSlide | VsSlide | PrimeDirectiveSlide | MentalModelSlide | AiFailuresSlide | JobsSlide | HandsOnSlide | BigStatementSlide | ChatbotMentalModelSlide | SafetyChecklistSlide | AgentLoopSlide | AgentCapabilitiesSlide | HumansVsAgentsSlide | MultiplierSlide | QuotesSlide | TrendSlide | SplitQuestionSlide | WrongReactionSlide | PracticeImplicationSlide | TransitionSlide | ClosingSlide | ScreenshotSlide | PerformanceGraphSlide | AdoptionCycleSlide | PromptingGuidelinesSlide | ExistingCodebaseStepSlide | CostComparisonSlide | ValueComparisonSlide | AgencyOpportunitySlide | ImplementationDetailSlide | MoatsStorySlide | IntroRoundSlide | AdoptionWakeSlide | WalkingDrivingSlide | NotAChoiceSlide | SingleStackSlide | Dev2026Slide | GlossarySlide | TermDemystifySlide | BigQuoteSlide;
 
 export interface Presentation {
   name: string;

@@ -76,26 +76,6 @@ export const demo: Presentation = {
             ],
         },
         {
-            type: 'question',
-            headline: 'Who has experience with...',
-            storageKey: 'question-1-counts',
-            options: [
-                {label: 'A', text: 'Cursor'},
-                {label: 'B', text: 'Claude Code'},
-                {label: 'C', text: 'Other AI coding tools'},
-            ],
-        },
-        {
-            type: 'question',
-            headline: 'Who has experience with...',
-            storageKey: 'question-2-counts',
-            options: [
-                {label: 'A', text: 'MCPs'},
-                {label: 'B', text: 'Sub-Agents'},
-                {label: 'C', text: 'Spec-Driven Development'},
-            ],
-        },
-        {
             type: 'easy-start',
             headline: 'Starting is very easy!',
         },
@@ -318,7 +298,25 @@ export const demo: Presentation = {
                     builtIn: false,
                 },
             ],
-            footer: 'Depending on your IDE and technology stack, other MCPs might be better suited.',
+            skillsDefinition: 'Packaged, reusable instructions the agent loads for a specific kind of task.',
+            skills: [
+                {
+                    name: 'Code Review',
+                    description: 'Checklist and process for reviewing changes',
+                    enables: 'Consistent quality bar',
+                },
+                {
+                    name: 'Spec Writer',
+                    description: 'Template and steps for writing a technical spec',
+                    enables: 'Faster, complete specs',
+                },
+                {
+                    name: 'Deploy Runbook',
+                    description: 'Step-by-step deployment and rollback procedure',
+                    enables: 'Safe, repeatable releases',
+                },
+            ],
+            footer: 'MCPs connect the agent to tools & data. Skills teach it your process. Both are equally important.',
         },
         {
             type: 'pillars',
@@ -384,8 +382,8 @@ export const demo: Presentation = {
             after: {
                 title: 'With AI Coding Agent',
                 items: [
-                    {task: 'Technical specifications', percentage: 80},
-                    {task: 'Validation of results', percentage: 10},
+                    {task: 'Technical specifications', percentage: 45},
+                    {task: 'Validation of results', percentage: 45},
                     {task: 'Defining Guardrails, Guidance & Tooling/MCPs', percentage: 5},
                     {task: 'Coding', percentage: 5},
                 ],
@@ -398,9 +396,9 @@ export const demo: Presentation = {
             tools: [
                 {
                     name: 'Claude Code',
+                    logos: ['/claudecode2.png'],
                     pros: [
                         'Most advanced coding agent',
-                        'Maintained by Anthropic',
                         'Semi-flatrate pricing (e.g. 100EUR/month per "premium" seat)',
                     ],
                     cons: [
@@ -408,10 +406,22 @@ export const demo: Presentation = {
                     ],
                 },
                 {
+                    name: 'Codex',
+                    logos: ['/codex-logo.png'],
+                    pros: [
+                        'Maintained by OpenAI',
+                        'Strong reasoning models (GPT-5.x)',
+                    ],
+                    cons: [
+                        'Smaller ecosystem of extensions',
+                    ],
+                },
+                {
                     name: 'Cursor',
+                    logos: ['/cursor-icon.png', '/grok-logo.png'],
                     pros: [
                         'Amazing UX',
-                        'All LLMs available**',
+                        'All LLMs available** (now incl. Grok, after the merger)',
                     ],
                     cons: [
                         'API-based billing',
@@ -419,6 +429,7 @@ export const demo: Presentation = {
                     highlight: 'main reason to use it',
                 },
             ],
+            infoBox: "Capability level of LLMs and harnesses is so high today, it's mostly a taste question. Private use: try them all, incl. open-weight models via OpenCode. Company: mostly a purchase decision, as team seats are expensive.",
             footnotes: [
                 '* There is a nice VSCode plugin available',
                 '** Claude Code can also be used with other LLMs',
@@ -427,6 +438,56 @@ export const demo: Presentation = {
         {
             type: 'agent-theory',
             headline: 'How Claude Code Works',
+        },
+        {
+            type: 'glossary',
+            headline: 'The Vocabulary of Agentic Engineering',
+            terms: [
+                {
+                    term: 'Prompt engineering',
+                    description: 'Designing the instruction for a single agent run.',
+                },
+                {
+                    term: 'Context engineering',
+                    description: 'Controlling which files, rules, history and evidence the agent sees at each step.',
+                },
+                {
+                    term: 'Harness engineering',
+                    description: 'Engineering the repository, tools, sandbox, policies and feedback surrounding the model. Described as making the codebase legible and enforceable for agents.',
+                    source: 'OpenAI',
+                },
+                {
+                    term: 'Workflow',
+                    description: 'A predefined sequence such as issue → plan → implement → test → review. Distinguished from agents, which choose their own path.',
+                    source: 'Anthropic',
+                },
+                {
+                    term: 'Loop engineering',
+                    description: 'Designing an autonomous cycle that repeatedly assigns work, validates the result and decides the next action until a stopping condition is met.',
+                    source: 'Addy Osmani',
+                },
+                {
+                    term: 'Graph engineering',
+                    description: 'Connecting multiple agents or steps through branches, parallel execution, gates, shared state and feedback edges. A loop is the simplest possible graph.',
+                    source: 'LangChain',
+                },
+                {
+                    term: 'Gauntlet Loop',
+                    description: 'A multi-agent pattern: builders produce components, independent critics compare them against a concrete quality bar, and failed components return for improvement.',
+                    source: 'Matt Shumer',
+                },
+                {
+                    term: 'AI Software Factory',
+                    description: 'An always-on operating system for the entire SDLC: signals enter, agents triage, plan, build, test, review, ship and monitor, generating new feedback. Contains many workflows, loops and graphs.',
+                    source: 'Factory.ai',
+                },
+            ],
+        },
+        {
+            type: 'term-demystify',
+            headline: 'Loop Engineering, Demystified',
+            term: 'Loop Engineering',
+            prompt: 'Implement, then test, if broken fix; repeat until done',
         },
         {
             type: 'prompting-guidelines',
@@ -448,6 +509,10 @@ export const demo: Presentation = {
                     good: 'Fix this, then update your skills so it never happens again',
                 },
             ],
+        },
+        {
+            type: 'big-quote',
+            quote: 'Use it yourself. As much as possible.',
         },
         {
             type: 'hands-on',

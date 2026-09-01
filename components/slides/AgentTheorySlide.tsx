@@ -314,7 +314,14 @@ export function AgentTheorySlide({ slide }: Props) {
         <BlurFade delay={1} duration={0.5}>
           <div className="pb-4 sm:pb-6 text-center px-4">
             <p className="text-sm sm:text-base md:text-lg text-slate-400">
-              The ReAct Loop
+              <a
+                href="https://arxiv.org/abs/2210.03629"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline decoration-slate-600 hover:text-slate-300 hover:decoration-slate-400 transition-colors"
+              >
+                The ReAct Loop
+              </a>
             </p>
             <p className="text-xs text-slate-600 mt-1 lg:hidden">Best viewed on larger screens</p>
           </div>

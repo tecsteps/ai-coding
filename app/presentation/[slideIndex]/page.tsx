@@ -22,6 +22,9 @@ import { JobsSlide } from '@/components/slides/JobsSlide';
 import { HandsOnSlide } from '@/components/slides/HandsOnSlide';
 import { PromptingGuidelinesSlide } from '@/components/slides/PromptingGuidelinesSlide';
 import { ExistingCodebaseStepSlide } from '@/components/slides/ExistingCodebaseStepSlide';
+import { GlossarySlide } from '@/components/slides/GlossarySlide';
+import { TermDemystifySlide } from '@/components/slides/TermDemystifySlide';
+import { BigQuoteSlide } from '@/components/slides/BigQuoteSlide';
 import { SlideNavigation } from '@/components/slides/SlideNavigation';
 import { SlideHints } from '@/components/slides/SlideHints';
 import { LaserPointer } from '@/components/slides/LaserPointer';
@@ -75,6 +78,9 @@ export default async function SlidePage({ params }: Props) {
       {slide.type === 'hands-on' && <HandsOnSlide slide={slide} />}
       {slide.type === 'prompting-guidelines' && <PromptingGuidelinesSlide slide={slide} />}
       {slide.type === 'existing-codebase-step' && <ExistingCodebaseStepSlide slide={slide} />}
+      {slide.type === 'glossary' && <GlossarySlide slide={slide} />}
+      {slide.type === 'term-demystify' && <TermDemystifySlide slide={slide} />}
+      {slide.type === 'big-quote' && <BigQuoteSlide slide={slide} />}
       <SlideHints slideIndex={index} slideType={slide.type} />
       <LaserPointer />
     </SlideContainer>
